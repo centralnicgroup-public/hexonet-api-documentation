@@ -14,7 +14,7 @@ All users have access to this command.
 ## COMMAND
 
 Parameter | Min | Definition | Type
----- | ---- | ---- | ---- | ----
+---- | ---- | ---- | ---- 
 COMMAND | 1 | `ActivateDomainSale` | COMMAND
 DOMAIN[0..N] | 1 | The domain names. | DOMAIN
 TRIGGER | 1 | The trigger from the confirmation link | TEXT

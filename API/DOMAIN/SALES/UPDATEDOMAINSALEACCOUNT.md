@@ -12,7 +12,7 @@ All users have access to this command.
 ## COMMAND
 
 Parameter | Min | Definition | Type
----- | ---- | ---- | ---- | ----
+---- | ---- | ---- | ---- 
 COMMAND | 1 | `UpdateDomainSaleAccount` | COMMAND
 PREMIUMCHANNEL | 1 | `SEDO` or `AFTERNIC` | TEXT
 APIKEY | 0 | The Sedo API key for the user account | TEXT
@@ -40,7 +40,7 @@ EOF
 ```
 
 ### Command
-To enable customers to use our AfterNIC account to list domains: 
+To enable customers to use our AfterNIC account to list domains:
 ```
 COMMAND = UpdateDomainSaleAccount
 PREMIUMCHANNEL = AFTERNIC

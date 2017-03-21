@@ -2,7 +2,7 @@
 
 ## DESCRIPTION
 The QueryDomainList command version 2 can be used to obtain the DOMAINSALE properties.
-Below are only the domain sales related parameters, the other parameters can be seen in 
+Below are only the domain sales related parameters, the other parameters can be seen in
 [API/DOMAIN/COMMON/QUERYDOMAINLIST_VERSION2.md](../COMMON/QUERYDOMAINLIST_VERSION2.md)
 
 
@@ -13,7 +13,7 @@ All users have access to this command.
 ## COMMAND
 
 Parameter | Min | Definition | Type
----- | ---- | ---- | ---- | ----
+---- | ---- | ---- | ----
 COMMAND | 1 | `QueryDomainList` | COMMAND
 VERSION | 1 | Indicates the version of the command. To access this version 2 of QueryDomainsList, `2` must be use used as value | INT
 PROPERTIES | 0 | The properties to return, e.g. `DOMAINSALE` | TEXT
@@ -40,7 +40,7 @@ Code | Description
 549 | Channel error
 
 Property | Min | Definition | Type
----- | ---- | ---- | ---- | ----
+---- | ---- | ---- | ----
 OBJECTID | 1 | The Object ID | TEXT
 DESCRIPTION | 1 | The object description | TEXT
 DOMAINSALE-AFTERNIC-STATUS | 0 | The AfterNIC listing status | `DISABLED`, `REQUESTED` or `ACTIVE`

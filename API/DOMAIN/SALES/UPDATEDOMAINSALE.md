@@ -16,7 +16,7 @@ All users have access to this command.
 ## COMMAND
 
 Parameter | Min | Definition | Type
----- | ---- | ---- | ---- | ----
+---- | ---- | ---- | ---- 
 COMMAND | 1 | `UpdateDomainSale` | COMMAND
 DOMAIN | 1 | The domain name. | DOMAIN
 AFTERNIC-STATUS | 0 | The status on AfterNIC | `DISABLED`, `ACTIVE` or `NONE`
