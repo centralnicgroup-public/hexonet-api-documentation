@@ -34,7 +34,12 @@ Code | Description
 
 Property | Min | Max | Definition | Type
 ---- | ---- | ---- | ---- | ----
+ADMINCONTACT | 0 | 1 | The admin contact stated in the transfer request | TEXT
+BILLINGCONTACT | 0 | 1 | The billing contact stated in the transfer request | TEXT
+OLD-REGISTRAR | 0 | 1 | The sponsoring registrar at the time of the transfer initiation | TEXT
+OWNERCONTACT | 0 | 1 | The owner contact stated in the transfer request | TEXT
 REPOSITORY | 1 | 1 | The repository in which the domain will be located after the transfer has been completed | TEXT
+TECHCONTACT | 0 | 1 | The technical contact stated in the transfer request | TEXT
 TRANSFERLOG[0..N] | 1 | N | The original log entries, separated by newlines | TEXT
 TRANSFERSTATUS | 1 | 1 | Status, i.e. `PENDING` | TEXT
 TRANSFERTYPE | 1 | 1 | The type of the transfer | TEXT
