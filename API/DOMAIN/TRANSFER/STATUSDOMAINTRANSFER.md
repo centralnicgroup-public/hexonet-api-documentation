@@ -36,6 +36,7 @@ Property | Min | Max | Definition | Type
 ---- | ---- | ---- | ---- | ----
 ADMINCONTACT | 0 | 1 | The admin contact stated in the transfer request | TEXT
 BILLINGCONTACT | 0 | 1 | The billing contact stated in the transfer request | TEXT
+CREATEDDATE | 1 | 1 | Creation date of the transfer | DATETIME
 OLD-REGISTRAR | 0 | 1 | The sponsoring registrar at the time of the transfer initiation | TEXT
 OWNERCONTACT | 0 | 1 | The owner contact stated in the transfer request | TEXT
 REPOSITORY | 1 | 1 | The repository in which the domain will be located after the transfer has been completed | TEXT
@@ -43,6 +44,7 @@ TECHCONTACT | 0 | 1 | The technical contact stated in the transfer request | TEX
 TRANSFERLOG[0..N] | 1 | N | The original log entries, separated by newlines | TEXT
 TRANSFERSTATUS | 1 | 1 | Status, i.e. `PENDING` | TEXT
 TRANSFERTYPE | 1 | 1 | The type of the transfer | TEXT
+UPDATEDDATE | 1 | 1 | Last modification date of the transfer | DATETIME
 
 ----
 ## Example
@@ -52,7 +54,7 @@ TRANSFERTYPE | 1 | 1 | The type of the transfer | TEXT
 ```
 [COMMAND]
 COMMAND = StatusDomainTransfer
-DOMAIN = hexonet-transfer.com
+DOMAIN = transfer-hexonet.com
 EOF
 ```
 ### Response
@@ -61,10 +63,12 @@ EOF
 [RESPONSE]
 CODE = 200
 DESCRIPTION = Command completed successfully
+PROPERTY[CREATEDDATE][0] = 2017-03-27 12:22:04
 PROPERTY[REPOSITORY][0] = COM-OTE-1API1
-PROPERTY[TRANSFERLOG][0] = 2016-09-26 15:46:44 [INITIATED] domain transfer initiated
+PROPERTY[TRANSFERLOG][0] = 2017-03-27 12:22:04 [INITIATED] domain transfer initiated
 PROPERTY[TRANSFERSTATUS][0] = INITIATED
 PROPERTY[TRANSFERTYPE][0] = INCOMING
+PROPERTY[UPDATEDDATE][0] = 2017-03-27 12:22:04
 EOF
 ```
 
