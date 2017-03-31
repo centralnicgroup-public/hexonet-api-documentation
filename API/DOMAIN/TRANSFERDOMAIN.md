@@ -35,7 +35,7 @@ OWNERCONTACT0 | 0 | Contact Handle ID | CONTACT or NULL
 ADMINCONTACT0 | 0 | Contact Handle ID | CONTACT or NULL
 TECHCONTACT0 | 0 | Contact Handle ID | CONTACT or NULL
 BILLINGCONTACT0 | 0 | Contact Handle ID | CONTACT or NULL
-TRANSFERLOCK | 0 | If set to `1` the domain will be locked for transfers after it has been transferred | `0`, `1` or NULL
+TRANSFERLOCK | 0 | If set to 1, a transfer lock will be set for the domain upon successful transfer. If set to 0, the domain will remain unlocked after the transfer. By default this value is set to 1 for all TLDs. | `0`, `1` or NULL
 REPOSITORY | 0 | Repository in which the domain will be located after the transfer is finished | NULL or TEXT
 X-ACCEPT-REGISTRATION-TAC | 0 | Set to `1` to accept the terms and conditions of the registration | `0`, `1` or NULL
 X-REGISTRANT-BIRTHDATE | 0 | The registrant's birthdate | TEXT or NULL
