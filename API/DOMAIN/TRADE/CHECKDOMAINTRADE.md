@@ -20,6 +20,9 @@ ADMINCONTACT0 | 0 | Contact Handle ID | CONTACT
 TECHCONTACT0 | 0 | Contact Handle ID | CONTACT
 NAMESERVER[0..12] | 0 | Nameserver Hostname | HOSTNAME or NULL
 HOST[0..N] | 0 | Nameserver hostnames and IP addresses | TEXT or NULL
+X-CONFIRM-DA-NEW-REGISTRANT | 0 | IRTP parameter: By setting this to `1` you confirm that you are the current registrant or the respective Designated Agent (DA) and that you authorize the change of the registrant | `0`, `1` or NULL
+X-CONFIRM-DA-OLD-REGISTRANT | 0 | IRTP parameter: By setting this to `1` you confirm that you are the new registrant or the respective Designated Agent (DA) and that you authorize the change of the registrant  | `0`, `1` or NULL
+X-REQUEST-OPT-OUT-TRANSFERLOCK | 0 | IRTP parameter: By setting this to `1` you can disable the 60 day transfer lock upon a successful registrant change | `0`, `1` or NULL
 X-AE-ACCEPT-REGISTRATION-TAC | 0 | Set to `1` to accept the terms and conditions; only relevant for .AE domains | `0`, `1` or NULL
 X-AE-REGISTRANT-NAME | 0 | Registrant's name; only relevant for .AE domains | TEXT or NULL
 X-AE-REGISTRANT-ID-TYPE | 0 | Registrant's ID type; only relevant for .AE domains | TEXT or NULL
