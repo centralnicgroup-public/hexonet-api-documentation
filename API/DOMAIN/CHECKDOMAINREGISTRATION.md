@@ -35,6 +35,7 @@ NOTICE-EXPIRATIONDATE | 0 | Expiration date of the accepted claims notice; NOTIC
 NOTICE-ACCEPTEDDATE | 0 | Date when the claims notice has been accepted; NOTICE-POA-ACCEPT-HASH should be used instead | DATETIME or NULL
 NOTICE-POA-ACCEPT-HASH | 0 | By providing the appropriate hash value, a respective claim notice is accepted | TEXT or NULL
 LAUNCH-MARK-CODE | 0 | Special allocation token provided by the registry | TEXT or NULL
+X-CAT-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-DISCLOSE | 0 | Set to `1` to disclose the domain's details | `0`, `1` or NULL
 X-REGISTRANT-DISCLOSE | 0 | Set to `1` to disclose the registrant's details | `0`, `1` or NULL
 X-ADMIN-DISCLOSE | 0 | Set to `1` to disclose the admins's details | `0`, `1` or NULL

@@ -63,6 +63,7 @@ X-BERLIN-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NU
 X-BROKER-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-CA-LANGUAGE | 0 | The registrant contact's language (default is `EN`) | TEXT or NULL
 X-CA-LEGALTYPE | 0 | The legal type of the domain owner | TEXT or NULL
+X-CAT-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-CFD-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-CORE-INTENDED-USE | 0 | Paremeter describing the intended use for the domain name | TEXT or NULL
 X-DE-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL

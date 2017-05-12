@@ -15,6 +15,7 @@ COMMAND | 1 | `CheckDomainTransfer` | COMMAND
 DOMAIN | 1 | Domain Name | DOMAIN
 AUTH | 0 | The domain's authorization code | TEXT
 X-AE-ACCEPT-REGISTRATION-TAC | 0 | Set to `1` to accept the terms and conditions of the .AE registry | `0`, `1` or NULL
+X-CAT-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-SYDNEY-NEXUS-CATEGORY | 0 | The registrant of the domain must match one of the following 3 criteria which can be stated here:<br>`A`: New South Wales Entities<br>`B`: New South Wales Residents<br>`C`: Associated Entities | `A`, `B`, `C` or NULL
 X-MELBOURNE-NEXUS-CATEGORY | 0 | The registrant of the domain must match one of the following 3 criteria which can be stated here:<br>`A`: Victorian Entities<br>`B`: Victorian Residents<br>`C`: Associated Entities | `A`, `B`, `C` or NULL
 X-TO-CUSTOMER-HANDLE | 0 | Customer handle; only relevant for .TO domains | TEXT or NULL

@@ -30,6 +30,7 @@ NAMESERVER[0..N] | 0 | Nameservers assigned to the domain after the transfer is 
 HOST[0..N] | 0 | Nameserver hostnames and IP addresses | TEXT or NULL
 SUBUSER | 0 | The account in which the domain will be located after the transfer is finished | TEXT or NULL
 PERIOD | 0 | Period the domain will be renewed during the transfer process. If not stated a default period will be queried. | PERIOD
+X-CAT-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-IDN-LANGUAGE | 0 | If the domain is a IDN domain, you have to submit the IDN language tag with this parameter (e.g. `DE` for German IDN domains) | TEXT or NULL
 OWNERCONTACT0 | 0 | Contact Handle ID | CONTACT or NULL
 ADMINCONTACT0 | 0 | Contact Handle ID | CONTACT or NULL

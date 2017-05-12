@@ -34,6 +34,7 @@ CLAIMKEY | 0 | If there is a claim on the domain name the claim key has to be pr
 CLAIMKEY-UPDATEDDATE | 0 | Date when the claim key has been updated the last time | DATETIME or NULL
 NOTICE-POA-ACCEPT-HASH | 0 | By providing the appropriate hash value, a respective claim notice is accepted | TEXT or NULL
 LAUNCH-MARK-CODE | 0 | Special allocation token provided by the registry | TEXT or NULL
+X-CAT-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-DISCLOSE | 0 | Set to `1` to disclose the domain's details | `0`, `1` or NULL
 X-REGISTRANT-DISCLOSE | 0 | Set to `1` to disclose the registrant's details | `0`, `1` or NULL
 X-ADMIN-DISCLOSE | 0 | Set to `1` to disclose the admin's details | `0`, `1` or NULL
