@@ -13,7 +13,7 @@ Parameter | Min | Definition | Type
 ---- | ---- | ---- | ----
 COMMAND | 1 | `TradeDomain` | COMMAND
 DOMAIN | 1 | Domain Name | TEXT
-OWNERCONTACT0 | 1 | Contact Handle of the new domain owner | CONTACT
+OWNERCONTACT0 | 0 | Contact Handle of the new domain owner.<br>This parameter is required if a trade is requested (ACTION=request), if a pending trade is cancelled (ACTION=cancel) this parameter is not mandatory. | CONTACT
 ORDER | 0 | Trade order action:<br>`CREATE` - create a trade order<br>`REPLACE` - replace a trade order<br>`UPDATE` - update a trade order | `CREATE`, `REPLACE` or `UPDATE`
 ORDERID | 0 | Trade order ID. Will only be considered if the parameter ORDER is set to REPLACE or UPDATE. If the parameter is not stated and the parameter ORDER is set to REPLACE or UPDATE then an auto detection of the order ID will be done. | INT
 ADMINCONTACT0 | 0 | Contact Handle of the new domain admin | CONTACT
