@@ -1,7 +1,7 @@
 # RequestDomainAuthInfo
 
 ## DESCRIPTION
-This command allows to request an authorisation code for a domain name transfer.
+This command allows to request an authorization code for a domain name transfer.
 
 ## AVAILABILITY
 All users have access to this command.
@@ -64,4 +64,4 @@ EOF
 ----
 ## NOTES
 
-* This command is supported only for a few registries: CORE Association, DNS Belgium, EURid, nic.at and Norid.
+* This command is supported only for a few registries: CORE Association, DNS Belgium, nic.at and Norid.
