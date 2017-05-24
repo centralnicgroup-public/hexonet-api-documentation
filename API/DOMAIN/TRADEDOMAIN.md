@@ -13,7 +13,7 @@ Parameter | Min | Definition | Type
 ---- | ---- | ---- | ----
 COMMAND | 1 | `TradeDomain` | COMMAND
 DOMAIN | 1 | Domain Name | TEXT
-OWNERCONTACT0 | 0 | Contact Handle of the new domain owner.<br>This parameter is required if a trade is requested (ACTION=request), if a pending trade is cancelled (ACTION=cancel) this parameter is not mandatory. | CONTACT
+OWNERCONTACT0 | 0 | Contact Handle of the new domain owner.<br>This parameter is required if a trade is requested (ACTION=request), if a pending trade is canceled (ACTION=cancel) this parameter is not mandatory. | CONTACT
 ORDER | 0 | Trade order action:<br>`CREATE` - create a trade order<br>`REPLACE` - replace a trade order<br>`UPDATE` - update a trade order | `CREATE`, `REPLACE` or `UPDATE`
 ORDERID | 0 | Trade order ID. Will only be considered if the parameter ORDER is set to REPLACE or UPDATE. If the parameter is not stated and the parameter ORDER is set to REPLACE or UPDATE then an auto detection of the order ID will be done. | INT
 ADMINCONTACT0 | 0 | Contact Handle of the new domain admin | CONTACT
@@ -22,7 +22,7 @@ BILLINGCONTACT0 | 0 | Contact Handle of the new billing contact | CONTACT
 NAMESERVER[0..12] | 0 | Nameserver Hostname | HOSTNAME or NULL
 AUTH | 0 | The domain's authorization code | TEXT
 HOST[0..N] | 0 | Nameserver hostnames and IP addresses | TEXT or NULL
-ACTION | 0 | May be `cancel` to cancel a running trade | TEXT or NULL
+ACTION | 0 | Defines the action to perform. Supported values are:<br>`request`: Request a new ownership change (parameter OWNERCONTACT mandatory)<br>`cancel`: Cancel a pending Trade (parameter OWNERCONTACT **not** mandatory)<br><br>The default value is `request` | TEXT or NULL
 X-CAT-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-CONFIRM-DA-NEW-REGISTRANT | 0 | IRTP parameter: By setting this to `1` you confirm that you are the current registrant or the respective Designated Agent (DA) and that you authorize the change of the registrant | `0`, `1` or NULL
 X-CONFIRM-DA-OLD-REGISTRANT | 0 | IRTP parameter: By setting this to `1` you confirm that you are the new registrant or the respective Designated Agent (DA) and that you authorize the change of the registrant  | `0`, `1` or NULL
