@@ -52,6 +52,7 @@ FORCE | 0 | Enforce certain domain updates that would otherwise be rejected; onl
 REGISTRANT-VERIFIED | 0 | By setting this parameter to `1` it is declared that the domain registrant has been verified; only possible for repository owners | `1` or NULL
 X-CAT-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-DISCLOSE | 0 | If set to `1` the domain's details get disclosed | `0`, `1` or NULL
+X-HEALTH-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1`
 X-REGISTRANT-DISCLOSE | 0 | If set to `1` the registrant's details get disclosed  | `0`, `1` or NULL
 X-ADMIN-DISCLOSE | 0 |  If set to `1` the admin's details get disclosed | `0`, `1` or NULL
 X-TECH-DISCLOSE | 0 |  If set to `1` the technical contact's details get disclosed | `0`, `1` or NULL

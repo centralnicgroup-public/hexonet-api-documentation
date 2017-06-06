@@ -37,6 +37,7 @@ NOTICE-POA-ACCEPT-HASH | 0 | By providing the appropriate hash value, a respecti
 LAUNCH-MARK-CODE | 0 | Special allocation token provided by the registry | TEXT or NULL
 X-CAT-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-DISCLOSE | 0 | Set to `1` to disclose the domain's details | `0`, `1` or NULL
+X-HEALTH-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1`
 X-REGISTRANT-DISCLOSE | 0 | Set to `1` to disclose the registrant's details | `0`, `1` or NULL
 X-ADMIN-DISCLOSE | 0 | Set to `1` to disclose the admins's details | `0`, `1` or NULL
 X-TECH-DISCLOSE | 0 | Set to `1` to disclose the technical contact's details | `0`, `1` or NULL

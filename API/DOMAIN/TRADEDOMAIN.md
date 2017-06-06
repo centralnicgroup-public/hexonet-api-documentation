@@ -26,6 +26,7 @@ ACTION | 0 | Defines the action to perform. Supported values are:<br>`request`: 
 X-CAT-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-CONFIRM-DA-NEW-REGISTRANT | 0 | IRTP parameter: By setting this to `1` you confirm that you are the current registrant or the respective Designated Agent (DA) and that you authorize the change of the registrant | `0`, `1` or NULL
 X-CONFIRM-DA-OLD-REGISTRANT | 0 | IRTP parameter: By setting this to `1` you confirm that you are the new registrant or the respective Designated Agent (DA) and that you authorize the change of the registrant  | `0`, `1` or NULL
+X-HEALTH-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1`
 X-REQUEST-OPT-OUT-TRANSFERLOCK | 0 | IRTP parameter: By setting this to `1` you can disable the 60 day transfer lock upon a successful registrant change | `0`, `1` or NULL
 X-AE-ACCEPT-REGISTRATION-TAC | 0 | Set to `1` to accept the terms and conditions; only relevant for .AE domains | `0`, `1` or NULL
 X-AE-REGISTRANT-NAME | 0 | Registrant's name; only relevant for .AE domains | TEXT or NULL
