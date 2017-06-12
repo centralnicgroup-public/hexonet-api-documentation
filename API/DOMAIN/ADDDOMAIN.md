@@ -352,6 +352,10 @@ NOTE: The response might include the parameter 'PENDING = 1'. This indicates tha
 
 Property | Min | Max | Definition | Type
 ---- | ---- | ---- | ---- | ----
+ACCOUNTINGDATE | 1 | 1 | The accounting date of the domain<br>Currently only returned in OTE. Will be returned in LIVE system as of 2017-07-10 | DATETIME
+FAILUREDATE | 1 | 1 | The failure date of the domain<br>Currently only returned in OTE. Will be returned in LIVE system as of 2017-07-10 | DATETIME
+FINALIZATIONDATE | 1 | 1 | The finalization date of the domain<br>Currently only returned in OTE. Will be returned in LIVE system as of 2017-07-10 | DATETIME
+PAIDUNTILDATE | 1 | 1 | The paid until date of the domain<br>Currently only returned in OTE. Will be returned in LIVE system as of 2017-07-10 | DATETIME
 REGISTRATIONEXPIRATIONDATE | 1 | 1 | The registration expiration date | DATETIME
 STATUS | 1 | 1 | The current registration status | TEXT
 
@@ -365,14 +369,13 @@ STATUS | 1 | 1 | The current registration status | TEXT
 COMMAND = AddDomain
 ADMINCONTACT0 = P-TUE1378025
 BILLINGCONTACT0 = P-TUE1378025
-DOMAIN = hexonet-domain.com
+DOMAIN = domain-hexonet.com
 NAMESERVER0 = ns1.hexonet.net
 NAMESERVER1 = ns2.hexonet.net
 NAMESERVER3 = ns3.hexonet.net
 OWNERCONTACT0 = P-TUE1378025
 TECHCONTACT0 = P-TUE1378025
 EOF
-
 ```
 ### Response
 
@@ -380,7 +383,11 @@ EOF
 [RESPONSE]
 CODE = 200
 DESCRIPTION = Command completed successfully
-PROPERTY[REGISTRATIONEXPIRATIONDATE][0] = 2017-09-26 14:53:20
+PROPERTY[ACCOUNTINGDATE][0] = 2018-06-07 10:05:38
+PROPERTY[FAILUREDATE][0] = 2018-07-26 10:05:38
+PROPERTY[FINALIZATIONDATE][0] = 2018-06-13 10:05:38
+PROPERTY[PAIDUNTILDATE][0] = 2018-06-12 10:05:38
+PROPERTY[REGISTRATIONEXPIRATIONDATE][0] = 2018-06-12 10:05:38
 PROPERTY[STATUS][0] = ACTIVE
 EOF
 ```
