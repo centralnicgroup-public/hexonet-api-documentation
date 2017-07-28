@@ -68,6 +68,7 @@ X-CFD-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and condi
 X-CORE-INTENDED-USE | 0 | Paremeter describing the intended use for the domain name | TEXT or NULL
 X-DE-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-DENTIST-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `0`, `1` or NULL
+X-DPML-VARIANT-LABEL[0..N] | 0 | When registering a Rightside DPML block up to 10 variants can be stated here that will be blocked in addition to the primary DPML block | TEXT or NULL
 X-FOREX-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-FR-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-FR-REGISTRANT-BIRTH-DATE | 0 | Birth date of the registrant | TEXT or NULL
