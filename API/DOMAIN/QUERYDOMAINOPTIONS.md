@@ -41,6 +41,7 @@ LAUNCHPHASESCLOSEDATE[0..N] | 0 | N | End date for each launch phase | TEXT
 LAUNCHPHASESSTARTDATE[0..N] | 0 | N | Start date for each launch phase | TEXT
 NAMESERVERMAX[0..N] | 0 | N | Maximum number of nameservers | INT
 NAMESERVERMIN[0..N] | 0 | N | Minimum number of nameservers | INT
+REGISTRYTRANSFERREQUIREAUTHCODE[0..N] | 0 | N | Indicates if the registry requires an authcode to initiate a transfer, can be `YES` or `NO` | `YES` or `NO`
 REPOSITORY[0..N] | 0 | N | Domain repository | TEXT
 X-INSTANTMOBILIZER[0..N] | 0 | N | Instant Mobilizer service; empty if not supported | TEXT
 X-PROXY[0..N] | 0 | N | WhoisTrustee service; empty if not supported | TEXT
