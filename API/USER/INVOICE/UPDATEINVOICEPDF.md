@@ -13,7 +13,7 @@ Parameter | Min | Definition | Type
 ---- | ---- | ---- | ----
 COMMAND | 1 | `UpdateInvoicePDF` | COMMAND
 INVOICEID | 1 | The invoice id for which the PDF should be added or replaced  | TEXT
-PDF[0..N] | 0 | The content of the new .PDF (base 64 encoded) | TEXT
+PDF[0..N] | 0 | The content of the new .PDF (base 64 encoded) | LONGTEXT
 
 ----
 ## RESPONSE
