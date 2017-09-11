@@ -53,6 +53,7 @@ FAILUREDATE | 1 | 1 | The domain's failure date | DATETIME
 FAILUREPERIOD | 1 | 1 | The domain's failure period | TEXT
 FINALIZATIONDATE | 1 | 1 | The domain's finalization date | DATETIME
 FINALIZATIONPERIOD | 1 | 1 | The domain's finalization period | TEXT
+HOST | 0 | N | The nameservers managed at the respective registry, if defined. When HOSTYPE is `ATTRIBUTE`, the namservers listed will contain the IPs | NULL or TEXT
 HOSTTYPE | 1 | 1 | Returns how the respective registry manages nameservers | TEXT
 ID | 1 | 1 | In case of a domain, the domain itself is returned | TEXT
 INTERNALNAMESERVER | 0 | N | If internal nameservers are used, they are returned here | TEXT
