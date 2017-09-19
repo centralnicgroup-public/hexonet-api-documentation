@@ -123,6 +123,7 @@ X-RU-REGISTRANT-PASSPORT-DATE | 0 | Registrant's passport issue date | TEXT or N
 X-RU-REGISTRANT-PASSPORT-LOCATION | 0 | Registrant's passport place of issue | TEXT or NULL
 X-RU-REGISTRANT-KPP | 0 | Registrant's KPP number | TEXT or NULL
 X-RU-REGISTRANT-TIN | 0 | Registrant's TIN number | TEXT or NULL
+X-SG-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-SG-RCBID | 0 | The company registration number has to be provided with this parameter if the registrant is a organization from Singapore | TEXT or NULL
 X-SWISS-REGISTRANT-ENTERPRISE-ID | 0 |  The enterprise ID, in the specific context of .swiss based on current rules, is the Swiss UID/IDE/IDI. | TEXT
 X-SYDNEY-NEXUS-CATEGORY | 0 | The registrant of the domain must one of 3 criteria:<br>`A`: New South Wales Entities<br>`B`: New South Wales Residents<br>`C`: Associated Entities | `A`, `B`, `C` or NULL
