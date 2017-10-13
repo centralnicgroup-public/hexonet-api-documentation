@@ -16,7 +16,7 @@ Parameter | Min | Definition | Type
 ---- | ---- | ---- | ----
 COMMAND | 1 | `QueryDomainList` | COMMAND
 VERSION | 1 | Indicates the version of the command. To access this version 2 of QueryDomainsList, `2` must be use used as value | INT
-PROPERTIES | 0 | The properties to return, e.g. `DOMAINSALE` | TEXT
+PROPERTIES | 0 | The properties to return, e.g. `DOMAINSALE` | TEXT or NULL
 DOMAINSALE-STATUS | 0 | Domain sale status | `NONE`, `DISABLED`, `REQUESTED` or `ACTIVE`
 DOMAINSALE-SEDO-STATUS | 0 | Domain sale Sedo status | `NONE`, `DISABLED`, `REQUESTED` or `ACTIVE`
 DOMAINSALE-AFTERNIC-STATUS | 0 | Domain sale AfterNIC status | `NONE`, `DISABLED`, `REQUESTED` or `ACTIVE`
