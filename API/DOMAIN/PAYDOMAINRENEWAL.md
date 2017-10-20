@@ -15,9 +15,9 @@ Parameter | Min | Definition | Type
 ---- | ---- | ---- | ----
 COMMAND | 1 | `PayDomainRenewal` | COMMAND
 DOMAIN | 1 | Domain Name | DOMAIN
-PERIOD | 0 | Renewal period in years, default = 1 | PERIOD
-EXPIRATION | 0 | Current expiration year | INT
-EXPIRATIONDATE | 0 | Current expiration date | TEXT
+PERIOD | 0 | Renewal period in years, the default depends on the domain name to be renewed | PERIOD
+EXPIRATION | 0 | Current expiration year, e.g. `2018` | INT
+EXPIRATIONDATE | 0 | Current expiration date, e.g. `2018-09-26 14:53:20` | TEXT
 CLASS | 0 | The class of the domain name in case it is a premium domain | TEXT
 
 ----
@@ -36,7 +36,7 @@ Code | Description
 540	| Attribute value is not unique
 541	| Invalid attribute value
 545	| Object not found
-546	|Credit limit exceeded
+546	| Credit limit exceeded
 549 | Command Failed
 552	| Object status does not allow for operation
 555	| Object already renewed

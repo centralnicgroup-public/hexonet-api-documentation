@@ -35,9 +35,9 @@ Code | Description
 Property | Min | Max | Definition | Type
 ---- | ---- | ---- | ---- | ----
 ALLOWEDIP[0..N] | 0 | N | The IP addresses/subnets from which the role user is allowed to log in | TEXT
-ACL[0..N] | 0 | N | The rights of the role user | TEXT
+ACL[0..N] | 0 | N | The permissions of the role user | TEXT
 CREATEDDATE | 1 | 1 | Date of creation of the role user | DATETIME
-DEFAULTPOLICY | 1 | 1 | Default access policy of the role user | TEXT
+DEFAULTPOLICY | 1 | 1 | Default access policy of the role user, can be either `ALLOW` or `DENY` | TEXT
 DESCRIPTION[0..1] | 0 | 2 | Description entered at the creation of the role user | TEXT
 OTPSTATUS | 1 | 1 | The status of the 2 factor authentification, `ACTIVE` or `INACTIVE` | TEXT
 STATUS | 1 | 1 | Current status of the role user | TEXT

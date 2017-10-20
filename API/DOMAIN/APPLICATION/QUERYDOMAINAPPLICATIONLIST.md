@@ -22,7 +22,7 @@ CLASS[0..N] | 0 | Search for several classes at once | PATTERN
 STATUS | 0 | Search for: Status | PATTERN
 DOMAIN | 0 | Search for: Domain | PATTERN
 DOMAIN[0..N] | 0 | Search for several domains at once | DOMAIN
-DOMAINREGEX | 0 | Only list applications for domains which match the regular expression stated here | TEXT or NULL
+DOMAINREGEX | 0 | Only list applications for domains which match the regular expression stated here, e.g. `^te.*\.com` would match only .com domains that start with "te" | TEXT or NULL
 OWNERCONTACT | 0 | Search for: Owner/Registrant Contact Handle ID | CONTACT or NULL
 
 ----

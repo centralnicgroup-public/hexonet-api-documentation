@@ -36,16 +36,6 @@ TECHCONTACT[0..2] | 1 |The Technical Contact Handle IDs | CONTACT or NULL
 X-ABOGADO-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-AFNIC-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-ALLOCATIONTOKEN | 0 | Allocation token or code for allocating an object like a domain name to the client | TEXT
-X-ASIA-CED-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0` or `1`
-X-ASIA-CED-CCLOCALITY | 0 | Location or domicile of the Entity (based on the corresponding ISO3166 code) | COUNTRY or NULL
-X-ASIA-CED-CONTACT | 0 | Indicates which contact should be used as CED. Must be `registrant`, `admin`, `tech` or `billing` | `registrant`, `admin`, `tech` or `billing`
-X-ASIA-CED-IDENTFORM | 0 | Must be one of the following: <br>`passport`<br>`certificate`<br>`legislation`<br>`societyRegistry`<br>`politicalPartyRegistry`<br>`other` | `passport`, `certificate`, `legislation`, `societyRegistry`, `politicalPartyRegistry` or `other`
-X-ASIA-CED-IDENTNUMBER | 0 | Identification Number / Code of Reference (e.g. Passport number, Business Certificate number, Act or Legislation number/code, etc.) | TEXT or NULL
-X-ASIA-CED-LEGALENTITYTYPE | 0 | Must be one of the following: <br>`naturalPerson`<br>`corporation`<br>`cooperative`<br>`partnership`<br>`government`<br>`politicalParty`<br>`society`<br>`institution`<br>`other Type of Entity` | `naturalPerson`, `corporation`, `cooperative`, `partnership`, `government`, `politicalParty`, `society`, `institution` or `other`
-X-ASIA-CED-LOCALITYCITY | 0 | City of establishment of the CED | TEXT or NULL
-X-ASIA-CED-LOCALITYSP | 0 | Province of establishment of the CED| TEXT or NULL
-X-ASIA-CED-OTHERIDENTFORM | 0 | If the legal entity type or form of identification is "other", please enter the appropriate information to support the claim | TEXT or NULL
-X-ASIA-CED-OTHERLETYPE | 0 | Other legal entity type | TEXT or NULL
 X-ASIA-IPR-APPDATE | 0 | Trademark application date | TEXT or NULL
 X-ASIA-IPR-CCLOCALITY | 0 | ISO-3166 Country Code | COUNTRY, `EM`, `BX` or NULL
 X-ASIA-IPR-NAME | 0 | Trademark name | TEXT or NULL

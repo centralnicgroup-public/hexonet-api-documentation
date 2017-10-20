@@ -4,7 +4,7 @@
 Check a list of domain names for availability.
 
 ## AVAILABILITY
-Your account must have the TLDs of the domain names within the relations.
+All users have access to this command.
 
 ----
 ## COMMAND
@@ -40,7 +40,7 @@ Property | Min | Max | Definition | Type
 ---- | ---- | ---- | ---- | ----
 CLASS[0..N] | 0 | N | The class of the domain name if it is a premium domain<br>This class has to be stated when registering the domain | TEXT
 CURRENCY[0..N] | 0 | N | The currency of the price for the domain name | TEXT
-DOMAINCHECK[0..N] | 1 | N | The result for the N-th domain, in the format:<br>`<code><space><description>` | TEXT
+DOMAINCHECK[0..N] | 1 | N | The result for the N-th domain, in the format:<br>`<CODE> <DESCRIPTION>` | TEXT
 DOMAINCHECKTIME[0..N] | 1 | N | The checktime for the N-th domain | TEXT
 PREMIUMCHANNELS[0..N] | 0 | N | The premium channel of the N-th domain | TEXT
 PRICE[0..N] | 0 | N | The price of the N-th domain | TEXT

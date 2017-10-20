@@ -192,4 +192,4 @@ EOF
 ----
 ## NOTES
 
-* Your account must have the relation PRICE_CLASS_DOMAIN_DOMAINCLASS_TRANSFER for the corresponding domain class if you want to request a registrar transfer.
+* Your account must have the relation PRICE_CLASS_DOMAIN_DOMAINCLASS_TRANSFER for the corresponding domain class if you want to request a domain transfer.

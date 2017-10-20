@@ -4,7 +4,7 @@
 By using this command, users with an own domain repository can synchronize the properties of a domain with the registry database, in case that the properties went out-of-sync.
 
 ## AVAILABILITY
-This command is only available to users which hold their own domain repository.
+This command is available only for registrars using our RegistrarOC system.
 
 ----
 ## COMMAND

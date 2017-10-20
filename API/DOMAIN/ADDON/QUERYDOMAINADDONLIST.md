@@ -1,7 +1,7 @@
 # QueryDomainAddonList
 
 ## DESCRIPTION
-This command returns a list of all domains that have a specific domain addon enabled.
+This command returns a list of all domains that are connected to a specific domain addon
 
 ## AVAILABILITY
 All users have access to this command.

@@ -12,7 +12,7 @@ Always, if zone is assigned to your user account.
 Parameter | Min | Definition | Type
 ---- | ---- | ---- | ----
 COMMAND | 1 | `FindDNSZone` | COMMAND
-RTYPE | 1 | Type of DNS record, can be NS, A, MX, ... | NULL or TEXT
+RTYPE | 1 | Type of DNS record, for example `NS`, `A`, `MX` etc. | NULL or TEXT
 RDATA | 1 | Name of one of the nameservers or IP address | NULL or TEXT
 
 ----

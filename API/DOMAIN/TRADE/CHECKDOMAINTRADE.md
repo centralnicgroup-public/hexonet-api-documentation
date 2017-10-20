@@ -50,8 +50,8 @@ X-ES-BILLING-TIPO-IDENTIFICACION | 0 | Must be one of the following:<br>`0`: Otr
 X-ES-BILLING-IDENTIFICACION | 0 | One of the following ID numbers can be provided via this parameter:<br>__For non-spanish owner__: passport number, drivers license number or even national identify card number<br>__For Spanish Individual or Organization__: Spanish National Personal ID or company VAT ID number<br>__Alien registration card__: Spanish resident alien ID number | TEXT or NULL
 X-EU-ACCEPT-TRUSTEE-TAC | 0 | Set this parameter to `1` to use our Trustee Contact Service for the Owner-C, if you can't provide a local presence in the EU | `0`, `1` or NULL
 X-FI-IDNUMBER | 0 | Registrant's personal or organizational identification number; only relevant for .FI domains | TEXT or NULL
-X-FI-REGISTRANT-BIRTH-DATE | 0 | The registrant's birth date | TEXT or NULL
-X-FI-REGISTRANT-IDNUMBER | 0 | The registrant's ID number | TEXT or NULL
+X-FI-REGISTRANT-BIRTH-DATE | 0 | The registrant's birth date; only relevant for .FI domains<br>Mandatory for non-finish private persons | TEXT or NULL
+X-FI-REGISTRANT-IDNUMBER | 0 | The registrant's ID number; only relevant for .FI domains | TEXT or NULL
 X-FR-ACCEPT-TRANSFER-TAC | 0 | Set to `1` to accept the .FR TRANSFER terms and conditions | `0`, `1` or NULL
 X-AFNIC-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-FR-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
@@ -366,7 +366,7 @@ X-EU-ACCEPT-TRUSTEE-TAC | 0 | 1 | TLD specific domain flag | INT
 X-FOREX-ACCEPT-HIGHLY-REGULATED-TAC | 0 | 1 | TLD specific domain flag | INT
 X-FI-IDNUMBER | 0 | 1 | Registrant's personal or organizational identification number | TEXT
 X-FI-REGISTRANT-BIRTH-DATE | 0 | 1 | The registrant's birth date | TEXT
-X-FI-REGISTRANT-IDNUMBER | 0 | 1 | The registrant's ID number | TEXT
+X-FI-REGISTRANT-IDNUMBER | 0 | 1 | The registrant's ID number; only relevant for .FI domains | TEXT
 X-FR-ACCEPT-TRANSFER-TAC | 0 | 1 | TLD specific domain flag | INT
 X-FR-ACCEPT-TRUSTEE-TAC | 0 | 1 | TLD specific domain flag | INT
 X-FR-REGISTRANT-BIRTH-DATE | 0 | 1 | TLD specific domain flag | TEXT

@@ -1,7 +1,8 @@
 # QueryDepositList
 
 ## DESCRIPTION
-This command allows to see which deposits were created for the user, executing the command, or its subuser.
+This command allows to see which deposits were created for the user, executing the command, or its subuser.<br>
+Please note that a negative deposit amount relates to a credit while a positive amount relates to a deposit being substracted from the user's credit. 
 
 ## AVAILABILITY
 All users have access to this command.
@@ -59,7 +60,6 @@ USER[0..N] | 0 | N | Account ID of the user, to whom the respective deposit was 
 [COMMAND]
 COMMAND = QueryDepositList
 LIMIT = 2
-SUBUSER = test.guest
 EOF
 ```
 ### Response
@@ -73,24 +73,24 @@ PROPERTY[LAST][0] = 1
 PROPERTY[COUNT][0] = 2
 PROPERTY[TOTAL][0] = 2
 PROPERTY[LIMIT][0] = 2
-PROPERTY[ACCOUNTINGTYPE][0] = PAYMENT
-PROPERTY[ACCOUNTINGTYPE][1] = PAYMENT
-PROPERTY[CREATEDDATE][0] = 2016-11-11 12:47:22
-PROPERTY[CREATEDDATE][1] = 2016-11-11 14:12:52
-PROPERTY[CURRENCY][0] = LVL
-PROPERTY[CURRENCY][1] = LVL
-PROPERTY[DEPOSIT][0] = -100.00
-PROPERTY[DEPOSIT][1] = -100.00
-PROPERTY[DEPOSITID][0] = 578
-PROPERTY[DEPOSITID][1] = 584
-PROPERTY[DESCRIPTION][0] = test deposit
-PROPERTY[DESCRIPTION][1] = Test deposit 003
-PROPERTY[EXPIRATIONDATE][0] = 2016-12-01 10:00:00
-PROPERTY[EXPIRATIONDATE][1] = 2016-12-01 10:00:00
-PROPERTY[UPDATEDDATE][0] = 0000-00-00 00:00:00
-PROPERTY[UPDATEDDATE][1] = 0000-00-00 00:00:00
-PROPERTY[USER][0] = test.guest
-PROPERTY[USER][1] = test.guest
+PROPERTY[ACCOUNTINGTYPE][0]=BUILD_LANDRUSH
+PROPERTY[ACCOUNTINGTYPE][1]=BUILD_LANDRUSH
+PROPERTY[CREATEDDATE][0]=2016-09-09 18:43:04
+PROPERTY[CREATEDDATE][1]=2016-09-09 18:43:04
+PROPERTY[CURRENCY][0]=EUR
+PROPERTY[CURRENCY][1]=EUR
+PROPERTY[DEPOSIT][0]=100.06
+PROPERTY[DEPOSIT][1]=100.06
+PROPERTY[DEPOSITID][0]=490
+PROPERTY[DEPOSITID][1]=488
+PROPERTY[DESCRIPTION][0]=gegergegregr.build
+PROPERTY[DESCRIPTION][1]=gergerg.build
+PROPERTY[EXPIRATIONDATE][0]=2017-10-20 14:23:04
+PROPERTY[EXPIRATIONDATE][1]=2017-10-20 14:23:03
+PROPERTY[UPDATEDDATE][0]=2017-10-20 11:23:04
+PROPERTY[UPDATEDDATE][1]=2017-10-20 11:23:03
+PROPERTY[USER][0]=test.user
+PROPERTY[USER][1]=test.user
 EOF
 ```
 

@@ -52,7 +52,7 @@ Property | Min | Max | Definition | Type
 ---- | ---- | ---- | ---- | ----
 DOMAIN | 1 | 1 | The domain name | DOMAIN
 EXPIRATIONDATE | 1 | 1 | New expiration date of the domain | DATETIME
-REGISTRATIONEXPIRATIONDATE | 0 | 1 | Deprecated: New expiration date of the domain | DATETIME
+REGISTRATIONEXPIRATIONDATE | 0 | 1 | Deprecated: New expiration date of the domain. Please use EXPIRATIONDATE  | DATETIME
 
 ----
 ## Example

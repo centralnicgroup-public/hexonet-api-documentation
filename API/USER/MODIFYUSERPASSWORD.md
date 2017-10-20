@@ -4,7 +4,8 @@
 With this command the three basic security features of an account can be managed:
 * Modify the password
 * Enable and disable 2 factor authentication or update the currently set OTP secret
-* Set a list of IPs from which a user can connect to the account
+* Add, Update or remove a list of IPs from which a user can connect to the account, the currently used IP address must be part of the updated or added set of IP addresses
+* The change can only be requested form an IP address that is already white listed
 
 ## AVAILABILITY
 All users have access to this command.

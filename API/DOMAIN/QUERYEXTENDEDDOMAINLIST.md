@@ -19,7 +19,7 @@ ORDERBY | 0 | The parameter by which the output will be sorted. <br>Must be one 
 USERDEPTH | 0 | Depth of the list, may be `SELF`, `SUBUSER` or `ALL` | `SELF`, `SUBUSER` or `ALL`
 ASSIGNED | 0 | Shows either all assigned or all unassigned (pending transfer/trades) domains (may be `0` or `1`) | `0` or `1`
 DOMAIN | 0 | Filter output for domains which match the pattern specified here, e. g. `*.com`, `a*.de` | PATTERN or TEXT
-DOMAINSUBCLASS | 0 | Show only domains with these subclasses (syntax: `COM.` [beware the "." at the END of the TLD]) | NULL or TEXT
+DOMAINSUBCLASS | 0 | Show only domains with these subclasses, e.g. `COM` for .com domains | NULL or TEXT
 OWNERCONTACT | 0 | Search for: Owner/Registrant-Contact | PATTERN
 ADMINCONTACT | 0 | Search for: Admin-Contact | PATTERN
 TECHCONTACT | 0 | Search for: Tech-Contact | PATTERN
