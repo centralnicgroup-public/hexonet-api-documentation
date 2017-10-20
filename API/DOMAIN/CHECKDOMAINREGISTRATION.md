@@ -327,6 +327,7 @@ X-ERRP-SIGNATURE[0..3] | 0 | Signature appearing at the end of the ERRP email | 
 X-WHOIS-URL | 0 | URL to display in our whois | TEXT or NULL
 X-WHOIS-RSP | 0 | RSP name to display in our whois | TEXT or NULL
 X-WHOIS-BANNER[0..2] | 0 | Text to display in our whois (e.g. Advertising campaign) | TEXT or NULL
+X-ZA-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-ACCEPT-WHOISTRUSTEE-TAC | 0 | Activates the Whois Trustee Service | `0`, `1` or NULL
 X-ACCEPT-WHOISTRUSTEELITE-TAC | 0 | Activates the Whois Trustee Service Lite | `0`, `1` or NULL
 INTERNALDNS | 0 | Creates the necessary dns zone before submitting application to the registry. | `0`, `1` or NULL
