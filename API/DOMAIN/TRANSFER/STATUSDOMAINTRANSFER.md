@@ -41,7 +41,7 @@ OLD-REGISTRAR | 0 | 1 | The sponsoring registrar at the time of the transfer ini
 OWNERCONTACT | 0 | 1 | The owner contact stated in the transfer request | TEXT
 REPOSITORY | 1 | 1 | The repository in which the domain will be located after the transfer has been completed | TEXT
 TECHCONTACT | 0 | 1 | The technical contact stated in the transfer request | TEXT
-TRANSFERLOG[0..N] | 1 | N | The original log entries, separated by newlines | TEXT
+TRANSFERLOG[0..N] | 1 | N | Transfer log entries, separated by newlines | TEXT
 TRANSFERSTATUS | 1 | 1 | Status, i.e. `PENDING` | TEXT
 TRANSFERTYPE | 1 | 1 | The type of the transfer | TEXT
 UPDATEDDATE | 1 | 1 | Last modification date of the transfer | DATETIME
