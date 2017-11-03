@@ -13,7 +13,7 @@ Parameter | Min | Definition | Type
 ---- | ---- | ---- | ----
 COMMAND | 1 | `QueryObjectLogList` | COMMAND
 OBJECTCLASS | 0 | Filter result by a specific class of objects, e. g. `DOMAIN` | TEXT or NULL
-OBJECTID | 0 | Filter result by a specific object ID, e. g. `domainname.com` | TEXT or NULL
+OBJECTID | 0 | Filter result by a specific object ID, e. g. `example.com` | TEXT or NULL
 OPERATIONTYPE | 0 | Search for object log entries with a certain operation type, e.g.: <br>`CREATE`<br>`RENEW`<br>`DELETE` | TEXT or NULL
 OPERATIONSTATUS | 0 | Search for object log entries with a certain operation status, e.g.:<br>`SUCCESSFUL`<br>`REQUEST`<br>`FAILED` | TEXT or NULL
 FIRST | 0 | Index of the first entry to be returned | INT or NULL
