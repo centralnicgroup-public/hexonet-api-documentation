@@ -14,7 +14,7 @@ Parameter | Min | Definition | Type
 COMMAND | 1 | `QueryAccountBalanceList` | COMMAND
 USERDEPTH | 1 | `SELF` lists the properties of the executing account, `SUBUSER` lists the properties for all subuser accounts | `SELF`, `SUBUSER` or NULL
 WIDE | 0 | If set to `1`: verbose output (more parameters) | `0`, `1` or NULL
-DATE | 0 | Addionally shows the financial properties at the date stated here | TEXT or NULL
+DATE | 0 | Shows in addition the financial properties at the given date | TEXT or NULL
 FIRST | 0 | Index of the first entry to be returned | INT or NULL
 LIMIT | 0 | Max. number of entries to be returned. The system has a default value for performance purposes | INT or NULL
 TASK | 0 | `ALL` - Consider all account balances. This is the default<br>`AR` - Only consider negative account balances<br>`AP` - Only consider positive account balances | `ALL`, `AR`, `AP` or NULL
