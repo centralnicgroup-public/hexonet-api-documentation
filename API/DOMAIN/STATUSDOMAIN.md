@@ -72,6 +72,10 @@ REGISTRATIONGRACEPERIOD | 0 | 1 | Registration grace period of the respective do
 RENEWALDATE | 1 | 1 | Date of next renewal | DATETIME
 RENEWALMODE | 1 | 1 | Indicates how the domain will be renewed | TEXT
 REPOSITORY | 1 | 1 | The domain's repository | TEXT
+REPOSITORYADMINCONTACT | 0 | N | Repository contact of the administrative contact , only if REPOSITORYCONTACT is set to `*` | TEXT
+REPOSITORYBILLINGCONTACT | 0 | N | Repository contact of the billing contact , only if REPOSITORYCONTACT is set to `*` | TEXT
+REPOSITORYOWNERCONTACT | 0 | N | Repository contact of the owner, only if REPOSITORYCONTACT is set to `*` | TEXT
+REPOSITORYTECHCONTACT | 0 | N | Repository contact of the technical contact , only if REPOSITORYCONTACT is set to `*` | TEXT
 ROID | 0 | 1 | The domain's unique identifier, called ROID | TEXT
 STATUS | 1 | N | The current registration status | TEXT
 SUBCLASS | 1 | 1 | Subclass of the domain name, mostlikely the TLD is returned | TEXT
@@ -93,10 +97,7 @@ X-REGISTRANT-VERIFICATION-TAG | 0 | 1 | Verification TAG of a registrant verific
 X-WDRP-RSP | 0 | 1 | Name of domain service provider to show in WDRP emails | TEXT
 X-WHOIS-RSP | 0 | 1 | Name of the domain service provider to show in WHOIS | TEXT
 X-WHOIS-URL | 0 | 1 | Website URL of the domain service provider to show in WHOIS | TEXT
-REPOSITORYOWNERCONTACT | 0 | N | Repository contact of the owner, only if REPOSITORYCONTACT is set to `*` | TEXT
-REPOSITORYADMINCONTACT | 0 | N | Repository contact of the administrative contact , only if REPOSITORYCONTACT is set to `*` | TEXT
-REPOSITORYTECHCONTACT | 0 | N | Repository contact of the technical contact , only if REPOSITORYCONTACT is set to `*` | TEXT
-REPOSITORYBILLINGCONTACT | 0 | N | Repository contact of the billing contact , only if REPOSITORYCONTACT is set to `*` | TEXT
+
 
 EOF
 
