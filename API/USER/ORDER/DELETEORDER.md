@@ -12,7 +12,6 @@ All users have access to this command.
 Parameter | Min | Definition | Type
 ---- | ---- | ---- | ----
 COMMAND | 1 | `DeleteOrder` | COMMAND
-ORDERID | 0 | Order ID | INT
 ORDERID[0..N] | 0 | Order IDs | INT
 
 ----
