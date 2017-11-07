@@ -12,7 +12,7 @@ All users have access to this command.
 Parameter | Min | Definition | Type
 ---- | ---- | ---- | ----
 COMMAND | 1 | `QueryDomainOptions` | COMMAND
-DOMAIN[0..N] | 0 | Domain Name | DOMAIN
+DOMAIN[0..N] | 1 | Domain Name | DOMAIN
 REPOSITORY[0..N] | 0 | Domain Repository | TEXT or NULL
 PROPERTIES | 0 | Display additional information; can be `LAUNCHPHASES` | TEXT
 
