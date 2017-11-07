@@ -42,9 +42,9 @@ No properties are returned.
 ```
 [COMMAND]
 COMMAND = AssignInvoiceItems
-ACCOUNTINGID0 = 830427
-INVOICEID = INVOICE001
-SUBUSER = anthony.test
+ACCOUNTINGID0 = 978234
+INVOICEID = ABC1234567
+SUBUSER = subuser.test
 EOF
 ```
 ### Response
