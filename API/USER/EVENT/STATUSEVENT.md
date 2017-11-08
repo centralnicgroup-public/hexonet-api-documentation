@@ -35,7 +35,7 @@ Property | Min | Max | Definition | Type
 CLASS | 1 | 1 | Class of the event | TEXT
 DATA[0..N] | 1 | N | Data of the event | TEXT
 DATE | 1 | 1 | Creation date of the event | TEXT
-INFO | 0 | 1 | Additional url encoded debug info | TEXT
+INFO | 0 | 1 | Additional url encoded info regarding system events | TEXT
 SUBCLASS | 1 | 1 | Subclass of the event | TEXT
 
 ----
