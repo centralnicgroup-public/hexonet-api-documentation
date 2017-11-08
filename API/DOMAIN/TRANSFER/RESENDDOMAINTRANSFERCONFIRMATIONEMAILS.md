@@ -1,7 +1,7 @@
 # ResendDomainTransferConfirmationEmails
 
 ## DESCRIPTION
-Resends the confirmation mail for a pending domain transfer/trade.
+Resends the confirmation emails for a pending domain transfer/trade.
 
 ## AVAILABILITY
 All users have access to this command.
