@@ -16,7 +16,7 @@ SUBUSER | 1 | Subuser ID | TEXT
 PASSWORD | 0 | New password for the subuser | TEXT
 OTPSECRET | 0 | OTP Secret which should be set for the user | TEXT or NULL
 CREDIT | 0 | Credit limit of the subuser | TEXT
-VAT | 0 | Additional V.A.T. % for the subuser, e. g. `16.00` | TEXT
+VAT | 0 | Additional V.A.T. % for the subuser, e. g. `19.00` | TEXT
 CURRENCY | 0 | Currency of the subuser account, e. g. `USD` | TEXT
 USERCLASS | 0 | Name of a UserClass (see ModifyUserClass to learn more about UserClasses) | TEXT
 ACTIVE | 0 | Activates/deactivates the user account | `0`, `1` or NULL
@@ -59,13 +59,13 @@ No properties are returned.
 ```
 [COMMAND]
 COMMAND = ModifyUser
-SUBUSER = subreseller.com
-PASSWORD = topsecret
 CREDIT = 1000.00
+PASSWORD = topsecret
 RELATION0 = ZONES:com,net,org
 RELATION1 = PRICE_CLASS_DOMAIN_ORG_ANNUAL:9.00
-RELATION2 = PRICE_CLASS_DOMAIN_ORG_SETUP=0.00
+RELATION2 = PRICE_CLASS_DOMAIN_ORG_SETUP:0.00
 RELATION3 = PRICE_CLASS_DOMAIN_NET_ANNUAL:10.00
+SUBUSER = subuser.test
 EOF
 ```
 ### Response
