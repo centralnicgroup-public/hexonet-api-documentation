@@ -15,7 +15,7 @@ COMMAND | 1 | `QueryTransferList` | COMMAND
 FIRST | 0 | Index of the first entry to be returned | INT
 LIMIT | 0 | Max. number of entries to be returned | INT
 DOMAIN | 0 | Domain pattern, e. g. `*.com`, `a*.de` | PATTERN
-USERDEPTH | 0 | Depth of the list, may be `SELF`, `SUBUSER` or `ALL`. Default: `ALL` | `SELF`, `SUBUSER` or `ALL`
+USERDEPTH | 0 | Depth of the list, may be one of the following:<br> `SELF`: Command only returns transfers that belong to the executing user. <br> `SUBUSER`: Command only returns transfers that belong to the executing user's subusers. <br> `ALL`: Command returns transfers that belong to the executing user or to one of it's subusers. <br> The default value of this parameter is `ALL`  | `SELF`, `SUBUSER` or `ALL`
 MINCREATEDDATE | 0 | Filter for transfers that haven been initiated after the date specified there | TEXT
 MAXCREATEDDATE | 0 | Filter for transfers that haven been initiated before the date specified there | TEXT
 ORDERBY | 0 | Parameter by which the output will be sorted.<br>Must be one of the following:<br>`DOMAIN`, `DOMAINDESC`, `USER`, `USERDESC`, `CREATEDDATE`, `CREATEDDATEDESC` | TEXT
@@ -39,13 +39,13 @@ Code | Description
 Property | Min | Max | Definition | Type
 ---- | ---- | ---- | ---- | ----
 COUNT | 1 | 1 | The number of entries returned | INT
-FIRST | 1 | 1 | The index of the first entry | INT
+FIRST | 1 | 1 | The index of the first entry. This parameter can be used to implement paging | INT
 LAST | 1 | 1 | The index of the last entry | INT
-LIMIT | 1 | 1 | The query limit (max. number of entries returned) | INT
+LIMIT | 1 | 1 | The query limit (max. number of entries returned). This parameter can be used to implement paging | INT
 TOTAL | 1 | 1 | The total number of entries found | INT
 CREATEDDATE[0..N] | 0 | N | Date when the transfer was initiated | DATETIME
 DOMAIN[0..N] | 0 | N | The domain name | TEXT
-DOMAINUMLAUT[0..N] | 0 | N | The domain name displayed as an IDN | TEXT
+DOMAINUMLAUT[0..N] | 0 | N | The domain name displayed as an IDN e. g. exämple.com displayed as xn--exmple-cua.com | TEXT
 PARENTUSER[0..N] | 0 | N | The user ID of the parent user | TEXT
 PEERUSER[0..N] | 0 | N |  String with all users in the user chain | TEXT
 USER[0..N] | 0 | N | The user ID | TEXT
@@ -87,12 +87,5 @@ PROPERTY[USER][0] = test.user
 PROPERTY[USER][1] = test.user
 EOF
 ```
-
-----
-
-## NOTES
-
-* USERDEPTH defines the depth of the returned list. `SELF` returns a list with only domain transfers of the user itself. `SUBUSER` returns a list with domain transfers of all direct subusers. `ALL` returns a list with domain transfers of all subusers and all subusers below them.
-* FIRST and LIMIT should be used to implement paging
 
 ----
