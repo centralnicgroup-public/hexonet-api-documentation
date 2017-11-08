@@ -104,6 +104,8 @@ X-MAKEUP-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and co
 X-BABY-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-BIBLE-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-ECO-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
+X-VOTE-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
+X-VOTO-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-VATID | 0 |  Domain contacts' VAT-ID | TEXT or NULL
 X-WF-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service  | `0`, `1` or NULL
 X-XXX-ACCEPT-REGISTRATION-TAC | 0 |  Set to `1` to accept the terms and conditions of the registration | NULL, `1` or `0`
