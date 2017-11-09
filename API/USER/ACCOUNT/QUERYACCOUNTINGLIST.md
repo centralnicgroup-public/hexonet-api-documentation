@@ -25,7 +25,7 @@ WIDE | 0 | If set to `1`: verbose output (more parameters) | `0` or `1`
 DESCRIPTION | 0 | Description that was entered with the accounting (e.g. domain name) | TEXT
 REFERENCE | 0 | Payment reference, e.g. ID of a subuser | TEXT or NULL
 TASK | 0 | The task for which the command gets executed. e.g. for the creation of a invoice. When stated must be either `INVOICECREATE` or `PAYMENTLIST` | TEXT or NULL
-NOSUM | 0 | Set to `1` to suppress the display of sum properties. This will improve the response time significantly | `0` or `1`
+NOSUM | 0 | Set to `1` to suppress the display of sum properties. This will improves the performance significantly | `0` or `1`
 TYPEREGEX | 0 | Only return records matching the regexp | TEXT or NULL
 TYPEREGEXNOT | 0 | Only return records not matching the regexp | TEXT or NULL
 
