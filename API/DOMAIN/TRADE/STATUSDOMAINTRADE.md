@@ -64,6 +64,8 @@ X-NICSE-IDNUMBER | 0 | 1 | Swedish personal or organizational number; only relev
 X-NICSE-VATID | 0 | 1 | VAT-ID; only relevant for .SE and .NU domains | TEXT
 X-NO-REGISTRANT-IDENTITY | 0 | 1 | Norwegian organization number; only relevant for .NO domains | TEXT
 X-PT-REGISTRANT-VATID | 0 | 1 | VAT-ID; only relevant for .PT domains | TEXT
+X-REGISTRANT-IDNUMBER | 0 | 1 | The registrant's ID number | TEXT
+X-VATID | 0 | 1 | Domain contacts' VAT-ID | TEXT
 
 ----
 ## Example
