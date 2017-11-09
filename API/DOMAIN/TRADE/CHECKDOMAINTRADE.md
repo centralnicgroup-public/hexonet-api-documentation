@@ -83,10 +83,16 @@ X-IT-ACCEPT-LIABILITY-TAC | 0 | Accepts "Section 3 - Declarations and assumption
 X-IT-ACCEPT-REGISTRATION-TAC | 0 | Accepts "Section 5 - Consent to the processing of personal data for registration" | `0`, `1` or NULL
 X-IT-ACCEPT-DIFFUSION-AND-ACCESSIBILITY-TAC | 0 | Accepts - "Section 6 - Consent to the processing of personal data for diffusion and accessibility via the internet" | `0`, `1` or NULL
 X-IT-ACCEPT-EXPLICIT-TAC | 0 | Accepts "Section 7 - Explicit acceptance of the following points" | `0`, `1` or NULL
+X-MY-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
+X-MY-REGISTRANT-ORGANIZATION-TYPE | 0 | The registrant's organization type | INT
+X-MY-REGISTRANT-RACE | 0 | Registrant's nationality | `MALAY`, `CHINESE`, `INDIAN` or `OTHERS`
+X-MY-REGISTRANT-PROOF-OF-IDENTITY | 0 | Document submitted as a proof of the registrant's identity | LONGTEXT
 X-NGO-ACCEPT-REGISTRATION-TAC | 0 | Set to `1` to accept the terms and conditions | `0`, `1` or NULL
 X-NL-ACCEPT-TRUSTEE-TAC | 0 | Set this parameter to `1` to use our Domicile Contact Service for the Owner-C, if you can't provide a domicile address in the Netherlands | `0`, `1` or NULL
 X-SYDNEY-NEXUS-CATEGORY | 0 | The registrant of the domain must one of 3 criteria:<br>`A`: New South Wales Entities<br>`B`: New South Wales Residents<br>`C`: Associated Entities | `A`, `B`, `C` or NULL
 X-MELBOURNE-NEXUS-CATEGORY | 0 | The registrant of the domain must one of 3 criteria:<br>`A`: Victorian Entities<br>`B`: Victorian Residents<br>`C`: Associated Entities | `A`, `B`, `C` or NULL
+X-SG-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
+X-SG-RCBID | 0 | The company registration number has to be provided with this parameter if the registrant is a organization from Singapore | TEXT or NULL
 X-US-NEXUS-APPPURPOSE | 0 | Must be one of the following:<br> `P1`: Business use for profit <br>`P2`: Non-profit business, club, association, religious organization, etc.<br>`P3`: Personal use<br> `P4`: Education purposes <br> `P5`: Government purposes | TEXT or NULL
 X-US-NEXUS-CATEGORY | 0 |Must be one of the following:<br> `C11`: a United States citizen<br> `C12`: a permanent resident of the United States of America or any of its posessions or territories. <br> `C21`: U.S. Organization incorporated within one of the 50 states or a U.S. Territory An entity or organization that has a bona fide presence in the United States of America or any of its possessions or territories.<br> `C31`:  Regularly engages in lawful activities (sales of goods or services or other business, commercial or non-commercial, including not-for-profit relations in the United States) <br> `C32`: Entity has an office or other facility in the US. | TEXT or NULL
 X-US-NEXUS-VALIDATOR | 0 | Specify the two-letter country-code of the registrant (if Nexus Category is either C31 or C32) | TEXT or NULL
@@ -401,6 +407,10 @@ X-MARKETS-ACCEPT-HIGHLY-REGULATED-TAC | 0 | 1 | TLD specific domain flag | INT
 X-FILM-ACCEPT-HIGHLY-REGULATED-TAC | 0 | 1 | TLD specific domain flag | INT
 X-MAKEUP-ACCEPT-HIGHLY-REGULATED-TAC | 0 | 1 | TLD specific domain flag | INT
 X-MELBOURNE-NEXUS-CATEGORY | 0 | 1 | TLD specific domain flag | TEXT
+X-MY-ACCEPT-TRUSTEE-TAC | 0 | 1 | Activates the trustee service | INT
+X-MY-REGISTRANT-ORGANIZATION-TYPE | 0 | 1 | The registrant's organization type | INT
+X-MY-REGISTRANT-RACE | 0 | 1 | Registrant's nationality | `MALAY`, `CHINESE`, `INDIAN` or `OTHERS`
+X-MY-REGISTRANT-PROOF-OF-IDENTITY | 0 | 1 | Document submitted as a proof of the registrant's identity | LONGTEXT
 X-NGO-ACCEPT-REGISTRATION-TAC | 0 | 1 | TLD specific domain flag | INT
 X-NICSE-IDNUMBER | 0 | 1 | TLD specific domain flag | TEXT
 X-NICSE-VATID | 0 | 1 | TLD specific domain flag | TEXT
@@ -416,6 +426,8 @@ X-REGISTRANT-QUALIFIED-LAWYER-JURISDICTION-STATE | 0 | 1 | TLD specific domain f
 X-REGULATORY-BODY-AUTHORIZATION | 0 | 1 | TLD specific domain flag | TEXT
 X-SPREADBETTING-ACCEPT-HIGHLY-REGULATED-TAC | 0 | 1 | TLD specific domain flag | INT
 X-SYDNEY-NEXUS-CATEGORY | 0 | 1 | TLD specific domain flag | TEXT
+X-SG-ACCEPT-TRUSTEE-TAC | 0 | 1 | Activates the trustee service | INT
+X-SG-RCBID | 0 | 1 | The company registration number for Singapore based .SG registrants | TEXT
 X-TF-ACCEPT-TRUSTEE-TAC | 0 | 1 | TLD specific domain flag | INT
 X-TRADING-ACCEPT-HIGHLY-REGULATED-TAC | 0 | 1 | TLD specific domain flag | INT
 X-WF-ACCEPT-TRUSTEE-TAC | 0 | 1 | TLD specific domain flag | INT
