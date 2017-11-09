@@ -15,7 +15,7 @@ COMMAND | 1 | `AddUser` | COMMAND
 SUBUSER | 1 | New user ID | TEXT
 PASSWORD | 1 | Password for the new user | TEXT
 CREDIT | 0 | Credit limit of the new user | TEXT
-VAT | 1 | Additional V.A.T % for the new user, e.g. `16.00` | TEXT
+VAT | 1 | Additional V.A.T % for the new user, e.g. `19.00` | TEXT
 TAXRATES | 0 | Tax rates | TEXT or NULL
 CURRENCY | 1 | Currency of the new user account, e.g. `USD` | TEXT
 USERCLASS | 0 | Name of a UserClass (see ModifyUserClass to learn more about UserClasses) | TEXT
@@ -50,18 +50,18 @@ No properties are returned.
 ```
 [COMMAND]
 COMMAND = AddUser
-SUBUSER = subreseller.com
-PASSWORD = topsecret
 CREDIT = 0.00
 CURRENCY = EUR
-VAT = 16.00
-RELATION0 = ZONES:com,net
-RELATION1 = PRICE_CLASS_DOMAIN_COM_ANNUAL:9.00
-RELATION2 = PRICE_CLASS_DOMAIN_COM_SETUP=0.00
-RELATION3 = PRICE_CLASS_DOMAIN_NET_ANNUAL:9.00
-RELATION4 = PRICE_CLASS_DOMAIN_NET_SETUP=0.00
 ENVIRONMENT0 = user-info/contact/company/organization:Testcompany
 ENVIRONMENT1 = user-info/contact/company/street:Teststreet_address
+PASSWORD = topsecret
+RELATION0 = ZONES:com,net
+RELATION1 = PRICE_CLASS_DOMAIN_COM_ANNUAL:9.00
+RELATION2 = PRICE_CLASS_DOMAIN_COM_SETUP:0.00
+RELATION3 = PRICE_CLASS_DOMAIN_NET_ANNUAL:9.00
+RELATION4 = PRICE_CLASS_DOMAIN_NET_SETUP:0.00
+SUBUSER = subuser142.test
+VAT = 19.00
 EOF
 ```
 ### Response
