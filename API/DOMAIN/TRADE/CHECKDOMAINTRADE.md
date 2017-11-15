@@ -83,6 +83,11 @@ X-IT-ACCEPT-LIABILITY-TAC | 0 | Accepts "Section 3 - Declarations and assumption
 X-IT-ACCEPT-REGISTRATION-TAC | 0 | Accepts "Section 5 - Consent to the processing of personal data for registration" | `0`, `1` or NULL
 X-IT-ACCEPT-DIFFUSION-AND-ACCESSIBILITY-TAC | 0 | Accepts - "Section 6 - Consent to the processing of personal data for diffusion and accessibility via the internet" | `0`, `1` or NULL
 X-IT-ACCEPT-EXPLICIT-TAC | 0 | Accepts "Section 7 - Explicit acceptance of the following points" | `0`, `1` or NULL
+X-JOBS-TITLE | 0 | Registrant's title; only relevant for .JOBS domains | TEXT or NULL
+X-JOBS-COMPANYURL | 0 | Company URL for .JOBS | TEXT or NULL
+X-JOBS-INDUSTRYCLASSIFICATION | 0 | Industry Classification for .JOBS | TEXT or NULL
+X-JOBS-HRANAME | 0 | Human Resources Association name for .JOBS | TEXT or NULL
+X-JOBS-ADMINTYPE | 0 | Set to `1` in order to indicate that the registrant is also the administrative contact of the domain; only relevant for .JOBS domains | `0` or `1`
 X-MY-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-MY-REGISTRANT-ORGANIZATION-TYPE | 0 | The registrant's organization type | INT
 X-MY-REGISTRANT-RACE | 0 | Registrant's nationality | `MALAY`, `CHINESE`, `INDIAN` or `OTHERS`
