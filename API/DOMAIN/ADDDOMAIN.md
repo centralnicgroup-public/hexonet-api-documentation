@@ -136,6 +136,8 @@ X-CORE-INTENDED-USE | 0 | Parameter describing the intended use for the domain n
 X-CORE-PRIVACY-DISCLOSURE | 0 | Privacy disclosure settings, set to `NATURE-TRUE` to disclose contact details, set to `NATURAL-FALSE` to hide the contact details. Must be set to `LEGAL` if the owner contact is an organization. | `NATURAL-FALSE`, `NATURAL-TRUE` or `LEGAL`
 X-DE-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-DE-NSENTRY[0..4] | 0 | DNS resource records to directly add to the .DE root nameservers | TEXT or NULL
+X-DK-ADMIN-CONTACT | 0 | Customers with an existing DK-HOSTMASTER account can provide their User ID in order to place newly registered domains on their existing account; only relevant for .DK domains | CONTACT or NULL
+X-DK-REGISTRANT-CONTACT | 0 | Customers with an existing DK-HOSTMASTER account can provide their User ID in order to place newly registered domains on their existing account; only relevant for .DK domains | CONTACT or NULL
 X-DK-VATID | 0 | VAT-ID; only relevant for .DK domains | TEXT or NULL
 X-EE-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-ES-ACCEPT-INDIVIDUAL-REGISTRATION-TAC | 0 | Accepts the terms and conditions of an individual registration | `0`, `1` or NULL

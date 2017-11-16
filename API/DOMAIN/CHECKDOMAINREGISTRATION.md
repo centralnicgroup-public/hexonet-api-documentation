@@ -133,6 +133,8 @@ X-CN-REGISTRANT-ID-TYPE | 0 | The type of ID provided for the registrant. Only r
 X-CORE-INTENDED-USE | 0 | Parameter describing the intended use for the domain name | TEXT or NULL
 X-DE-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-DE-NSENTRY[0..4] | 0 | DNS resource records to directly add to the .DE root nameservers | TEXT or NULL
+X-DK-ADMIN-CONTACT | 0 | Customers with an existing DK-HOSTMASTER account can provide their User ID in order to place newly registered domains on their existing account; only relevant for .DK domains | CONTACT or NULL
+X-DK-REGISTRANT-CONTACT | 0 | Customers with an existing DK-HOSTMASTER account can provide their User ID in order to place newly registered domains on their existing account; only relevant for .DK domains | CONTACT or NULL
 X-DK-VATID | 0 | VAT-ID; only relevant for .DK domains | TEXT or NULL
 X-EE-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-ES-ACCION-COMERCIAL | 0 | Special promotion token; only relevant for registrar OC customers | TEXT or NULL
