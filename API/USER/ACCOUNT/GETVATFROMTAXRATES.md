@@ -33,7 +33,7 @@ Code | Description
 Property | Min | Max | Definition | Type
 ---- | ---- | ---- | ---- | ----
 TAXRATESNAME[0..N] | 1 | N | Tax rate name | TEXT
-TAXRATESNOMINALRATE[0..N] | 1 | N | Nominal tax rate | TEXT or NULL
+TAXRATESNOMINALRATE[0..N] | 1 | N | Nominal tax rate if specified in `TAXRATES` parameter | TEXT or NULL
 TAXRATESRATE[0..N] | 1 | N | Effective tax rate | DECIMAL
 VAT | 1 | 1 | Total VAT | DECIMAL
 
@@ -45,7 +45,7 @@ VAT | 1 | 1 | Total VAT | DECIMAL
 ```
 [COMMAND]
 COMMAND = GetVATFromTaxrates
-TAXRATES = PST:7.00+GST:5.00
+TAXRATES = PST~E1.:3.00+GST~E2.:5.00
 EOF
 ```
 ### Response
@@ -56,13 +56,12 @@ CODE = 200
 DESCRIPTION = Command completed successfully
 PROPERTY[TAXRATESNAME][0] = PST
 PROPERTY[TAXRATESNAME][1] = GST
-PROPERTY[TAXRATESNOMINALRATE][0] =
-PROPERTY[TAXRATESNOMINALRATE][1] =
-PROPERTY[TAXRATESRATE][0] = 7.0000
+PROPERTY[TAXRATESNOMINALRATE][0] = E1.
+PROPERTY[TAXRATESNOMINALRATE][1] = E2.
+PROPERTY[TAXRATESRATE][0] = 3.0000
 PROPERTY[TAXRATESRATE][1] = 5.0000
-PROPERTY[VAT][0] = 12.0000
+PROPERTY[VAT][0] = 8.0000
 EOF
 ```
 
 ----
-
