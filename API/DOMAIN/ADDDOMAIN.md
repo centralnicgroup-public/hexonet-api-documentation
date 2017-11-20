@@ -376,10 +376,10 @@ STATUS | 1 | 1 | The current registration status | TEXT
 COMMAND = AddDomain
 ADMINCONTACT0 = P-TUE1378025
 BILLINGCONTACT0 = P-TUE1378025
-DOMAIN = domain-hexonet.com
+DOMAIN = d0main0-hexonet.com
 NAMESERVER0 = ns1.hexonet.net
 NAMESERVER1 = ns2.hexonet.net
-NAMESERVER3 = ns3.hexonet.net
+NAMESERVER2 = ns3.hexonet.net
 OWNERCONTACT0 = P-TUE1378025
 TECHCONTACT0 = P-TUE1378025
 EOF
@@ -390,11 +390,11 @@ EOF
 [RESPONSE]
 CODE = 200
 DESCRIPTION = Command completed successfully
-PROPERTY[ACCOUNTINGDATE][0] = 2018-06-07 10:05:38
-PROPERTY[FAILUREDATE][0] = 2018-07-26 10:05:38
-PROPERTY[FINALIZATIONDATE][0] = 2018-06-13 10:05:38
-PROPERTY[PAIDUNTILDATE][0] = 2018-06-12 10:05:38
-PROPERTY[REGISTRATIONEXPIRATIONDATE][0] = 2018-06-12 10:05:38
+PROPERTY[ACCOUNTINGDATE][0] = 2018-11-15 11:35:15
+PROPERTY[FAILUREDATE][0] = 2019-01-03 11:35:15
+PROPERTY[FINALIZATIONDATE][0] = 2018-11-21 11:35:15
+PROPERTY[PAIDUNTILDATE][0] = 2018-11-20 11:35:15
+PROPERTY[REGISTRATIONEXPIRATIONDATE][0] = 2018-11-20 11:35:15
 PROPERTY[STATUS][0] = ACTIVE
 EOF
 ```
@@ -402,4 +402,4 @@ EOF
 ----
 ## NOTES
 * The contact parameters of this command can be substituted.
-* If the STATUS property is `REQUESTED` or `PROCESSING`, then the domain has not yet been registered, but awaits confirmation by the registry. Poll the Event queue for any incoming information.
+* If the STATUS property is `REQUESTEDCREATE` or `PENDINGCREATE`, then the domain has not yet been registered, but awaits confirmation by the registry. Poll the Event queue for any incoming information.
