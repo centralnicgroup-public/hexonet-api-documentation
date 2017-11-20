@@ -13,7 +13,8 @@ Parameter | Min | Definition | Type
 ---- | ---- | ---- | ----
 COMMAND | 1 | `QueryDomainSuggestionList` | COMMAND
 KEYWORD | 1 | The keyword to which the query results should match to | TEXT
-LIMIT | 0 | Max. number of entries to be returned. The system has a default value for performance purposes | TEXT
+FIRST | 0 | Index of the first entry to be returned | INT
+LIMIT | 0 | Max. number of entries to be returned. The system has a default value for performance purposes | INT
 SOURCE | 0 | Defines the source the query the results from. Can be `ISPAPI-CATEGORIES` (Returns the categories of the HEXONET suggestion engine), `ISPAPI-SUGGESTIONS` (Uses the HEXONET suggestion engine for the results) or left blank (uses 3rd party suggestion engines for the result, currently only NAMEMEDIA is supported ).   | TEXT
 ZONE[0..N] | 0 | Only show domains with a zone stated here | TEXT
 IPADDRESS | 0 | Internet Protocol address of the user used to provide location specific suggestions | IPADDRESS
