@@ -57,4 +57,4 @@ EOF
 ----
 ## NOTES
 
-* This command is applicable only to domain names, which are in a pending state after the creation.
+* This command is applicable only to domain names, which are in status 'REQUESTEDCREATE' after the creation.
