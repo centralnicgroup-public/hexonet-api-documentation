@@ -38,6 +38,7 @@ X-AU-REGISTRANT-ID-NUMBER | 0 | The respective ID number used as a eligibility p
 X-AU-REGISTRANT-ID-TYPE | 0 | The respective type of the ID number used as the eligibility proof for a .AU domain. <br> Can be `ABN` (Australian Business Number), `ACN` (Australian Company Number) or `TM` (Trademark Number)| `ABN`, `ACN` or `TM`
 X-CA-LEGALTYPE | 0 | The legal type of the domain owner | TEXT or NULL
 X-CA-LANGUAGE | 0 | The registrant contact's language (default is `EN`) | TEXT or NULL
+X-CORE-INTENDED-USE | 0 | Parameter describing the intended use for the domain name | TEXT or NULL
 X-DISCLOSE | 0 | Set to `1` to disclose the domain's details | `0`, `1` or NULL
 X-ES-ACCEPT-INDIVIDUAL-REGISTRATION-TAC | 0 | Set `1` to accept the terms and condition of a individual registration, mandatory if the registrant is an individual | `0`, `1` or NULL
 X-ES-REGISTRANT-FORM-JURIDICA | 0 | Registrant's legal form | `1`, `39`, `47`, `59`, `68`, `124`, `150`, `152`, `164`, `181`, `197`, `203`, `229`, `269`, `286`, `365`, `434`, `436`, `439`, `476`, `510`, `524`, `525`, `554`, `560`, `562`, `566`, `608`, `612`, `713`, `717`, `744`, `745`, `746`, `747`, `877`, `878` or `879`

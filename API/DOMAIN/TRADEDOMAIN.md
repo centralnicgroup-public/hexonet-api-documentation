@@ -41,6 +41,7 @@ X-AU-REGISTRANT-ID-NUMBER | 0 | The respective ID number depending on the regist
 X-AU-REGISTRANT-ID-TYPE | 0 | The ID Type can be one of the following:<br>`ABN`: Australian Business Number<br>`ACN`:  Australian Company Number<br>`RBN`: Business Registration Number<br>`TM`:  Trademark Number | TEXT or NULL
 X-CA-LEGALTYPE | 0 | The legal type of the domain owner | TEXT or NULL
 X-CA-LANGUAGE | 0 | The registrant contact's language (default is `EN`) | TEXT or NULL
+X-CORE-INTENDED-USE | 0 | Parameter describing the intended use for the domain name | TEXT or NULL
 X-ES-ACCEPT-INDIVIDUAL-REGISTRATION-TAC | 0 | Set `1` to accept the terms and condition of a individual registration, mandatory if the registrant is an individual | `0`, `1` or NULL
 X-ES-REGISTRANT-FORM-JURIDICA | 0 | Registrant's legal form | `1`, `39`, `47`, `59`, `68`, `124`, `150`, `152`, `164`, `181`, `197`, `203`, `229`, `269`, `286`, `365`, `434`, `436`, `439`, `476`, `510`, `524`, `525`, `554`, `560`, `562`, `566`, `608`, `612`, `713`, `717`, `744`, `745`, `746`, `747`, `877`, `878` or `879`
 X-ES-REGISTRANT-TIPO-IDENTIFICACION | 0 | Must be one of the following:<br>`0`: Otra; For non-spanish owner<br>`1`: NIF/DNI; For Spanish Individual or Organization<br>`3`: NIE: Alien registration card | `0`, `1` or `3`
