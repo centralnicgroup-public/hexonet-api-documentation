@@ -14,7 +14,7 @@ Parameter | Min | Definition | Type
 COMMAND | 1 | `StatusDomain` | COMMAND
 DOMAIN | 1 | Domain Name | DOMAIN
 REFRESH | 0 | Trigger to refresh domains' properties when set to `1` | `0` or `1`
-HOSTTYPE | 0 | Switch how hosts should be returned | `AUTO`, `ATTRIBUTE` or `OBJECT`
+HOSTTYPE | 0 | Switch how hosts should be returned. <br> If set to `ATTRIBUTE` the respective IP address(es) will be included in the HOST[0..N] response property together with the host name. If set to `OBJECT` the hosts will get returned without the respective IP address(es) - in this case you can use the `StatusNameserver` command to get the IP address(es) of the host. If set to `AUTO` the system will detect how the respective registry manages hosts and use that information to decide if the hosts will be returned as attributes or as objects. The default value for this parameter is `AUTO` | `AUTO`, `ATTRIBUTE` or `OBJECT`
 REPOSITORYCONTACT | 0 | Return repository contacts also | NULL or `*`
 
 ----
