@@ -14,9 +14,9 @@ Parameter | Min | Definition | Type
 COMMAND | 1 | `ModifyNameserver` | COMMAND
 NAMESERVER | 1 | Nameserver Hostname | HOSTNAME
 NEWNAMESERVER | 0 | Nameserver Hostname | HOSTNAME
-ADDIPADDRESS[0..12] | 0 | Add new IP Address of Hostname, required if IPADDRESS[0..12] not provided, not required if DELIPADDRESS[0..12] is provided | IPADDRESS
-DELIPADDRESS[0..12] | 0 | Delete existing IP Address of Hostname, required if IPADDRESS[0..12] not provided, not required if ADDIPADDRESS[0..12] is provided | IPADDRESS
-IPADDRESS[0..12] | 0 | Assigning new IP Address of Hostname, required if ADDIPADDRESS / DELIPADDRESS is not provided<br> Warning: Using IPADDRESS[0..12] will overwrite ALL existing ip addresses stored with this nameserver. | IPADDRESS or NULL
+ADDIPADDRESS[0..12] | 0 | Add new IP Address of Hostname | IPADDRESS
+DELIPADDRESS[0..12] | 0 | Delete existing IP Address of Hostname | IPADDRESS
+IPADDRESS[0..12] | 0 | Assigning new IP Address of Hostname <br> Warning: Using IPADDRESS[0..12] will overwrite ALL existing ip addresses stored with this nameserver. | IPADDRESS or NULL
 
 ----
 ## RESPONSE
@@ -65,3 +65,5 @@ EOF
 ```
 
 ----
+## NOTES
+To update the IP address(es) of a nameserver there are two possibilities: (i) provide all the IP address(es) (including those which were previously set in `AddNameserver` command) in the IPADDRESS[0..N] parameter or (ii) either provide new IP address(es) in ADDIPADDRESS[0..N] parameter which should be added or provide existing IP address(es) in the DELIPADDRESS[0..N] parameter that should be removed.
