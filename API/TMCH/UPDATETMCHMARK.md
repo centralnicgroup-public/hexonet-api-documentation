@@ -31,6 +31,27 @@ HOLDER0COUNTRY | 0 | Trademark holder country code | COUNTRY or NULL
 HOLDER0PHONE | 0 | Trademark holder phone number | PHONE or NULL
 HOLDER0FAX | 0 | Trademark holder fax number | PHONE or NULL
 HOLDER0EMAIL | 0 | Trademark holder email address | EMAIL or NULL
+LABEL[0..N] | 0 | The ASCII form of the domain name label | TEXT or NULL
+LABEL0SMDINCLUSION | 0 | Flag for TMCH sunrise services: the label is included in the SMD file to be used in sunrise | INT or NULL
+LABEL0CLAIMSNOTIFY | 0 | Flag for the claims services, provided by TMCH: registrants will be made aware of mark existance and holders receive notification on registration during the initial period of general availability | INT or NULL
+LABEL1SMDINCLUSION | 0 | Flag for TMCH sunrise services: the label is included in the SMD file to be used in sunrise | INT or NULL
+LABEL1CLAIMSNOTIFY | 0 | Flag for the claims services, provided by TMCH: registrants will be made aware of mark existance and holders receive notification on registration during the initial period of general availability | INT or NULL
+LABEL2SMDINCLUSION | 0 | Flag for TMCH sunrise services: the label is included in the SMD file to be used in sunrise | INT or NULL
+LABEL2CLAIMSNOTIFY | 0 | Flag for the claims services, provided by TMCH: registrants will be made aware of mark existance and holders receive notification on registration during the initial period of general availability | INT or NULL
+LABEL3SMDINCLUSION | 0 | Flag for TMCH sunrise services: the label is included in the SMD file to be used in sunrise | INT or NULL
+LABEL3CLAIMSNOTIFY | 0 | Flag for the claims services, provided by TMCH: registrants will be made aware of mark existance and holders receive notification on registration during the initial period of general availability | INT or NULL
+LABEL4SMDINCLUSION | 0 | Flag for TMCH sunrise services: the label is included in the SMD file to be used in sunrise | INT or NULL
+LABEL4CLAIMSNOTIFY | 0 | Flag for the claims services, provided by TMCH: registrants will be made aware of mark existance and holders receive notification on registration during the initial period of general availability | INT or NULL
+LABEL5SMDINCLUSION | 0 | Flag for TMCH sunrise services: the label is included in the SMD file to be used in sunrise | INT or NULL
+LABEL5CLAIMSNOTIFY | 0 | Flag for the claims services, provided by TMCH: registrants will be made aware of mark existance and holders receive notification on registration during the initial period of general availability | INT or NULL
+LABEL6SMDINCLUSION | 0 | Flag for TMCH sunrise services: the label is included in the SMD file to be used in sunrise | INT or NULL
+LABEL6CLAIMSNOTIFY | 0 | Flag for the claims services, provided by TMCH: registrants will be made aware of mark existance and holders receive notification on registration during the initial period of general availability | INT or NULL
+LABEL7SMDINCLUSION | 0 | Flag for TMCH sunrise services: the label is included in the SMD file to be used in sunrise | INT or NULL
+LABEL7CLAIMSNOTIFY | 0 | Flag for the claims services, provided by TMCH: registrants will be made aware of mark existance and holders receive notification on registration during the initial period of general availability | INT or NULL
+LABEL8SMDINCLUSION | 0 | Flag for TMCH sunrise services: the label is included in the SMD file to be used in sunrise | INT or NULL
+LABEL8CLAIMSNOTIFY | 0 | Flag for the claims services, provided by TMCH: registrants will be made aware of mark existance and holders receive notification on registration during the initial period of general availability | INT or NULL
+LABEL9SMDINCLUSION | 0 | Flag for TMCH sunrise services: the label is included in the SMD file to be used in sunrise | INT or NULL
+LABEL9CLAIMSNOTIFY | 0 | Flag for the claims services, provided by TMCH: registrants will be made aware of mark existance and holders receive notification on registration during the initial period of general availability | INT or NULL
 ADDLABEL[0..N] | 0 | The ASCII form of the domain name label | TEXT or NULL
 ADDLABEL0SMDINCLUSION | 0 | Flag for TMCH sunrise services: the label is included in the SMD file to be used in sunrise | INT or NULL
 ADDLABEL0CLAIMSNOTIFY | 0 | Flag for the claims services, provided by TMCH: registrants will be made aware of mark existance and holders receive notification on registration during the initial period of general availability | INT or NULL
