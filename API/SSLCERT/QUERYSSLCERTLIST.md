@@ -18,6 +18,7 @@ FIRST | 0 | Position from which on entries of the entire list should be returned
 LIMIT | 0 | Maximum number of entries that should be returned from the entire list; default: LIMIT = `10000` | INT
 USERDEPTH | 0 | Depth of subuser accounts to consider | `SELF`, `SUBUSER` or `ALL`
 SSLCERTCLASS | 0 | Limit the search to certificate orders of certain product types | PATTERN
+SSLCERTCLASSREGEX | 0 | Only show objects where the product type matches the regular expression specified here | REGEX or NULL
 SSLCERTID | 0 | Limit the search to certificate orders with certain certificate IDs | PATTERN
 STATUS | 0 | Limit the search to certificate orders having a certain status | PATTERN
 SSLCERTCN | 0 | Limit the search to certificate orders with certain Common Names | TEXT or NULL
@@ -111,4 +112,3 @@ EOF
 ```
 
 ----
-
