@@ -246,6 +246,7 @@ SSLCERTID | 1 | 1 | SSL certificate ID | TEXT
 STATUS | 1 | 1 | SSL certificate status | TEXT
 STATUSDETAILS | 0 | 1 | Additional status information | TEXT or NULL
 STREET | 0 | 1 | Default contact address street | TEXT or NULL
+SUPPLIERORDERID | 0 | 1 | Order or product ID of the upstream supplier | TEXT or NULL
 TECHCONTACT0CITY | 0 | 1 | Tech contact address city | TEXT
 TECHCONTACT0COUNTRY | 0 | 1 | Tech contact address country code | COUNTRY
 TECHCONTACT0EMAIL | 0 | 1 | Tech contact email address | EMAIL
