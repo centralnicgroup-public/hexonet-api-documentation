@@ -85,7 +85,7 @@ AUTH[0..N] | 0 | N | Authorization code of the respective domain name | TEXT
 BILLINGCONTACT[0..N] | 0 | N | The Billing Contact/s. If more than one, separated by spaces | TEXT
 CLAIMKEY[0..N] | 0 | N | The claim key of Domain Applications that have one | TEXT
 CREATEDDATE[0..N] | 0 | N | Creation date of the object | DATE
-CURRENCY[0..N] | 0 | N | Only displayed if PROPERTIES is set to `RENEWALPRICE`: The currency for RENEWALGROSSPRICE and RENEWALPRICE | DATE
+CURRENCY[0..N] | 0 | N | Only displayed if PROPERTIES is set to `RENEWALPRICE`: The currency for RENEWALGROSSPRICE and RENEWALPRICE | TEXT
 DESCRIPTION[0..N] | 0 | N | The U-label of the domain associated with the object | DATE
 EXPIRATIONDATE[0..N] | 0 | N | Expiration date of the respective domain name | DATE
 FAILUREDATE[0..N] | 0 | N | Failure date of the respective domain name | DATE
