@@ -17,7 +17,7 @@ WIDE | 0 | If set to `1`: verbose output (more parameters) | `1` or `0`
 FIRST | 0 | Index of the first entry to be returned | INT
 LIMIT | 0 | Max. number of entries to be returned. The system has a default value for performance purposes | INT
 NOTOTAL | 0 | Set to `0` to suppress the return of the TOTAL response property. This will impore response time. If set to `1` the TOTAL response property will be returned | `0` or `1`
-ORDERBY | 0 | Parameter by which the output will be sorted.<br>Must be one of the following:<br>`OBJECTID`, `OBJECTIDDESC`, `DESCRIPTION`, `DESCRIPTIONDESC`, `CREATEDDATE`, `CREATEDDATEDESC`, `UPDATEDDATE`, `UPDATEDDATEDESC`, `EXPIRATIONDATE`, `EXPIRATIONDATEDESC` | TEXT
+ORDERBY | 0 | Parameter by which the output will be sorted.<br>Must be one of the following:<br>`OBJECTID`, `OBJECTIDDESC`, `DESCRIPTION`, `DESCRIPTIONDESC`, `CREATEDDATE`, `CREATEDDATEDESC`, `UPDATEDDATE`, `UPDATEDDATEDESC`, `EXPIRATIONDATE`, `EXPIRATIONDATEDESC`, `FINALIZATIONDATE`, `FINALIZATIONDATEDESC` | TEXT
 USERDEPTH | 0 | Depth of the list, may be `SELF`, `SUBUSER` or `ALL` | `SELF`, `SUBUSER` or `ALL`
 PROPERTIES | 0 | Additional properties to be returned can be specified here. Currently supported values are:<br>`TRANSFER`: if used, the response will contain the transfer related propeties TRANSFER-CREATEDDATE, TRANSFER-DIRECTION, TRANSFER-NEWREGISTRAR, TRANSFER-OLDREGISTRAR and TRANSFER-STATUS<br>`PRICE`: if used, the response will contain the properties CURRENCY, RENEWALGROSSPRICE, RENEWALPRICE and VAT | TEXT or NULL
 DESCRIPTION | 0 | Only show objects with an description that matches the pattern specified here. | PATTERN or TEXT
