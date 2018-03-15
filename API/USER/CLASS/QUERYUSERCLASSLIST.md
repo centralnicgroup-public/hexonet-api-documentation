@@ -1,7 +1,7 @@
 # QueryUserClassList
 
 ## DESCRIPTION
-Query a list of user classes for the executing user.
+Query the list of user classes of the executing user or one of his subusers.
 
 ## AVAILABILITY
 All users have access to this command. This command does not make sense if your useraccount does not have any subusers.
@@ -12,6 +12,7 @@ All users have access to this command. This command does not make sense if your 
 Parameter | Min | Definition | Type
 ---- | ---- | ---- | ----
 COMMAND | 1 | `QueryUserClassList` | COMMAND
+SUBUSER | 0 | Lists the user classes of a dedicated subuser | TEXT
 
 ----
 ## RESPONSE
