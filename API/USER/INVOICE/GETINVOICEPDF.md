@@ -14,6 +14,7 @@ Parameter | Min | Definition | Type
 COMMAND | 1 | `GetInvoicePDF` | COMMAND
 INVOICEID | 1 | Invoice ID for which a .PDF was previously created | TEXT
 USERDEPTH | 0 | USERDEPTH defines the depth of the returned list. `SELF` returns a list with only objects of the user itself. `SUBUSER` returns a list with objects of all direct subusers. | `SELF` or `SUBUSER`
+RENDER | 0 | Render the invoice PDF, if not rendered before | `0` or `1`
 
 ----
 ## RESPONSE
