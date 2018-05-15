@@ -126,6 +126,7 @@ X-REGISTRANT-QUALIFIED-LAWYER-ACCREDITATION-YEAR | 0 | The year of the accredita
 X-REGISTRANT-QUALIFIED-LAWYER-JURISDICTION-CC | 0 | ISO-3166 Country Code | COUNTRY or NULL
 X-REGISTRANT-QUALIFIED-LAWYER-JURISDICTION-STATE | 0 | The state the jurisdiction is located in | TEXT or NULL
 X-REGISTRANT-IDNUMBER | 0 | The registrant's ID number | TEXT or NULL
+X-ADMIN-IDNUMBER | 0 | The admin's ID number | TEXT or NULL
 X-VATID | 0 | Domain contacts' VAT-ID | TEXT or NULL
 
 ----
