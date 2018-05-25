@@ -32,7 +32,8 @@ VATID | 0 | VAT ID | TEXT or NULL
 IDNUMBER | 0 | ID Number | TEXT or NULL
 IDAUTHORITY | 0 | ID Authority | TEXT or NULL
 AUTH | 0 | Authcode | TEXT or NULL
-DELETE[0..N] | 0 | Remove properties, e.g. NAME or ORGANIZATION | TEXT
+DISCLOSE | 0 | Set to `1` to disclose (publish) the contact details, set to `0` for non-disclosure. This feature is only supported by dedicated registries and by the HEXONET whois server | `0`, `1`
+DISCLOSE-ELEMENTS | 0 | Specify which dedicated contact details should be affected by the DISCLOSE parameter setting. If not stated the DISCLOSE parameter affects all possible contact details. Multiple values are possible and have to be separated by a blank space. Possible values are:<br>`NAME`: disclose the name<br>`ORG`: disclose the organization name<br>`ADDR`: disclose street, state, zip, city and country<br>`VOICE`: disclose the phone number<br>`FAX`: disclose the fax number<br>`EMAIL`: disclose the email address | `/^(((NAME|ORG|ADDR|VOICE|FAX|EMAIL)[ ])*(NAME|ORG|ADDR|VOICE|FAX|EMAIL))?$/`
 X-AFNIC-DISCLOSE | 0 | If set to `1` the contact details will get disclosed for domains registered at AFNIC | `0`, `1` or NULL
 X-CAT-DISCLOSE-FLAG | 0 | Global disclose flag | `0` or `1`
 X-CAT-DISCLOSE-TYPE[0..N] | 0 | Disclose contact elements | `VOICE` or `EMAIL`
