@@ -31,7 +31,7 @@ CSRCONTACT0STREET | 0 | CSR contact address street | TEXT or NULL
 CSRCONTACT0CITY | 0 | CSR contact address city | TEXT or NULL
 CSRCONTACT0STATE | 0 | CSR contact address state / province | TEXT or NULL
 CSRCONTACT0ZIP | 0 | CSR contact address postal code | TEXT or NULL
-CSRCONTACT0COUNTRY | 0 | CSR contact address country code | TEXT or NULL
+CSRCONTACT0COUNTRY | 0 | CSR contact address country code | COUNTRY or NULL
 CSRCONTACT0PHONE | 0 | CSR contact phone number | TEXT or NULL
 CSRCONTACT0FAX | 0 | CSR contact fax number | TEXT or NULL
 CSRCONTACT0EMAIL | 0 | CSR contact email address | EMAIL or NULL
