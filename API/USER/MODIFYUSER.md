@@ -40,7 +40,6 @@ Code | Description
 420 | Command failed due to server error. Server closing connection
 421 | Command failed due to server error. Client should try again
 423 | Command failed due to server error. Client should try again (Could not get session)
-425 | Service temporarily locked; usage exceeded
 503 | Invalid attribute name
 504 | Missing required attribute
 505 | Invalid attribute value syntax
