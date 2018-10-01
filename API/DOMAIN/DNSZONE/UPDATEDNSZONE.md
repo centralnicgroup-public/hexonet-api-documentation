@@ -31,6 +31,7 @@ X-HTTP-A | 0 | Set special destination IP address in EXTENDED mode | TEXT or NUL
 EXTENDED | 0 | Switch to EXTENDED mode to manage forwardings | `0` or `1`
 ZONEMODE | 0 | Set zonemode to MASTER or SLAVE | `MASTER` or `SLAVE`
 SLAVEMASTER | 0 | Set the master nameserver in case the zonemode is SLAVE | TEXT or NULL
+DNSSEC-MODE | 0 | DNSSEC mode, `AUTO` or `DISABLED` | `DISABLED`, `AUTO`
 
 ----
 ## RESPONSE
