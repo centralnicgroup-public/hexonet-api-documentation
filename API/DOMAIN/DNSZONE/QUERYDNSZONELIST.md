@@ -13,7 +13,7 @@ Parameter | Min | Definition | Type
 ---- | ---- | ---- | ----
 COMMAND | 1 | `QueryDNSZoneList` | COMMAND
 WIDE | 1 | Return more properties than only the simple list of zones | `0`, `1` or `DNSNODE`
-ORDERBY | 0 | Order list by defined algorithm, possible values are `CREATEDDATE`, `UPDATEDDATE`, `EXPIRATIONDATE`, `RRSTOTAL` | TEXT
+ORDERBY | 0 | Order list by defined algorithm, possible values are `DNSZONE`, `CREATEDDATE`, `UPDATEDDATE`, `EXPIRATIONDATE`, `QUERY-QUOTA-PREDICTION`, `QUERY-QUOTA-COUNT`, `QUERY-QUOTA-STATUS` | TEXT
 FIRST | 0 | Parameter to implement a pagination, first will be the start of the list returned | INT
 LIMIT | 0 | Limit the number of zones returned | INT
 USERDEPTH | 0 | Userdepth allows to limit the list inside the usertree | `SELF`, `SUBUSER` or `ALL`
@@ -27,6 +27,16 @@ MAXUPDATEDDATE | 0 | Filter by highest UPDATEDDATE | NULL or TEXT
 MINEXPIRATIONDATE | 0 | Filter by lowest EXPIRATIONDATE | NULL or TEXT
 MAXEXPIRATIONDATE | 0 | Filter by highest EXPIRATIONDATE | NULL or TEXT
 STATUS | 0 | Filter list by STATUS of DNSZONE | `ACTIVE`, `INACTIVE`, `HOLD` or NULL
+PROPERTIES | 0 | Additional properties to be returned can be specified here. Currently supported values are:<br>`PREMIUMDNS` | TEXT or NULL
+PREMIUMDNSCLASS | 0 | Only show objects with a PremiumDNS class that matches the pattern specified here. | PATTERN or TEXT
+PREMIUMDNSCLASSREGEX | 0 | Only show objects with a PremiumDNS class that matches the regular expression specified here. | REGEX or NULL
+PREMIUMDNSCLASSREGEXNOT | 0 | Only show objects with a PremiumDNS class that does not match the regular expression specified here. | REGEX or NULL
+MINQUERY-QUOTA-COUNT | 0 | Filter by lowest QUERY-QUOTA-COUNT | INT
+MAXQUERY-QUOTA-COUNT | 0 | Filter by highest QUERY-QUOTA-COUNT | INT
+MINQUERY-QUOTA-PREDICTION | 0 | Filter by lowest QUERY-QUOTA-PREDICTION | INT
+MAXQUERY-QUOTA-PREDICTION | 0 | Filter by highest QUERY-QUOTA-PREDICTION | INT
+QUERY-QUOTA-STATUS | 0 | Filter by QUERY-QUOTA-STATUS, e.g. `OK`, `WARNING`, `EXCEEDED`, `SUSPENDED` | TEXT or NULL
+
 
 ----
 ## RESPONSE
@@ -138,4 +148,3 @@ EOF
 ```
 
 ----
-
