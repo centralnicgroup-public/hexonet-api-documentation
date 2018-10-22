@@ -16,6 +16,7 @@ WIDE | 1 | Return more properties than only the simple list of zones | `0`, `1` 
 ORDERBY | 0 | Order list by defined algorithm, possible values are `DNSZONE`, `CREATEDDATE`, `UPDATEDDATE`, `EXPIRATIONDATE`, `QUERY-QUOTA-PREDICTION`, `QUERY-QUOTA-COUNT`, `QUERY-QUOTA-STATUS` | TEXT
 FIRST | 0 | Parameter to implement a pagination, first will be the start of the list returned | INT
 LIMIT | 0 | Limit the number of zones returned | INT
+NOTOTAL | 0 | Set to `0` to suppress the return of the TOTAL response property. This will impore response time. If set to `1` the TOTAL response property will be returned | `0` or `1`
 USERDEPTH | 0 | Userdepth allows to limit the list inside the usertree | `SELF`, `SUBUSER` or `ALL`
 DNSZONE | 0 | Allows to use a zone name as search pattern | PATTERN or TEXT
 SUBCLASS | 0 | Allows to filter the list for MASTER / SLAVE zones, can be set to `MASTER`, `SLAVE` | TEXT or NULL
