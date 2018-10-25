@@ -25,6 +25,8 @@ RR[0..N] | 0 | A set of desired DNS records (A,NS,MX,PTR,AAAA,TXT) | LONGTEXT
 EXTENDED | 0 | Switch to enable extended mode to submit URL and email forwarding records | `0` or `1`
 ZONEMODE | 0 | Create the zone as MASTER or SLAVE zone, default is MASTER | `MASTER` or `SLAVE`
 SLAVEMASTER | 0 | Master nameserver to replicate the zone from, only required if mode is SLAVE | TEXT or NULL
+DOMAINTRANSFER | 0 | Used to create a temporary DNS zone for incoming domain transfers, if no matching domain or PremiumDNS object exists | `0` or `1`
+
 
 ----
 ## RESPONSE
