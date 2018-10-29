@@ -13,7 +13,7 @@ Parameter | Min | Definition | Type
 ---- | ---- | ---- | ----
 COMMAND | 1 | `QueryDNSZoneList` | COMMAND
 WIDE | 1 | Return more properties than only the simple list of zones | `0`, `1` or `DNSNODE`
-ORDERBY | 0 | Order list by defined algorithm, possible values are `DNSZONE`, `CREATEDDATE`, `UPDATEDDATE`, `EXPIRATIONDATE`, `QUERY-QUOTA-PREDICTION`, `QUERY-QUOTA-COUNT`, `QUERY-QUOTA-STATUS` | TEXT
+ORDERBY | 0 | Order list by defined algorithm, possible values are `DNSZONE`, `CREATEDDATE`, `UPDATEDDATE`, `EXPIRATIONDATE`, `QUERY-QUOTA-PREDICTION`, `QUERY-QUOTA-COUNT`, `QUERY-QUOTA-STATUS`, `PREMIUMDNSCREATEDDATE`, `PREMIUMDNSEXPIRATIONDATE`, `PREMIUMDNSCLASS`, `PREMIUMDNSRENEWALMODE` | TEXT
 FIRST | 0 | Parameter to implement a pagination, first will be the start of the list returned | INT
 LIMIT | 0 | Limit the number of zones returned | INT
 NOTOTAL | 0 | Set to `0` to suppress the return of the TOTAL response property. This will impore response time. If set to `1` the TOTAL response property will be returned | `0` or `1`
