@@ -12,7 +12,7 @@ All users have access to this command.
 Parameter | Min | Definition | Type
 ---- | ---- | ---- | ----
 COMMAND | 1 | `UpgradePremiumDNS` | COMMAND
-CLASS | 1 | New Premium DNS Product Class | `5M`, `15M`, `30M`, `50M`, `75M`, `100M` or `ENTERPRISE`
+CLASS | 1 | New Premium DNS Product Class | `2M`, `5M`, `15M`, `30M`, `50M`, `75M`, `100M` or `ENTERPRISE`
 OBJECTID | 1 | PremiumDNS object ID | TEXT
 ORDER | 0 | PremiumDNS upgrade order action:<br>`CREATE` - create a PremiumDNS upgrade order<br>`REPLACE` - replace a PremiumDNS upgrade order<br>`UPDATE` - update a PremiumDNS upgrade order | `CREATE`, `REPLACE` or `UPDATE`
 ORDERID | 0 | PremiumDNS upgrade order ID; only relevant if ORDER is `REPLACE` or `UPDATE` | INT
