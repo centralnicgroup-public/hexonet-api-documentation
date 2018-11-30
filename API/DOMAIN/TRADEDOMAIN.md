@@ -105,6 +105,7 @@ X-JOBS-COMPANYURL | 0 | Company URL for .JOBS | TEXT or NULL
 X-JOBS-INDUSTRYCLASSIFICATION | 0 | Industry Classification for .JOBS | TEXT or NULL
 X-JOBS-HRANAME | 0 | Human Resources Association name for .JOBS | TEXT or NULL
 X-JOBS-ADMINTYPE | 0 | Set to `1` in order to indicate that the registrant is also the administrative contact of the domain; only relevant for .JOBS domains | `0` or `1`
+X-LT-REGISTRANT-LEGAL-ID | 0 | Legal entity identification code of the registrant of a .LT domain. Required as of December 1, 2018 if the registrant is a legal entity. | TEXT or NULL
 X-MK-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-MY-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-MY-REGISTRANT-ORGANIZATION-TYPE | 0 | The registrant's organization type | INT

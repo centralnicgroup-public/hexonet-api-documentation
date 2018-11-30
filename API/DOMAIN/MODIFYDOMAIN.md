@@ -201,6 +201,7 @@ X-JP-NAME | 0 | Representative name; only relevant for .JP domains | TEXT or NUL
 X-JP-TYPE | 0 | Organization type; only relevant for .JP domains | TEXT or NULL
 X-JP-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-KR-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
+X-LT-REGISTRANT-LEGAL-ID | 0 | Legal entity identification code of the registrant of a .LT domain. Required as of December 1, 2018 if the registrant is a legal entity. | TEXT or NULL
 X-MK-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-MOBI-ACCEPT-INSTANTMOBILIZER-TAC | 0 | Activates the Instant Mobilizer | `0`, `1` or NULL
 X-MOBI-INSTANTMOBILIZER-DOMAIN | 0 | The website to proxy | DOMAIN or NULL
