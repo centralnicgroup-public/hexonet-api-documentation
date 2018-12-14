@@ -22,6 +22,7 @@ SOARETRY | 0 | See the accordant RFC (listed below) for details | INT
 SOAEXPIRE | 0 | See the accordant RFC (listed below) for details | INT
 SOAMINTTL | 0 | See the accordant RFC (listed below) for details | INT
 INCSERIAL | 0 | Increases the zone serial by 1 if submitted | INT
+RESOLVETTLCONFLICTS | 0 | Automatically resolve TTL conflicts if possible | `0` or `1`
 RR[0..N] | 0 | When using "rr" as parameter in UpdateDNSZone, all existing records (besides the SOA record of course) will get deleted and replaced by the new records, defined by rr0, rr1, ... | LONGTEXT
 ADDRR[0..N] | 0 | Add one or more new DNS records to the zone. The existing records are not touched by this parameter. The new records are appended to the existing ones. | LONGTEXT
 DELRR[0..N] | 0 | Delete one or more DNS records | LONGTEXT
