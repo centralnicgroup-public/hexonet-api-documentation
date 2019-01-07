@@ -276,11 +276,6 @@ X-BOATS-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and con
 X-ECO-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-VOTE-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-VOTO-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
-X-REGISTRANT-QUALIFIED-LAWYER-ACCREDITATION-ID | 0 | The ID of the accreditation | TEXT or NULL
-X-REGISTRANT-QUALIFIED-LAWYER-ACCREDITATION-BODY | 0 | The body of the accreditation | TEXT or NULL
-X-REGISTRANT-QUALIFIED-LAWYER-ACCREDITATION-YEAR | 0 | The year of the accreditation | INT or NULL
-X-REGISTRANT-QUALIFIED-LAWYER-JURISDICTION-CC | 0 | ISO-3166 Country Code | COUNTRY or NULL
-X-REGISTRANT-QUALIFIED-LAWYER-JURISDICTION-STATE | 0 | The state the jurisdiction is located in | TEXT or NULL
 X-REGULATORY-BODY-CONTACT-EMAIL | 0 | Email Address | EMAIL or NULL
 X-REGULATORY-BODY-CONTACT-PHONE | 0 | ITU Phone Number | PHONE or NULL
 X-ACCEPT-WHOISTRUSTEE-TAC | 0 | Activates the Whois Trustee Service | `0`, `1` or NULL
