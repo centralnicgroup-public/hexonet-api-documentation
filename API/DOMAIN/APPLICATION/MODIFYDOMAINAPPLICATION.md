@@ -81,11 +81,6 @@ X-NICSE-VATID | 0 | The VAT-ID has to be stated for companies that are located i
 X-NYC-REGISTRANT-NEXUS-CATEGORY | 0 | The value of this parameter has to be either <br>`1` for a natural person whose primary place of domicile is a valid physical address in the City of New York or <br> `2` for an entity or organization that has a physical street address in the City of New York | `1`, `2` or NULL
 X-PM-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-RE-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
-X-REGISTRANT-QUALIFIED-LAWYER-ACCREDITATION-BODY | 0 | The body of the accreditation | TEXT or NULL
-X-REGISTRANT-QUALIFIED-LAWYER-ACCREDITATION-ID | 0 |  The ID of the accreditation | TEXT or NULL
-X-REGISTRANT-QUALIFIED-LAWYER-ACCREDITATION-YEAR | 0 | The year of the accreditation | INT or NULL
-X-REGISTRANT-QUALIFIED-LAWYER-JURISDICTION-CC | 0 | ISO-3166 Country Code | COUNTRY or NULL
-X-REGISTRANT-QUALIFIED-LAWYER-JURISDICTION-STATE | 0 | The state the jurisdiction is located in | TEXT or NULL
 X-REGISTRANT-IDNUMBER | 0 | The registrant's ID number | TEXT or NULL
 X-RUHR-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-SPREADBETTING-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
