@@ -96,11 +96,6 @@ X-NYC-REGISTRANT-NEXUS-CATEGORY | 0 |  The value of this parameter has to be eit
 X-PM-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-RE-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-REGISTRANT-IDNUMBER | 0 | The registrant's ID number | TEXT or NULL
-X-REGISTRANT-QUALIFIED-LAWYER-ACCREDITATION-BODY | 0 | The body of the accreditation | TEXT or NULL
-X-REGISTRANT-QUALIFIED-LAWYER-ACCREDITATION-ID | 0 | The ID of the accreditation | TEXT or NULL
-X-REGISTRANT-QUALIFIED-LAWYER-ACCREDITATION-YEAR | 0 | The year of the accreditation | INT or NULL
-X-REGISTRANT-QUALIFIED-LAWYER-JURISDICTION-CC | 0 | ISO-3166 Country Code | COUNTRY or NULL
-X-REGISTRANT-QUALIFIED-LAWYER-JURISDICTION-STATE | 0 | The state the jurisdiction is located in | TEXT or NULL
 X-RUHR-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-SPREADBETTING-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-SWISS-REGISTRANT-ENTERPRISE-ID | 0 | The enterprise ID, in the specific context of .swiss based on current rules, is the Swiss UID/IDE/IDI | TEXT
