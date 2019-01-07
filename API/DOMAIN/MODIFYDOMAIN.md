@@ -137,6 +137,12 @@ X-CA-LANGUAGE | 0 | The registrant contact's language (default is `EN`) | TEXT o
 X-CA-LEGALTYPE | 0 |  The legal type of the domain owner* | TEXT or NULL
 X-CN-REGISTRANT-ID-NUMBER | 0 | ID number of the registrant. Only relevant for .CN domains | TEXT or NULL
 X-CN-REGISTRANT-ID-TYPE | 0 | The type of ID provided for the registrant. Only relevant for .CN domains | `SFZ`, `HZ`, `JGZ`, `ORG`, `YYZZ` or `QT`
+X-CN-ADMIN-ID-NUMBER | 0 | ID number of the administrative contact. Only relevant for .CN domains | TEXT or NULL
+X-CN-ADMIN-ID-TYPE | 0 | The type of ID provided for the admin contact. Only relevant for .CN domains | `SFZ`, `HZ`, `JGZ`, `ORG`, `YYZZ` or `QT`
+X-CN-TECH-ID-NUMBER | 0 | ID number of the technical contact. Only relevant for .CN domains | TEXT or NULL
+X-CN-TECH-ID-TYPE | 0 | The type of ID provided for the tech contact. Only relevant for .CN domains | `SFZ`, `HZ`, `JGZ`, `ORG`, `YYZZ` or `QT`
+X-CN-BILLING-ID-NUMBER | 0 | ID number of the billing contact. Only relevant for .CN domains | TEXT or NULL
+X-CN-BILLING-ID-TYPE | 0 | The type of ID provided for the billing contact. Only relevant for .CN domains | `SFZ`, `HZ`, `JGZ`, `ORG`, `YYZZ` or `QT`
 X-CORE-PRIVACY-DISCLOSURE | 0 | Privacy disclosure settings, set to `NATURE-TRUE` to disclose contact details, set to `NATURAL-FALSE` to hide the contact details. Must be set to `LEGAL` if the owner contact is an organization. | `NATURAL-FALSE`, `NATURAL-TRUE` or `LEGAL`
 X-DE-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-DE-NSENTRY[0..4] | 0 | DNS resource records to directly add to the .DE root nameservers | TEXT or NULL
