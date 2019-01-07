@@ -309,11 +309,6 @@ X-BABY-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and cond
 X-BIBLE-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-ECO-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-BOATS-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
-X-REGISTRANT-QUALIFIED-LAWYER-ACCREDITATION-ID | 0 | The ID of the accreditation | TEXT or NULL
-X-REGISTRANT-QUALIFIED-LAWYER-ACCREDITATION-BODY | 0 | The body of the accreditation* | TEXT or NULL
-X-REGISTRANT-QUALIFIED-LAWYER-ACCREDITATION-YEAR | 0 | The year of the accreditation* | INT or NULL
-X-REGISTRANT-QUALIFIED-LAWYER-JURISDICTION-CC | 0 | ISO-3166 Country Code | COUNTRY or NULL
-X-REGISTRANT-QUALIFIED-LAWYER-JURISDICTION-STATE | 0 | The state the jurisdiction is located in | TEXT or NULL
 X-WDRP-RSP | 0 | Name of the RSP appearing in the WDRP email | TEXT or NULL
 X-WDRP-URL | 0 | URL of the RSP appearing in the WDRP email | TEXT or NULL
 X-WDRP-SIGNATURE[0..3] | 0 | Signature appearing at the end of the WDRP email | TEXT or NULL
