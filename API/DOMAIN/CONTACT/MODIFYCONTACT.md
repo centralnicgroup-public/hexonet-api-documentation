@@ -40,7 +40,6 @@ X-CAT-DISCLOSE-TYPE[0..N] | 0 | Disclose contact elements | `VOICE` or `EMAIL`
 X-CAT-EMAIL-SPONSOR | 0 | Email address of the sponsoring contact | TEXT or NULL
 X-CAT-MAINTAINER | 0 | Maintainer | TEXT or NULL
 X-CAT-LANG | 0 | Contact language | TEXT or NULL
-X-CA-DISCLOSE | 0 | Set to `1` to disclose the contact's details | `0`, `1` or NULL
 X-COOP-SPONSOR[0..N] | 0 | Sponsoring contact | TEXT or NULL
 
 ----

@@ -129,6 +129,7 @@ X-CA-LANGUAGE | 0 | The registrant contact's language (default is `EN`) | TEXT o
 X-CA-REGISTRANT-LANGUAGE | 0 | The registrant contact's language (default is `EN`) | TEXT or NULL
 X-CA-ADMIN-LANGUAGE | 0 | The admin contact's language (default is `EN`) | TEXT or NULL
 X-CA-TECH-LANGUAGE | 0 | The technical contact's language (default is `EN`) | TEXT or NULL
+X-CA-DISCLOSE | 0 | Set to `1` to disclose the contact's details | `0`, `1` or NULL
 X-CL-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-CN-REGISTRANT-ID-NUMBER | 0 | ID number of the registrant. Only relevant for .CN domains | TEXT or NULL
 X-CN-REGISTRANT-ID-TYPE | 0 | The type of ID provided for the registrant. Only relevant for .CN domains | `SFZ`, `HZ`, `JGZ`, `ORG`, `YYZZ` or `QT`
