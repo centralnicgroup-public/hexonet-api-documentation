@@ -18,6 +18,8 @@ KEYWORDMATCH | 0 | Specify which part of the domain name the keyword has to matc
 ZONE[0..N] | 0 | Filter by zone | TEXT or NULL
 DELETIONDAY[0..N] | 0 | Filter by deletion days | DATE or NULL
 FINALIZATIONDATE[0..N] | 0 | Filter by finalization dates | DATE or NULL
+MINFINALIZATIONDATE | 0 | Returns only results >= MINFINALIZATIONDATE | DATE or NULL
+MAXFINALIZATIONDATE | 0 | Returns only results <= MAXFINALIZATIONDATE | DATE or NULL
 LENGTH[0..N] | 0 | Filter by length of domain name (range: 1-20) | TEXT or NULL
 SCORE[0..N] | 0 | Filter by score of domain names (range: 1-10) | TEXT or NULL
 FILTER[0..N] | 0 | Filter by domain name criteria, must be one of the following:<br>`NOHYPHENS` show only domain names with no hyphens<br>`NONUMBERS`: show only domain names which don't contain any numbers<br>`NOIDNS` don't show any IDNs | `NOHYPHENS`, `NONUMBERS`, `NOIDNS` or NULL
@@ -93,4 +95,3 @@ EOF
 ```
 
 ----
-
