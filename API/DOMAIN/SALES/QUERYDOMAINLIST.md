@@ -39,17 +39,17 @@ Code | Description
 200 | Command completed successfully
 549 | Channel error
 
-Property | Min | Definition | Type
----- | ---- | ---- | ----
-OBJECTID | 1 | The Object ID | TEXT
-DESCRIPTION | 1 | The object description | TEXT
-DOMAINSALE-AFTERNIC-STATUS | 0 | The AfterNIC listing status | `DISABLED`, `REQUESTED` or `ACTIVE`
-DOMAINSALE-AFTERNIC-PRICE | 0 | The AfterNIC listing price | /^[0-9]+(\.[0-9]+)?$/
-DOMAINSALE-SEDO-STATUS | 0 |  The AfterNIC listing status | `DISABLED`, `REQUESTED` or `ACTIVE`
-DOMAINSALE-SEDO-PRICE | 0 | The Sedo listing price | /^[0-9]+(\.[0-9]+)?$/
-DOMAINSALE-SEDO-MINPRICE | 0 | The Sedo minimum price | /^[0-9]+(\.[0-9]+)?$/
-DOMAINSALE-SEDO-CURRENCY | 0 | The Sedo currency | `EUR`, `USD`, or `GBP`
-DOMAINSALE-SEDO-LISTING-TYPE | 0 | The Sedo listing type | `buy_now_instant`, `buy_now_staged` or `make_offer`
+Property | Min | Max | Definition | Type
+---- | ---- | ---- | ---- | ----
+OBJECTID | 1 | 1 | The Object ID | TEXT
+DESCRIPTION | 1 | 1 | The object description | TEXT
+DOMAINSALE-AFTERNIC-STATUS | 0 | 1 | The AfterNIC listing status | `DISABLED`, `REQUESTED` or `ACTIVE`
+DOMAINSALE-AFTERNIC-PRICE | 0 | 1 | The AfterNIC listing price | /^[0-9]+(\.[0-9]+)?$/
+DOMAINSALE-SEDO-STATUS | 0 | 1 | The AfterNIC listing status | `DISABLED`, `REQUESTED` or `ACTIVE`
+DOMAINSALE-SEDO-PRICE | 0 | 1 | The Sedo listing price | /^[0-9]+(\.[0-9]+)?$/
+DOMAINSALE-SEDO-MINPRICE | 0 | 1 | The Sedo minimum price | /^[0-9]+(\.[0-9]+)?$/
+DOMAINSALE-SEDO-CURRENCY | 0 | 1 | The Sedo currency | `EUR`, `USD`, or `GBP`
+DOMAINSALE-SEDO-LISTING-TYPE | 0 | 1 | The Sedo listing type | `buy_now_instant`, `buy_now_staged` or `make_offer`
 
 ----
 ## Example
