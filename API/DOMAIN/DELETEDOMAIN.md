@@ -42,11 +42,11 @@ Code | Description
 552	| Object status does not allow for operation
 553	| Operation not allowed. Object pending transfer
 
-NOTE: The response might include the parameter 'PENDING = 1'. In case of domain deletions this indicates that the deletion is pending and a restore of the domain might still be possible.
-
 Property | Min | Max | Definition | Type
 ---- | ---- | ---- | ---- | ----
 STATUS | 0 | 1 | The new status of the domain | TEXT
+PENDING | 0 | 1 | Indicates that the deletion is pending and a restore of the domain might still be possible | `1`
+
 ----
 ## Example
 

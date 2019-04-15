@@ -326,11 +326,10 @@ Code | Description
 552 | Object status does not allow for operation
 553 | Operation not allowed. Object pending transfer
 
-NOTE: The response might include the parameter 'PENDING = 1'. This indicates that the update request has not been completed yet and that it might still get rejected.
-
 Property | Min | Max | Definition | Type
 ---- | ---- | ---- | ---- | ----
 STATUS | 0 | 1 | The current update status in case the update has not been completed yet | TEXT
+PENDING | 0 | 1 | Indicates that the update request has not been completed yet and that it might still get rejected | `1`
 
 ----
 ## Example

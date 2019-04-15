@@ -45,12 +45,12 @@ Code | Description
 552	| Object status does not allow for operation
 554	| Object already registered
 
-NOTE: A successful response will include the parameter 'PENDING = 1' which indicates that the restore has been requested and that an event will be created at a later point in time to notify about the outcome of the operation
-
 Property | Min | Max | Definition | Type
 ---- | ---- | ---- | ---- | ----
 DOMAIN | 0 | 1 | The domain name of the command (only present if returned by the respective registry) | DOMAIN
 EXPIRATIONDATE | 0 | 1 | The new expiration date of the domain (only present if returned by the respective registry) | DATETIME
+PENDING | 1 | 1 | Indicates that the restore has been requested and that an event will be created at a later point in time to notify about the outcome of the operation | `1`
+
 ----
 ## Example
 
