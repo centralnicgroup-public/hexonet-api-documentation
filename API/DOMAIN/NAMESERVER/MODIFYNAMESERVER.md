@@ -40,7 +40,7 @@ Code | Description
 552 | Object status does not allow for operation
 
 
-No properties are returned
+No properties are returned.
 
 ----
 ## Example

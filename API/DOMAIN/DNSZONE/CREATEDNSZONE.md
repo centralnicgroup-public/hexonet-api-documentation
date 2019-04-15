@@ -45,7 +45,7 @@ Code | Description
 540 | Attribute value is not unique; zone
 541 | The command failed
 
-No properties are returned
+No properties are returned.
 
 ----
 ## Example

@@ -38,7 +38,7 @@ Code | Description
 545 | Object not found
 549 | Command failed
 
-No properties are returned
+No properties are returned.
 
 
 ----

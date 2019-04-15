@@ -41,16 +41,20 @@ Code | Description
 
 Property | Min | Definition | Type
 ---- | ---- | ---- | ----
-OBJECTID | 1 | The Object ID | TEXT
-DESCRIPTION | 1 | The object description | TEXT
-DOMAINSALE-AFTERNIC-STATUS | 0 | The AfterNIC listing status | `DISABLED`, `REQUESTED` or `ACTIVE`
-DOMAINSALE-AFTERNIC-PRICE | 0 | The AfterNIC listing price | /^[0-9]+(\.[0-9]+)?$/
-DOMAINSALE-SEDO-STATUS | 0 |  The AfterNIC listing status | `DISABLED`, `REQUESTED` or `ACTIVE`
-DOMAINSALE-SEDO-PRICE | 0 | The Sedo listing price | /^[0-9]+(\.[0-9]+)?$/
-DOMAINSALE-SEDO-MINPRICE | 0 | The Sedo minimum price | /^[0-9]+(\.[0-9]+)?$/
-DOMAINSALE-SEDO-CURRENCY | 0 | The Sedo currency | `EUR`, `USD`, or `GBP`
-DOMAINSALE-SEDO-LISTING-TYPE | 0 | The Sedo listing type | `buy_now_instant`, `buy_now_staged` or `make_offer`
-
+FIRST | 1 | 1 | The index of the first entry | INT
+LAST | 1 | 1 | The index of the last entry | INT
+COUNT | 1 | 1 | The number of entries returned | INT
+TOTAL | 1 | 1 | The total number of entries found | INT
+LIMIT | 1 | 1 | The query limit (max. number of entries returned) | INT
+OBJECTID[0..N] | 0 | N | The Object ID | TEXT
+DESCRIPTION[0..N] | 0 | N | The object description | TEXT
+DOMAINSALE-AFTERNIC-STATUS[0..N] | 0 | N | The AfterNIC listing status | `DISABLED`, `REQUESTED` or `ACTIVE`
+DOMAINSALE-AFTERNIC-PRICE[0..N] | 0 | N | The AfterNIC listing price | /^[0-9]+(\.[0-9]+)?$/
+DOMAINSALE-SEDO-STATUS[0..N] | 0 | N | The AfterNIC listing status | `DISABLED`, `REQUESTED` or `ACTIVE`
+DOMAINSALE-SEDO-PRICE[0..N] | 0 | N | The Sedo listing price | /^[0-9]+(\.[0-9]+)?$/
+DOMAINSALE-SEDO-MINPRICE[0..N] | 0 | N | The Sedo minimum price | /^[0-9]+(\.[0-9]+)?$/
+DOMAINSALE-SEDO-CURRENCY[0..N] | 0 | N | The Sedo currency | `EUR`, `USD`, or `GBP`
+DOMAINSALE-SEDO-LISTING-TYPE[0..N] | 0 | N | The Sedo listing type | `buy_now_instant`, `buy_now_staged` or `make_offer`
 ----
 ## Example
 

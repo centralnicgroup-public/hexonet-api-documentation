@@ -34,7 +34,7 @@ Code | Description
 541 | Invalid attribute value
 545 | Object not found
 
-No properties are returned
+No properties are returned.
 
 ----
 ## Example
