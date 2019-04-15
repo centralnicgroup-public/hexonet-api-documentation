@@ -49,7 +49,7 @@ Property | Min | Max | Definition | Type
 ---- | ---- | ---- | ---- | ----
 DOMAIN | 0 | 1 | The domain name of the command (only present if returned by the respective registry) | DOMAIN
 EXPIRATIONDATE | 0 | 1 | The new expiration date of the domain (only present if returned by the respective registry) | DATETIME
-PENDING | 1 | 1 | Indicates that the restore has been requested and that an event will be created at a later point in time to notify about the outcome of the operation | `1`
+PENDING | 0 | 1 | Indicates that the restore has been requested and that an event will be created at a later point in time to notify about the outcome of the operation | `1`
 
 ----
 ## Example
