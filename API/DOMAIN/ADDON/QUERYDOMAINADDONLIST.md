@@ -74,7 +74,6 @@ SUMADDONDELETE | 0 | 1 | Only displayed if STATS is set to `1`: Sum of domains w
 SUMADDONCANCEL | 0 | 1 | Only displayed if STATS is set to `1`: Sum of domains with addon status "CANCEL" | INT
 SUMADDONEXPIRE | 0 | 1 | Only displayed if STATS is set to `1`: Sum of domains with addon status "EXPIRE" | INT
 SUMADDONHOLD | 0 | 1 | Only displayed if STATS is set to `1`: Sum of domains with addon status "HOLD" | INT
-TOTAL | 0 | 1 | Only displayed if STATS is set to `1`: Total number of domains with addon | INT
 
 ----
 ## Example
