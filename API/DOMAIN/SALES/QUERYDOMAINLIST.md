@@ -39,7 +39,7 @@ Code | Description
 200 | Command completed successfully
 549 | Channel error
 
-Property | Min | Definition | Type
+Property | Min | Max | Definition | Type
 ---- | ---- | ---- | ----
 FIRST | 1 | 1 | The index of the first entry | INT
 LAST | 1 | 1 | The index of the last entry | INT
