@@ -40,7 +40,7 @@ Code | Description
 549 | Channel error
 
 Property | Min | Max | Definition | Type
----- | ---- | ---- | ----
+---- | ---- | ---- | ---- | ----
 FIRST | 1 | 1 | The index of the first entry | INT
 LAST | 1 | 1 | The index of the last entry | INT
 COUNT | 1 | 1 | The number of entries returned | INT
