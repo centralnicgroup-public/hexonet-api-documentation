@@ -51,6 +51,7 @@ X-BACKORDER-LITE | 0 | Set to `1` to create Backorder-Lite | `1`, `0` or NULL
 X-BAYERN-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-BERLIN-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-BROKER-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
+X-CA-DISCLOSE | 0 | Set to `1` to disclose the registrant contact details | `0`, `1` or NULL
 X-CA-LANGUAGE | 0 | The registrant contact's language (default is `EN`) | TEXT or NULL
 X-CA-LEGALTYPE | 0 | The legal type of the domain owner | TEXT or NULL
 X-CAT-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
