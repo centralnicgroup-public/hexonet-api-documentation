@@ -279,6 +279,7 @@ X-RU-REGISTRANT-PASSPORT-LOCATION | 0 | Registrant's passport place of issue | T
 X-RU-REGISTRANT-KPP | 0 | Registrant's KPP number | TEXT or NULL
 X-RU-REGISTRANT-TIN | 0 | Registrant's TIN number | TEXT or NULL
 X-RU-REGISTRANT-NAME | 0 | Registrant's name | TEXT or NULL
+X-SE-ACCEPT-REGISTRATION-TAC | 0 | Set to `1` to accept the terms and conditions; only relevant for .SE domains | `0`, `1` or NULL
 X-SG-RCBID | 0 | Companies located in Singapore must enter their registration number | TEXT or NULL
 X-SG-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-SK-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
