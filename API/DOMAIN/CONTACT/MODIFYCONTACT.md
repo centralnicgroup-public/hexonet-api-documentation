@@ -41,6 +41,8 @@ X-CAT-EMAIL-SPONSOR | 0 | Email address of the sponsoring contact | TEXT or NULL
 X-CAT-MAINTAINER | 0 | Maintainer | TEXT or NULL
 X-CAT-LANG | 0 | Contact language | TEXT or NULL
 X-COOP-SPONSOR[0..N] | 0 | Sponsoring contact | TEXT or NULL
+X-CZ-DISCLOSE | 0 | Set to `1` to disclose (publish) the contact details, set to `0` for non-disclosure. | `0`, `1`
+X-CZ-DISCLOSE-ELEMENTS | 0 | Specify which dedicated contact details should be affected by the DISCLOSE parameter setting. If not stated the DISCLOSE parameter affects all possible contact details. Multiple values are possible and have to be separated by a blank space. Possible values are:<br>`ADDR`: disclose street, state, zip, city and country<br>`VOICE`: disclose the phone number<br>`FAX`: disclose the fax number<br>`EMAIL`: disclose the email address<br>`VAT`: disclose the VAT<br>`IDENT`: disclose the IDENT<br>`NOTIFYEMAIL`: disclose the notification email address | `/^(((ADDR|VOICE|FAX|EMAIL|VAT|IDENT|NOTIFYEMAIL)[ ])*(ADDR|VOICE|FAX|EMAIL|VAT|IDENT|NOTIFYEMAIL))?$/`
 
 ----
 ## RESPONSE
