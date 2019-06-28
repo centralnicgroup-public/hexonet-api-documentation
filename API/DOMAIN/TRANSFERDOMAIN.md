@@ -94,6 +94,7 @@ X-IT-ACCEPT-TRUSTEE-TAC | 0 | Activate the trustee service for a .IT domain | `0
 X-IT-REGISTRANT-ENTITY-TYPE | 0 | In some special cases you need to specify the exact entity type of the registrant:<br>`1`: Italian and foreign natural persons<br>`2`: Italian Companies / one man companies<br>`3`:  freelance workers / professionals <br>`4`: non-profit organizations<br>`5`: public organizations<br>`6`: other subjects<br>`7`: foreigners who match 2 - 6 | TEXT or NULL
 X-IT-CONSENTFORPUBLISHING | 0 | State if you agree to the .IT Consent for Publishing | `0`, `1` or NULL
 X-IT-ACCEPT-DIFFUSION-AND-ACCESSIBILITY-TAC | 0 | Accepts - "Section 6 - Consent to the processing of personal data for diffusion and accessibility via the internet" | `0`, `1` or NULL
+X-IT-NATIONALITY | 0 | The nationality of the registrant contact if it deviates from the country code | TEXT or NULL
 X-JP-ORGANIZATION | 0 | Organization name | TEXT or NULL
 X-JP-KANA-ORGANIZATION | 0 | Organization name in Japanese | TEXT or NULL
 X-JP-ADDRESS | 0 | Organization address | TEXT or NULL
