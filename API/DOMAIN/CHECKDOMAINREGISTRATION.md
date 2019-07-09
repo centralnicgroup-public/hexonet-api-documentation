@@ -245,6 +245,7 @@ X-NO-REGISTRANT-IDENTITY | 0 | The organization number of the Norwegian organiza
 X-NO-DECLARATION-VERSION | 0 | Version of the declaration form on which the domain name policy is accepted | TEXT or NULL
 X-NO-CONSENTING-PERSON-NAME | 0 | Name of the person accepting the domain name policy | TEXT or NULL
 X-NO-DECLARATION-TIMESTAMP | 0 | Date and time when the domain name policy has been accepted | TEXT or NULL
+X-NU-ACCEPT-REGISTRATION-TAC | 0 | Set to `1` to accept the terms and conditions; only relevant for .NU domains | `0`, `1` or NULL
 X-NYC-REGISTRANT-NEXUS-CATEGORY | 0 | The value of this parameter has to be either <br>`1` for a natural person whose primary place of domicile is a valid physical address in the City of New York or <br> `2` for an entity or organization that has a physical street address in the City of New York | `1`, `2` or NULL
 X-PARIS-ACCEPT-REGISTRATION-TAC | 0 | Set to `1` to accept the terms and conditions of the registration | `0`, `1` or NULL
 X-PL-REASON | 0 | .PL Reason of registration | TEXT or NULL
