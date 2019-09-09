@@ -70,6 +70,7 @@ X-CA-LEGALTYPE | 0 | The legal type of the domain owner | TEXT or NULL
 X-CA-LANGUAGE | 0 | The registrant contact's language (default is `EN`) | TEXT or NULL
 X-CL-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-DE-ACCEPT-TRUSTEE-TAC | 0 | Activate the trustee service for a .DE domain | `0`, `1` or NULL
+X-EU-ACCEPT-TRUSTEE-TAC | 0 | Activate the trustee service for a .EU domain | `0`, `1` or NULL
 X-FI-IDNUMBER | 0 | Registrant's personal or organizational identification number; only relevant for .FI domains | TEXT or NULL
 X-FI-ACCEPT-REGISTRATION-TAC | 0 | Set to `1` to accept the terms and conditions | `0`, `1` or NULL
 X-FI-DOMAIN-NAME-HOLDER-COMPANY-TYPE | 0 | Type of company applying for an .FI domain; possible values:<br>`0`: Private person<br>`1`: Company (default)<br>`2`: Association<br>`3`: Foundation<br>`4`: Municipality<br>`5`: Political party<br>`6`: State<br>`7`: Public corporation | INT or NULL
