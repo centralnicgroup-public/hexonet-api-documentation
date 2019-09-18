@@ -78,6 +78,7 @@ X-FR-REGISTRANT-LOCAL-ID | 0 | Companies with a local identifier specific to a c
 X-FR-REGISTRANT-TRADEMARK-NUMBER | 0 | Companies with a European trademark can additionally add their trademark number using this parameter | TEXT or NULL
 X-HAMBURG-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-HEALTH-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1`
+X-ID-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1`
 X-IDN-LANGUAGE | 0 |  If the domain is an IDN domain, an IDN language tag is needed which by default gets auto-detected by the system. You can however override the default auto-detection by stating an explicit language tag here.  | TEXT or NULL
 X-IT-PIN | 0 | Taxpayer number for .IT domain registrations | TEXT or NULL
 X-IT-ACCEPT-LIABILITY-TAC | 0 | Accepts "Section 3 - Declarations and assumptions of liability" | `0`, `1` or NULL
