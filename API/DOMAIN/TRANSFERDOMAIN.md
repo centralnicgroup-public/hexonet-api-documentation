@@ -70,6 +70,8 @@ X-CA-LEGALTYPE | 0 | The legal type of the domain owner | TEXT or NULL
 X-CA-LANGUAGE | 0 | The registrant contact's language (default is `EN`) | TEXT or NULL
 X-CL-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-DE-ACCEPT-TRUSTEE-TAC | 0 | Activate the trustee service for a .DE domain | `0`, `1` or NULL
+X-DE-ABUSE-CONTACT | 0 | Abuse contact information for the domain that will be displayed by the registry. Value must consist of a valid URI template string, either a mailto link (e.g. `mailto:contact@example.com` ) or a valid http/https URL (e.g. `https://mycontactform.example`). If not given the domain will keep the currently set Abuse contact | TEXT or NULL
+X-DE-GENERAL-REQUEST | 0 | General request contact information for the domain that will be displayed by the registry. Value must consist of a valid URI template string, either a mailto link (e.g. `mailto:contact@example.com` ) or a valid http/https URL (e.g. `https://mycontactform.example`). If not given the domain will keep the currently set General request contact| TEXT or NULL
 X-EU-ACCEPT-TRUSTEE-TAC | 0 | Activate the trustee service for a .EU domain | `0`, `1` or NULL
 X-FI-IDNUMBER | 0 | Registrant's personal or organizational identification number; only relevant for .FI domains | TEXT or NULL
 X-FI-ACCEPT-REGISTRATION-TAC | 0 | Set to `1` to accept the terms and conditions | `0`, `1` or NULL
