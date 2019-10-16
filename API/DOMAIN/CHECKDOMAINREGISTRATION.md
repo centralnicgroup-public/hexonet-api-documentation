@@ -129,7 +129,7 @@ X-CA-ADMIN-LANGUAGE | 0 | The admins contact's language (default is `EN`) | TEXT
 X-CA-TECH-LANGUAGE | 0 | The technical contact's language (default is `EN`) | TEXT or NULL
 X-CL-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-CN-REGISTRANT-ID-NUMBER | 0 | ID number of the registrant. Only relevant for .CN domains | TEXT or NULL
-X-CN-REGISTRANT-ID-TYPE | 0 | The type of ID provided for the registrant. Only relevant for .CN domains | `SFZ`, `HZ`, `GAJMTX`, `TWJMTX`, `WJLSFZ`, `GAJZZ`, `TWJZZ`, `JGZ`, `QT`, `ORG`, `YYZZ`, `TYDM`, `BDDM`, `JDDWFW`, `SYDWFR`, `WGCZJG`, `SHTTFR`, `ZJCS`, `MBFQY`, `JJHFR`, `LSZY`, `WGZHWH`, `WLCZJG`, `SFJD`, `JWJG`, `SHFWJG`, `MBXXBX`, `YLJGZY`, `GZJGZY` or `BJWSXX` 
+X-CN-REGISTRANT-ID-TYPE | 0 | The type of ID provided for the registrant. Only relevant for .CN domains | `SFZ`, `HZ`, `GAJMTX`, `TWJMTX`, `WJLSFZ`, `GAJZZ`, `TWJZZ`, `JGZ`, `QT`, `ORG`, `YYZZ`, `TYDM`, `BDDM`, `JDDWFW`, `SYDWFR`, `WGCZJG`, `SHTTFR`, `ZJCS`, `MBFQY`, `JJHFR`, `LSZY`, `WGZHWH`, `WLCZJG`, `SFJD`, `JWJG`, `SHFWJG`, `MBXXBX`, `YLJGZY`, `GZJGZY` or `BJWSXX`
 X-CORE-INTENDED-USE | 0 | Parameter describing the intended use for the domain name | TEXT or NULL
 X-DE-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-DE-NSENTRY[0..4] | 0 | DNS resource records to directly add to the .DE root nameservers | TEXT or NULL
@@ -150,6 +150,7 @@ X-ES-TECH-IDENTIFICACION | 0 | One of the following ID numbers can be provided v
 X-ES-BILLING-TIPO-IDENTIFICACION | 0 | Must be one of the following:<br>`0`: Otra; For non-spanish owner<br>`1`: NIF/DNI; For Spanish Individual or Organization<br>`3`: NIE: Alien registration card | `0`, `1` or `3`
 X-ES-BILLING-IDENTIFICACION | 0 | One of the following ID numbers can be provided via this parameter:<br>__For non-spanish owner__: passport number, drivers license number or even national identify card number<br>__For Spanish Individual or Organization__: Spanish National Personal ID or company VAT ID number<br>__Alien registration card__: Spanish resident alien ID number | TEXT or NULL
 X-EU-ACCEPT-TRUSTEE-TAC | 0 | Set this parameter to `1` to use our Trustee Contact Service for the Owner-C, I you can't provide a local presence in the EU | `0`, `1` or NULL
+X-EU-REGISTRANT-CITIZENSHIP | 0 | Citizenship of the registrant. Only relevant for natural persons with an European citizenship residing outside of the EU | `at`, `be`, `bg`, `cz`, `cy`, `de`, `dk`, `es`, `ee`, `fi`, `fr`, `gr`, `hu`, `ie`, `it`, `lt`, `lu`, `lv`, `mt`, `nl`, `pl`, `pt`, `ro`, `se`, `sk`, `si` or `hr`
 X-EU-REGISTRANT-LANG | 0 | Language of the .EU Domain registrant; possible values:<br>`cs`<br>`da`<br>`de`<br>`el`<br>`en`<br>`es`<br>`et`<br>`fi`<br>`fr`<br>`hu`<br>`it`<br>`lt`<br>`lv`<br>`mt`<br>`nl`<br>`pl`<br>`pt`<br>`sk`<br>`sl`<br>`sv` | `cs`, `da`, `de`, `el`, `en`, `es`, `et`, `fi`, `fr`, `hu`, `it`, `lt`, `lv`, `mt`, `nl`, `pl`, `pt`, `sk`, `sl` or `sv`
 X-FI-IDNUMBER | 0 | Registrant's personal or organizational identification number; only relevant for .FI domains | TEXT or NULL
 X-FI-ACCEPT-REGISTRATION-TAC | 0 | Set to `1` to accept the terms and conditions; only relevant for .FI domains | `0`, `1` or NULL
