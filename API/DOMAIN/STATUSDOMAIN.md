@@ -71,7 +71,7 @@ REGISTRATIONEXPIRATIONDATE | 1 | 1 | The registration expiration date | DATETIME
 REGISTRATIONGRACEPERIOD | 0 | 1 | Registration grace period of the respective domain | TEXT
 RENEWALDATE | 1 | 1 | Date of next renewal | DATETIME
 RENEWALMODE | 1 | 1 | Indicates how the domain will be renewed | TEXT
-RENEWALPERIOD | 1 | 1 | The renewal period configured with SetDomainRenewalMode. If empty, it will use the default renewal period for the TLD. | TEXT
+RENEWALPERIOD | 0 | 1 | The renewal period configured with SetDomainRenewalMode. If empty, it will use the default renewal period for the TLD. | TEXT
 REPOSITORY | 1 | 1 | The domain's repository | TEXT
 REPOSITORYADMINCONTACT | 0 | N | Repository contact of the administrative contact , only if REPOSITORYCONTACT is set to `*` | TEXT
 REPOSITORYBILLINGCONTACT | 0 | N | Repository contact of the billing contact , only if REPOSITORYCONTACT is set to `*` | TEXT
