@@ -121,6 +121,7 @@ X-RUHR-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-BAYERN-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-HAMBURG-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-BR-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
+X-BR-REGISTER-NUMBER | 0 | The X-BR-REGISTER-NUMBER parameter is mandatory for the registration of a .com.br domain without trustee service | TEXT or NULL
 X-CAT-ENS-AUTH-ID | 0 | The ID needed to register a .CAT domain | TEXT or NULL
 X-CAT-ENS-AUTH-KEY | 0 | The respective password | TEXT or NULL
 X-CAT-ENS-INTENDED-USE | 0 | How the .CAT domain is intended to be used | TEXT or NULL
