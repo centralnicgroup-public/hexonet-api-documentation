@@ -64,6 +64,7 @@ X-FR-REGISTRANT-LEGAL-FORM-OTHER | 0 | Other form than the possible values of th
 X-FR-REGISTRANT-LEGAL-ID | 0 | ID of the registrant | TEXT or NULL
 X-FR-REGISTRANT-LOCAL-ID | 0 | Companies with a local identifier specific to a country of the European Economic Area can provide their local identifier using this parameter | TEXT or NULL
 X-FR-REGISTRANT-TRADEMARK-NUMBER | 0 | Companies with a European trademark can additionally add their trademark number using this parameter | TEXT or NULL
+X-GAY-ACCEPT-REQUIREMENTS | 0 | Set to `1` to accept the policy and enforcement terms | `0`, `1` or NULL
 X-HAMBURG-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-HEALTH-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1`
 X-IT-PIN | 0 | Taxpayer number for .IT domain registrations | TEXT or NULL
