@@ -167,8 +167,6 @@ X-PM-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-TF-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-WF-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-YT-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
-X-FR-BIRTHDATE | 0 | Birth date of the registrant | TEXT or NULL
-X-FR-BIRTHPLACE | 0 | Birth place of the registrant | TEXT or NULL
 X-FR-DATE-PUBLICATION-JO | 0 | Date of the declaration of the trademark registration | TEXT or NULL
 X-FR-NUMERO-DE-PAGE-ANNOUNCE-JO | 0 | Trademark registration journal number | TEXT or NULL
 X-FR-SIREN-OR-SIRET | 0 | SIREN / SIRET number | TEXT or NULL
