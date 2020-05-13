@@ -1,7 +1,7 @@
 # QueryDomainPendingDeleteList
 
 ## DESCRIPTION
-Query a detailed list of all backorder applications
+Query the list of pending delete domains. (the domains which are going to be released soon)
 
 ## AVAILABILITY
 All users have access to this command.
