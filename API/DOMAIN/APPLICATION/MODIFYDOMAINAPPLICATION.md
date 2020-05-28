@@ -51,6 +51,7 @@ X-DENTIST-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and c
 X-DISCLOSE | 0 | Set to `1` to disclose the domain's details | `0`, `1` or NULL
 X-FOREX-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-FR-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
+X-FR-ADMIN-DISCLOSE | 0 | Set to `1` to disclose the administrators's details | TEXT or NULL
 X-FR-REGISTRANT-BIRTH-DATE | 0 | Birth date of the registrant | TEXT or NULL
 X-FR-REGISTRANT-BIRTH-PLACE | 0 | Birth place of the registrant | TEXT or NULL
 X-FR-REGISTRANT-DISCLOSE | 0 | Setting this parameter to `1` discloses the registrant's details | TEXT or NULL
