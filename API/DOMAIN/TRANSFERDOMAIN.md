@@ -81,6 +81,7 @@ X-FI-BASED-ON-PERSON-NAME | 0 | Set to `1` in order to indicate that the domain 
 X-FI-PERSON-NAME-REGISTRATION-ID | 0 | The register where the company name on which the domain name is based has been registered; only relevant for .FI domains | INT or NULL
 X-FI-PERSON-NAME-REGISTRATION-NUMBER | 0 | The registration number of the registered company name on which the domain name is based; only relevant for .FI domains | TEXT or NULL
 X-FR-ACCEPT-TRANSFER-TAC | 0 | Set to `1` to accept the .FR transfer terms and conditions | `0`, `1` or NULL
+X-FR-ADMIN-DISCLOSE | 0 | Set to `1` to disclose the administrators's details | TEXT or NULL
 X-FR-REGISTRANT-DISCLOSE | 0 | Setting this parameter to `1` discloses the registrant's details | TEXT or NULL
 X-FR-REGISTRANT-TRADEMARK-NUMBER | 0 | Companies with a European trademark can additionally add their trademark number using this parameter | TEXT or NULL
 X-FR-REGISTRANT-LEGAL-FORM | 0 | Legal form of the entity (in case registrant is not a natural person) | TEXT or NULL
