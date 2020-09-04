@@ -110,7 +110,7 @@ X-AT-TECH-DISCLOSE | 0 | Set to `1` to disclose the technical contact's details 
 X-AT-TECH-DISCLOSE-EMAIL | 0 | Set to `1` to disclose the technical contact's email address | `0`, `1` or NULL
 X-AT-TECH-DISCLOSE-FAX | 0 | Set to `1` to disclose the technical contact's fax number | `0`, `1` or NULL
 X-AT-TECH-DISCLOSE-VOICE | 0 | Set to `1` to disclose the technical contact's phone number | `0`, `1` or NULL
-X-AU-REGISTRANT-ID-TYPE | 0 | The ID Type can be one of the following:<br>`ABN`: Australian Business Number<br>`ACN`:  Australian Company Number<br>`RBN`: Business Registration Number<br>`TM`:  Trademark Number | `ABN`, `ACN`, `RBN` or `TM`
+X-AU-REGISTRANT-ID-TYPE | 0 | The ID Type can be one of the following:<br>`ABN`: Australian Business Number<br>`ACN`:  Australian Company Number<br>`RBN`: Business Registration Number<br>`TM`:  Trademark Number | `ABN`, `ACN`, `RBN`, `TM` or `OTHER`
 X-AU-REGISTRANT-ID-NUMBER | 0 | The respective ID number depending on the registrant ID type | TEXT or NULL
 X-AR-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-BERLIN-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL

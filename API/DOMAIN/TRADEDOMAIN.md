@@ -38,7 +38,7 @@ X-AE-ELIGIBILITY-ID-TYPE | 0 | Registration eligibility ID type; only relevant f
 X-AE-ELIGIBILITY-ID-NUMBER | 0 | Registration eligibility ID number; only relevant for .AE domains | TEXT or NULL
 X-AE-POLICY-REASON | 0 | Registration reason; only relevant for .AE domains | TEXT or NULL
 X-AU-REGISTRANT-ID-NUMBER | 0 | The respective ID number depending on the registrant ID type | TEXT or NULL
-X-AU-REGISTRANT-ID-TYPE | 0 | The ID Type can be one of the following:<br>`ABN`: Australian Business Number<br>`ACN`:  Australian Company Number<br>`RBN`: Business Registration Number<br>`TM`:  Trademark Number | TEXT or NULL
+X-AU-REGISTRANT-ID-TYPE | 0 | The ID Type can be one of the following:<br>`ABN`: Australian Business Number<br>`ACN`:  Australian Company Number<br>`RBN`: Business Registration Number<br>`TM`:  Trademark Number | `ABN`, `ACN`, `RBN`, `TM` or `OTHER`
 X-CA-LEGALTYPE | 0 | The legal type of the domain owner | TEXT or NULL
 X-CA-LANGUAGE | 0 | The registrant contact's language (default is `EN`) | TEXT or NULL
 X-CORE-INTENDED-USE | 0 | Parameter describing the intended use for the domain name | TEXT or NULL
