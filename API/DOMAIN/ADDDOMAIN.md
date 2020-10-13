@@ -268,7 +268,7 @@ X-PT-BRAND-DATE | 0 | Registration date of the brand; only relevant for .PT doma
 X-PT-BRAND-NUMBER | 0 | Registration number of the brand; only relevant for .PT domains | TEXT or NULL
 X-PT-BRAND-WAY-OF-REGISTRY | 0 | Registration type of the brand; only relevant for .PT domains | TEXT or NULL
 X-PT-ARBITRATION | 0 | Special arbitration parameter; only relevant for .PT domains | `true`, `false` or NULL
-X-RO-PERSONTYPE | 0 | Registrant entity type; can be `c` (company) or `p` (person) | TEXT or NULL
+X-RO-PERSONTYPE | 0 | Registrant entity type; can be `c` (company), `p` (person) or `pi` (public institute) | TEXT or NULL
 X-RU-KPP | 0 | Registrant's KPP number | TEXT or NULL
 X-RU-ACCEPT-INDIVIDUAL-REGISTRATION-TAC | 0 | Set to `1` to accept the terms and conditions of a individual registration, mandatory if the registrant is an individual | `0`, `1` or NULL
 X-RU-REGISTRANT-BIRTH-DATE | 0 | The registrant's birth date | TEXT or NULL
