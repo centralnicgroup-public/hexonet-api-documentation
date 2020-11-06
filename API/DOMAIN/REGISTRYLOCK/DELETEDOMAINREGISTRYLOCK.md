@@ -51,7 +51,7 @@ EOF
 ```
 [RESPONSE]
 CODE = 200
-DESCRIPTION = Command completed successfully; Our fulfillment team will initiate the removal of the Registry Lock
+DESCRIPTION = Command completed successfully; Our team will contact you to remove the Registry Lock for your domain
 EOF
 ```
 

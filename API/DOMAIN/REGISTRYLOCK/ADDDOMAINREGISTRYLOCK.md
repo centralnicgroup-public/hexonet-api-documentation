@@ -52,7 +52,7 @@ EOF
 ```
 [RESPONSE]
 CODE = 200
-DESCRIPTION = Command completed successfully; Our fulfillment team will initiate the Registry Lock
+DESCRIPTION = Command completed successfully; Our team will initiate the Registry Lock process
 EOF
 ```
 
