@@ -15,7 +15,7 @@ COMMAND | 1 | `CreateRoleUser` | COMMAND
 ROLEID | 1 | The role user ID | TEXT
 PASSWORD | 1 | The role user password | TEXT
 DESCRIPTION[0..N] | 0 | Description text to describe e.g. the position or rights of a user within a company | TEXT or NULL
-ACL[0..N] | 0 |  A list of API commands which execution the role user is either denied or granted. <br>Must be stated in the following syntax: API command, followed by brackets, a colon, and ALLOW or DENY. Example:<br>`RenewDomain():DENY` denies the execution of RenewDomain commands for the role user<br><br>You can also allow or deny only the execution of commands with certain parameters via wildcards. Example:<br>ACL0 = `RenewDomain(`<br>ACL1 = `domain=*.uk`<br>ACL2 = `):DENY`<br> denies the execution of  RenewDomain commands for .UK domains only. | TEXT or NULL
+ACL[0..N] | 0 |  A list of API commands which execution the role user is either denied or granted. <br>Must be stated in the following syntax: API command, followed by squared or round brackets, a colon, and ALLOW or DENY. <br>Example: `RenewDomain():DENY` denies the execution of RenewDomain commands for the role user.<br><br>You can also allow or deny only the execution of commands with certain parameters via wildcards. <br>Squared brackets work for white- and blacklisting with any amount of parameters.<br>Round brackets do only work for at maximum one parameter and enforce the use of a given parameter in the command. <br>If you are in doubt which bracket to use, use the squared bracket. Example: <br>ACL0 = `RenewDomain[`<br>ACL1 = `domain=*.uk`<br>ACL2 = `]:DENY`<br> denies the execution of  RenewDomain commands for .UK domains only. | TEXT or NULL
 ALLOWEDIP[0..N] | 0 |  List of IP addresses/subnets from which a role user is allowed to log in | TEXT or NULL
 STATUS | 0 | Set the status of the role user to `ACTIVE` or `INACTIVE`. Default value is `ACTIVE` | `INACTIVE` or `ACTIVE`
 DEFAULTPOLICY | 0 | If no rights for a certain command are defined, this policy is used. Must be either `ALLOW` or `DENY`. Default is `DENY` | `ALLOW` or `DENY`
@@ -49,13 +49,13 @@ No properties are returned.
 ```
 [COMMAND]
 COMMAND = CreateRoleUser
-ACL0 = QueryDomainList():ALLOW
+ACL0 = QueryDomainList[]:ALLOW
 ACL1 = QueryExtendedDomainList():ALLOW
 ACL2 = DeleteDomain():ALLOW
-ACL3 = RenewDomain(
+ACL3 = RenewDomain[
 ACL4 = DOMAIN = *.uk
 ACL5 = PERIOD = 1
-ACL6 = ):ALLOW
+ACL6 = ]:ALLOW
 DEFAULTPOLICY = DENY
 DESCRIPTION0 = Test User
 DESCRIPTION1 = This is only a test user

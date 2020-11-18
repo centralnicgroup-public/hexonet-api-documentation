@@ -16,7 +16,7 @@ ROLEID | 1 | The role user ID | TEXT
 PASSWORD | 0 | The role user password | TEXT
 OTPSECRET | 0 | Secret used for two-factor authentication. | TEXT or NULL
 DESCRIPTION[0..N] | 0 | Description text to describe e.g. the position or rights of a user within a company | TEXT or NULL
-ACL[0..N] | 0 | A list of API commands which execution the role user is either denied or granted. <br>Must be stated in the following syntax: API command, followed by brackets, a colon, and ALLOW or DENY. Example:<br>`RenewDomain():DENY` denies the execution of RenewDomain commands for the role user<br><br>You can also allow or deny only the execution of commands with certain parameters via wildcards. Example:<br>ACL0 = `RenewDomain(`<br>ACL1 = `domain=*.uk`<br>ACL2 = `):DENY`<br> denies the execution of  RenewDomain commands for .UK domains only. | TEXT or NULL
+ACL[0..N] | 0 | A list of API commands which execution the role user is either denied or granted. <br>Must be stated in the following syntax: API command, followed by squared or round brackets, a colon, and ALLOW or DENY. <br>Example: `RenewDomain():DENY` denies the execution of RenewDomain commands for the role user.<br><br>You can also allow or deny only the execution of commands with certain parameters via wildcards. <br>Squared brackets work for white- and blacklisting with any amount of parameters.<br>Round brackets do only work for at maximum one parameter and enforce the use of a given parameter in the command. <br>If you are in doubt which bracket to use, use the squared bracket. Example: <br>ACL0 = `RenewDomain[`<br>ACL1 = `domain=*.uk`<br>ACL2 = `]:DENY`<br> denies the execution of  RenewDomain commands for .UK domains only. | TEXT or NULL
 ALLOWEDIP[0..N] | 0 | List of IP addresses from which a role user is allowed to log in | TEXT or NULL
 STATUS | 0 | Set the status of the role user to `ACTIVE` or `INACTIVE` | `ACTIVE` or `INACTIVE`
 DEFAULTPOLICY | 0 | If no rights for a certain command are defined, this policy is used | `DENY` or `ALLOW`
@@ -49,9 +49,9 @@ No properties are returned.
 
 ```
 COMMAND = UpdateRoleUser
-ACL0 = RenewDomain(
+ACL0 = RenewDomain[
 ACL1 = domain=*.uk
-ACL2 = ):DENY
+ACL2 = ]:DENY
 ALLOWEDIP0 = 1.2.3.4
 DEFAULTPOLICY = ALLOW
 ROLEID = myrole
