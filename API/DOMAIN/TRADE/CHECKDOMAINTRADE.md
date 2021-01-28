@@ -76,6 +76,14 @@ X-FR-REGISTRANT-JO-PAGE | 0 | The page of the announcement in the Journal Offici
 X-FR-REGISTRANT-JO-DATE-PUBLICATION | 0 | The date of publication in the Journal Officiel | TEXT or NULL
 X-FR-REGISTRANT-DUNS-NUMBER | 0 | The DUNS number is a nine-digit number, issued by Dun & Bradstreet. DUNS is the abbreviation of Data Universal Numbering System. Companies with a valid DUNS number are still obliged having their head office in the territory of the European Union. The DUNS number can be provided using this parameter | TEXT or NULL
 X-FR-REGISTRANT-LOCAL-ID | 0 | Companies with a local identifier specific to a country of the European Economic Area can provide their local identifier using this parameter | TEXT or NULL
+X-HK-REGISTRANT-CHINESE-COMPANY | 0 | Company name in Chinese | TEXT or NULL
+X-HK-REGISTRANT-DOCUMENT-TYPE | 0 | Must be one of the following for individuals:<br>`HKID`: Hong Kong Identity Number<br>`OTHID`: Other's Country Identity Number<br>`PASSNO`: Passport No.<br>`BIRTHCERT`: Birth Certificate<br>`OTHIDV`: Others Individual Document<br>Must be one of the following for organizations:<br>`BR`: Business Registration Certificate<br>`CI`: Certificate of Incorporation<br>`CRES`: Certificate of Registration of a School<br>`HKSARG`: Hong Kong Special Administrative Region Government Department <br>`HKORDINANCE`: Ordinance of Hong Kong<br>`OTHORG`: Others Organization Document  | TEXT or NULL
+X-HK-REGISTRANT-OTHER-DOCUMENT-TYPE | 0 | Type of document if other document was chosen | TEXT or NULL
+X-HK-REGISTRANT-DOCUMENT-NUMBER | 0 | The respective document number | TEXT or NULL
+X-HK-REGISTRANT-DOCUMENT-ORIGIN-COUNTRY | 0 | ISO-3166 Country Code | COUNTRY or NULL
+X-HK-REGISTRANT-BIRTH-DATE | 0 | Registrant's birth date, mandatory if the registrant is an individual | TEXT or NULL
+X-HK-REGISTRANT-INDUSTRY-TYPE | 0 | Registrant's industry type; default is: `0` (not specified) | TEXT or NULL
+X-HK-ACCEPT-INDIVIDUAL-REGISTRATION-TAC | 0 | Set `1` to accept the terms and condition of a individual registration, mandatory if the registrant is an individual | `0`, `1` or NULL
 X-NICSE-IDNUMBER | 0 | This number must be provided for individuals as well as for organizations. For individuals or companies located in Sweden a valid Swedish personal or organizational number must be stated (6 digits, dash, 4 digits).<br> For individuals and companies outside of Sweden the ID number (e.g. Civic registration number, company registration number, or the equivalent) can consist of 4 to 123 characters. | TEXT or NULL
 X-NICSE-VATID | 0 | The VAT-ID has to be stated for companies that are located inside the European Union but outside Sweden | TEXT or NULL
 X-IT-PIN | 0 | If the registrant is an individual, the PIN has to be: <br> The registrant's fiscal code or  the number of an identity document<br>If  the registrant is an organization, the PIN has to be:<br> The company's fiscal code or the company's VAT number | TEXT or NULL
