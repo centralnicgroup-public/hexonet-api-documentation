@@ -230,11 +230,6 @@ X-SG-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-UK-REG-OPT-OUT | 0 | If set to `Y`, the registrant's contact data will not be shown in the WHOIS | TEXT or NULL
 X-UK-REG-TYPE | 0 | Registrant type | TEXT or NULL
 X-UK-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
-X-JOBS-TITLE | 0 | Registrant's title; only relevant for .JOBS domains | TEXT or NULL
-X-JOBS-COMPANYURL | 0 | The company's URL | TEXT or NULL
-X-JOBS-INDUSTRYCLASSIFICATION | 0 | Industry Classification for .JOBS | TEXT or NULL
-X-JOBS-HRANAME | 0 | Human Resources Association name for .JOBS | TEXT or NULL
-X-JOBS-ADMINTYPE | 0 | Set to `1` in order to indicate that the registrant is also the administrative contact of the domain; only relevant for .JOBS domains | `0`, `1` or NULL
 X-TEL-WHOISTYPE | 0 | With this parameter the way the domain will be displayed in the WHOIS can be selected | `Legal`, `Natural` or NULL
 X-TEL-PUBLISH | 0 | If set to `N`, the registrant's contact data will not be shown in the WHOIS | `Y`, `N` or NULL
 X-US-NEXUS-APPPURPOSE | 0 | Must be one of the following:<br> `P1`: Business use for profit <br>`P2`: Non-profit business, club, association, religious organization, etc.<br>`P3`: Personal use<br> `P4`: Education purposes <br> `P5`: Government purposes | `P1`, `P2`, `P3`, `P4` or `P5`
