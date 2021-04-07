@@ -288,7 +288,7 @@ X-TEL-WHOISTYPE | 0 | With this parameter the way the domain will be displayed i
 X-TEL-PUBLISH | 0 | If set to `N`, the registrant's contact data will not be shown in the WHOIS | `Y`, `N` or NULL
 X-TO-CUSTOMER-HANDLE | 0 | Customer handle; only relevant for .TO domains | TEXT or NULL
 X-TRAVEL-UIN | 0 | In order to register .travel domains the registrant has to provide a UIN "Unique Identification Number". The UIN can be provided to the registrant through an Association Authentification Partner (a list of AAPs can be viewed under http://www.tralliance.info/authentication.htm). | TEXT or NULL
-X-TRAVEL-INDUSTRY | 0 | In order to register .travel domains the registrant has to indicate a relationship to the travel industry | 1 or NULL
+X-TRAVEL-INDUSTRY | 0 | In order to register .travel domains the registrant has to indicate a relationship to the travel industry | `1` or NULL
 X-UK-REG-OPT-OUT | 0 | If set to `Y`, the registrant's contact data will not be shown in the WHOIS | TEXT or NULL
 X-UK-REG-TYPE | 0 | Registrant type | TEXT or NULL
 X-US-NEXUS-APPPURPOSE | 0 | Must be one of the following:<br> `P1`: Business use for profit <br>`P2`: Non-profit business, club, association, religious organization, etc.<br>`P3`: Personal use<br> `P4`: Education purposes <br> `P5`: Government purposes | `P1`, `P2`, `P3`, `P4`, `P5` or NULL
