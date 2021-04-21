@@ -28,11 +28,6 @@ MAXUPDATEDDATE | 0 | Filter by highest UPDATEDDATE | NULL or TEXT
 MINEXPIRATIONDATE | 0 | Filter by lowest EXPIRATIONDATE | NULL or TEXT
 MAXEXPIRATIONDATE | 0 | Filter by highest EXPIRATIONDATE | NULL or TEXT
 STATUS | 0 | Filter list by STATUS of DNSZONE | `ACTIVE`, `INACTIVE`, `HOLD` or NULL
-PROPERTIES | 0 | Additional properties to be returned can be specified here. Currently supported values are:<br>`PREMIUMDNS` | TEXT or NULL
-PREMIUMDNSCLASS | 0 | Only show objects with a PremiumDNS class that matches the pattern specified here. | PATTERN or TEXT
-PREMIUMDNSCLASSREGEX | 0 | Only show objects with a PremiumDNS class that matches the regular expression specified here. | REGEX or NULL
-PREMIUMDNSCLASSREGEXNOT | 0 | Only show objects with a PremiumDNS class that does not match the regular expression specified here. | REGEX or NULL
-PREMIUMDNSRENEWALMODE | 0 | Show only zones with a certain renewal mode of PremiumDNS.<br>Can be`EXPIRE` or `RENEW` | NULL or TEXT
 MINQUERY-QUOTA-COUNT | 0 | Filter by lowest QUERY-QUOTA-COUNT | INT
 MAXQUERY-QUOTA-COUNT | 0 | Filter by highest QUERY-QUOTA-COUNT | INT
 MINQUERY-QUOTA-PREDICTION | 0 | Filter by lowest QUERY-QUOTA-PREDICTION | INT

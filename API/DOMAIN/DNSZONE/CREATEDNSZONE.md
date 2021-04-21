@@ -25,7 +25,8 @@ RR[0..N] | 0 | A set of desired DNS records (A,NS,MX,PTR,AAAA,TXT) | LONGTEXT
 EXTENDED | 0 | Switch to enable extended mode to submit URL and email forwarding records | `0` or `1`
 ZONEMODE | 0 | Create the zone as MASTER or SLAVE zone, default is MASTER | `MASTER` or `SLAVE`
 SLAVEMASTER | 0 | Master nameserver to replicate the zone from, only required if mode is SLAVE | TEXT or NULL
-DOMAINTRANSFER | 0 | Used to create a temporary DNS zone for incoming domain transfers, if no matching domain or PremiumDNS object exists | `0` or `1`
+DOMAINTRANSFER | 0 | Used to create a temporary DNS zone for incoming domain transfers, if no matching domain object exists | `0` or `1`
+EXTERNAL | 0 | Must be set to `1` in order to create a zone for which the respective domain is not managed via Hexonet. By setting this parameter to `1` a customer indicates that the zone is external and approves any cost that may be incurred for the management of this zone | `0`, `1` or NULL
 
 
 ----
