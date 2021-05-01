@@ -22,6 +22,7 @@ EOI | 0 | If you have created an EOI (Expression of interest) for the domain nam
 INCOMPLETE | 0 |  If set to `1` the application creation request will be accepted even if not all required parameters are given for the application | INT or NULL
 LAUNCH-MARK-CODE | 0 | Special allocation token provided by the registry | TEXT or NULL
 NAMESERVER[0..12] | 0 | Nameserver hosts | HOSTNAME or NULL
+TRANSFERLOCK | 0 | TRANSFERLOCK=`1` locks a domain immediately after creating it | `0`, `1` or NULL
 NEW | 0 | Force to create a new application even if an application with the same data exists | `0`, `1` or NULL
 NOTICE-POA-ACCEPT-HASH | 0 | By submitting this parameter the registrant confirms that he is aware that the domain name matches a trademark registered in the Clearinghouse. This parameter can be obtained by querying a StatusTMDBClaim command on the respective claim key | TEXT or NULL
 ORDER | 0 | Order action:<br>`CREATE` - create an application order<br>`REPLACE` - replace an application order<br>`UPDATE` - update an application order | `CREATE`, `REPLACE` or `UPDATE`
