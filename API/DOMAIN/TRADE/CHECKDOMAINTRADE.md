@@ -422,15 +422,6 @@ X-NICSE-VATID | 0 | 1 | TLD specific domain flag | TEXT
 X-NL-ACCEPT-TRUSTEE-TAC | 0 | 1 | TLD specific domain flag | INT
 X-PM-ACCEPT-TRUSTEE-TAC | 0 | 1 | TLD specific domain flag | INT
 X-PT-ROID | 0 | 1 | TLD specific domain flag | TEXT
-X-PT-REGISTRANT-VATID | 0 | The registrant's VAT-ID. Required if the contact is used for the first time for a .PT domain | TEXT or NULL
-X-PT-ADMIN-VATID | 0 | The admin's VAT-ID | TEXT or NULL
-X-PT-TECH-VATID | 0 | The technical contact's VAT-ID. Required if the contact is used for the first time for a .PT domain | TEXT or NULL
-X-PT-LEGITIMACY | 0 | Registrant type; only relevant for .PT domains | TEXT or NULL
-X-PT-REGISTRATION-BASIS | 0 | Registration reason; only relevant for .PT domains | TEXT or NULL
-X-PT-BRAND-DATE | 0 | Registration date of the brand; only relevant for .PT domains | DATE or NULL
-X-PT-BRAND-NUMBER | 0 | Registration number of the brand; only relevant for .PT domains | TEXT or NULL
-X-PT-BRAND-WAY-OF-REGISTRY | 0 | Registration type of the brand; only relevant for .PT domains | TEXT or NULL
-X-PT-ARBITRATION | 0 | Special arbitration parameter; only relevant for .PT domains | `true`, `false` or NULL
 X-RE-ACCEPT-TRUSTEE-TAC | 0 | 1 | TLD specific domain flag | INT
 X-REGISTRANT-QUALIFIED-LAWYER-ACCREDITATION-BODY | 0 | 1 | TLD specific domain flag | TEXT
 X-REGISTRANT-QUALIFIED-LAWYER-ACCREDITATION-ID | 0 | 1 | TLD specific domain flag | TEXT
