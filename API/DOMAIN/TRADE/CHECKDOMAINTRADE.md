@@ -100,6 +100,13 @@ X-MY-REGISTRANT-RACE | 0 | Registrant's nationality | `MALAY`, `CHINESE`, `INDIA
 X-MY-REGISTRANT-PROOF-OF-IDENTITY | 0 | Document submitted as a proof of the registrant's identity | LONGTEXT
 X-NGO-ACCEPT-REGISTRATION-TAC | 0 | Set to `1` to accept the terms and conditions | `0`, `1` or NULL
 X-NL-ACCEPT-TRUSTEE-TAC | 0 | Set this parameter to `1` to use our Domicile Contact Service for the Owner-C, if you can't provide a domicile address in the Netherlands | `0`, `1` or NULL
+X-PT-REGISTRANT-VATID | 0 | The registrant's VAT-ID. Required if the contact is used for the first time for a .PT domain | TEXT or NULL
+X-PT-LEGITIMACY | 0 | Registrant type; only relevant for .PT domains | TEXT or NULL
+X-PT-REGISTRATION-BASIS | 0 | Registration reason; only relevant for .PT domains | TEXT or NULL
+X-PT-BRAND-DATE | 0 | Registration date of the brand; only relevant for .PT domains | DATE or NULL
+X-PT-BRAND-NUMBER | 0 | Registration number of the brand; only relevant for .PT domains | TEXT or NULL
+X-PT-BRAND-WAY-OF-REGISTRY | 0 | Registration type of the brand; only relevant for .PT domains | TEXT or NULL
+X-PT-ARBITRATION | 0 | Special arbitration parameter; only relevant for .PT domains | `true`, `false` or NULL
 X-SYDNEY-NEXUS-CATEGORY | 0 | The registrant of the domain must one of 3 criteria:<br>`A`: New South Wales Entities<br>`B`: New South Wales Residents<br>`C`: Associated Entities | `A`, `B`, `C` or NULL
 X-MELBOURNE-NEXUS-CATEGORY | 0 | The registrant of the domain must one of 3 criteria:<br>`A`: Victorian Entities<br>`B`: Victorian Residents<br>`C`: Associated Entities | `A`, `B`, `C` or NULL
 X-SG-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
