@@ -15,7 +15,7 @@ COMMAND | 1 | `QueryObjectList` | COMMAND
 WIDE | 1 | If set to `1`: verbose output (more parameters) | `1` or `0`
 FIRST | 0 | Index of the first entry to be returned | INT
 LIMIT | 0 | Max. number of entries to be returned | INT
-ORDERBY | 0 | The parameter the output should be sorted by. <br> Must be one of the following: <br> `OBJECTCLASS`,`OBJECTCLASSDESC`,`OBJECTID`,`OBJECTIDDESC` | TEXT
+ORDERBY | 0 | The parameter the output should be sorted by. <br> Must be one of the following: <br> `OBJECTCLASS`,`OBJECTCLASSDESC`,`OBJECTID`,`OBJECTIDDESC`,`EXPIRATIONDATE`,`EXPIRATIONDATEDESC` | TEXT
 USERDEPTH | 0 | Depth of the list, may be `SELF`, `SUBUSER` or `ALL` | `SELF`, `SUBUSER` or `ALL`
 OBJECTCLASS | 0 | Filter query result by the object class stated here | PATTERN
 OBJECTID | 0 | Filter the query result by the object ID stated here | PATTERN
@@ -44,6 +44,9 @@ TOTAL | 1 | 1 | The total number of entries found | INT
 LIMIT | 1 | 1 | The query limit (max. number of entries returned) | INT
 OBJECTCLASS[0..N] | 0 | N | The object class | TEXT
 OBJECTID[0..N] | 0 | N | The object ID | TEXT
+CREATEDDATE[0..N] | 0 | N | The creation date of the object | DATETIME
+UPDATEDDATE[0..N] | 0 | N | Last modification date of the object | DATETIME
+EXPIRATIONDATE[0..N] | 0 | N | Expiration date of the domain name | DATETIME
 PEERUSER[0..N] | 0 | N | Only displayed if wide is set to `1`: String with all users in the user chain | TEXT
 PARENTUSER[0..N] | 0 | N | Only displayed if wide is set to `1`: The user ID of the parent user | TEXT
 USER[0..N] | 0 | N | Only displayed if wide is set to `1`: The user ID | TEXT
