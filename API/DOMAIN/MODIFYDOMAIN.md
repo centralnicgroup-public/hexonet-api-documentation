@@ -159,7 +159,7 @@ X-ES-BILLING-IDENTIFICACION | 0 | One of the following ID numbers can be provide
 X-FI-REGISTRANT-BIRTH-DATE | 0 | The registrant's birth date; only relevant for .FI domains<br>Mandatory for non-finish private persons | TEXT or NULL
 X-FI-REGISTRANT-IDNUMBER | 0 | The registrant's ID number; only relevant for .FI domains | TEXT or NULL
 X-EU-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
-X-EU-REGISTRANT-CITIZENSHIP | 0 | Citizenship of the registrant. Only relevant for natural persons with an European citizenship residing outside of the EU | `at`, `be`, `bg`, `cz`, `cy`, `de`, `dk`, `es`, `ee`, `fi`, `fr`, `gr`, `hu`, `ie`, `it`, `lt`, `lu`, `lv`, `mt`, `nl`, `pl`, `pt`, `ro`, `se`, `sk`, `si` or `hr` or NULL
+X-EU-REGISTRANT-CITIZENSHIP | 0 | Citizenship of the registrant. Only relevant for natural persons with an European citizenship residing outside of the EU | `at`, `be`, `bg`, `cz`, `cy`, `de`, `dk`, `es`, `ee`, `fi`, `fr`, `gr`, `hu`, `ie`, `it`, `lt`, `lu`, `lv`, `mt`, `nl`, `pl`, `pt`, `ro`, `se`, `sk`, `si`, `hr` or NULL
 X-AFNIC-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-FR-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-RE-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
