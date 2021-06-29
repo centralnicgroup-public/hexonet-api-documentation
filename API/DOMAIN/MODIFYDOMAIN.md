@@ -50,6 +50,7 @@ GENERATERANDOMAUTH | 0 | If set to `1` a random authorization code gets generate
 TRANSFERLOCK | 0 | If set to `1` the clientTransferProhibited flag gets set | `0`, `1` or NULL
 FORCE | 0 | Enforce certain domain updates that would otherwise be rejected; only possible for repository owners | `0`, `1` or NULL
 REGISTRANT-VERIFIED | 0 | By setting this parameter to `1` it is declared that the domain registrant has been verified; only possible for repository owners | `1` or NULL
+RESET-X-AU-FLAGS | 0 | When stating the X-AU-REGISTRANT-ID-NUMBER and X-AU-REGISTRANT-ID-TYPE flags Hexonet uses lookup service to generate in total 7 X-AU flags that are required by the registry.<br>By setting this parameter to `1` all X-AU flags get re-generated based on the X-AU-REGISTRANT-ID-NUMBER and X-AU-REGISTRANT-ID-TYPE flags that are currently set for this domain name.<br>Depending on how these re-generated X-flags differ from the ones that are currently set this command either <br>a) sets these re-generated flags at the registry<br>or<br>b) returns an error if the re-generated flags differs in a way that they can only be set via a trade operation | `1` or NULL
 X-CAT-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-DISCLOSE | 0 | If set to `1` the domain's details get disclosed | `0`, `1` or NULL
 X-HEALTH-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1`
