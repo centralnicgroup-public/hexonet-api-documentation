@@ -28,7 +28,6 @@ EMAILTO | 0 | For some registries/TLDs an email is sent during the domain transf
 REQUESTENTITY | 0 | Organization requesting the transfer. <br>The default value comes from the environment key  "user-info/contact/company/organization". | TEXT
 NAMESERVER[0..N] | 0 | Nameservers assigned to the domain after the transfer is finished | TEXT or NULL
 HOST[0..N] | 0 | Nameserver hostnames and IP addresses | TEXT or NULL
-SUBUSER | 0 | The account in which the domain will be located after the transfer is finished | TEXT or NULL
 PERIOD | 0 | Period the domain will be renewed during the transfer process. If not stated a default period will be queried. | PERIOD
 OWNERCONTACT0 | 0 | Contact Handle ID | CONTACT or NULL
 ADMINCONTACT0 | 0 | Contact Handle ID | CONTACT or NULL
