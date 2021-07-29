@@ -35,6 +35,7 @@ SMD[0..N] | 0 | The respective SMD file | LONGTEXT or NULL
 SMD | 0 | The respective SMD file | LONGTEXT or NULL
 TECHCONTACT[0..2] | 1 |The Technical Contact Handle IDs | CONTACT or NULL
 X-ABOGADO-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
+X-ACCEPT-WHOISTRUSTEE-TAC | 0 | Activates the Whois Trustee Service | `0`, `1` or NULL
 X-ACCEPT-SSL-REQUIREMENT | 0 | Set to `1` to accept the policy and enforcement terms | `0`, `1` or NULL
 X-AFNIC-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-ALLOCATIONTOKEN | 0 | Allocation token or code for allocating an object like a domain name to the client | TEXT
