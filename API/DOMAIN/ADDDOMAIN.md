@@ -330,6 +330,8 @@ X-ACCEPT-WHOISTRUSTEE-TAC | 0 | Activates the Whois Trustee Service | `0`, `1` o
 X-ACCEPT-WHOISTRUSTEELITE-TAC | 0 | Activates the Whois Trustee Service Lite | `0`, `1` or NULL
 X-ID-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-ZA-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
+X-ZUERICH-AGREEMENT | 0 | Set to `1` to accept the local laws of Canton of Zurich, in particular to the TLDV ordinance | `1` or NULL
+X-ZUERICH-UID | 0 |   Enterprise Identification Number (UID) or PUBLIC | TEXT
 INTERNALDNS | 0 | Creates the necessary dns zone before submitting application to the registry. | `0`, `1` or NULL
 
 
