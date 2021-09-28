@@ -109,6 +109,8 @@ X-XXX-ACCEPT-REGISTRATION-TAC | 0 |  Set to `1` to accept the terms and conditio
 X-XXX-MEMBERSHIP-CONTACT | 0 | Contact Handle ID | CONTACT or NULL
 X-XXX-NON-RESOLVING | 0 | Set to `1` if the domain should not resolve | `0`, `1` or NULL
 X-YT-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service  | `0`, `1` or NULL
+X-ZUERICH-AGREEMENT | 0 | Set to `1` to accept the local laws of Canton of Zurich, in particular to the TLDV ordinance | `1` or NULL
+X-ZUERICH-UID | 0 |   Enterprise Identification Number (UID) or PUBLIC | TEXT
 
 ----
 ## RESPONSE
