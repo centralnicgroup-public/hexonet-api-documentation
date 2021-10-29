@@ -333,7 +333,6 @@ X-ZA-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and condit
 X-ZUERICH-AGREEMENT | 0 | Set to `1` to accept the local laws of Canton of Zurich, in particular to the TLDV ordinance | `1` or NULL
 X-ZUERICH-UID | 0 |   Enterprise Identification Number (UID) or PUBLIC | TEXT
 INTERNALDNS | 0 | Creates the necessary dns zone before submitting application to the registry. | `0`, `1` or NULL
-X-DOMAIN-BLOCKING-IPR-ID | 0 | Trademark IPR number for zone .adultblock,.adultblockplus | TEXT or NULL
 
 
 ----
