@@ -111,6 +111,8 @@ X-XXX-NON-RESOLVING | 0 | Set to `1` if the domain should not resolve | `0`, `1`
 X-YT-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service  | `0`, `1` or NULL
 X-ZUERICH-AGREEMENT | 0 | Set to `1` to accept the local laws of Canton of Zurich, in particular to the TLDV ordinance | `1` or NULL
 X-ZUERICH-UID | 0 |   Enterprise Identification Number (UID) or PUBLIC | TEXT
+X-XXX-SUNRISE-B-ON-EXPIRY-ACTION | 0 |  Set the expiry action of the XXX-SUNRISE-B application  | `EXPIRE`, `CONVERTTOADULTBLOCK` or `CONVERTTOADULTBLOCKPLUS` 
+X-DOMAIN-BLOCKING-IPR-ID | 0 |  IPR-Number of the XXX-SUNRISE-B application  | TEXT or NULL
 
 ----
 ## RESPONSE
