@@ -133,6 +133,7 @@ X-ZUERICH-AGREEMENT | 0 | Set to `1` to accept the local laws of Canton of Zuric
 X-ZUERICH-UID | 0 |   Enterprise Identification Number (UID) or PUBLIC | TEXT
 X-XXX-SUNRISE-B-ON-EXPIRY-ACTION | 0 |  Set the expiry action of the XXX-SUNRISE-B application  | `EXPIRE`, `CONVERTTOADULTBLOCK` or `CONVERTTOADULTBLOCKPLUS` 
 X-IPR-NUMBER | 0 |  IPR-Number of the XXX-SUNRISE-B application  | TEXT or NULL
+X-DOMAIN-BLOCKING-IPR-ID | 0 |  IPR-Number of the XXX-SUNRISE-B application  | TEXT or NULL
 
 ----
 ## RESPONSE
