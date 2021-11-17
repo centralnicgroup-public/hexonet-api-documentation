@@ -24,6 +24,7 @@ AUTH | 0 | The domain's authorization code | TEXT
 HOST[0..N] | 0 | Nameserver hostnames and IP addresses | TEXT or NULL
 ACTION | 0 | Defines the action to perform. Supported values are:<br>`request`: Request a new ownership change (parameter OWNERCONTACT mandatory)<br>`cancel`: Cancel a pending Trade (parameter OWNERCONTACT **not** mandatory)<br><br>The default value is `request` | TEXT or NULL
 X-CAT-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
+X-COOP-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-CONFIRM-DA-NEW-REGISTRANT | 0 | IRTP parameter: By setting this to `1` you confirm that you are the current registrant or the respective Designated Agent (DA) and that you authorize the change of the registrant | `0`, `1` or NULL
 X-CONFIRM-DA-OLD-REGISTRANT | 0 | IRTP parameter: By setting this to `1` you confirm that you are the new registrant or the respective Designated Agent (DA) and that you authorize the change of the registrant  | `0`, `1` or NULL
 X-HEALTH-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1`
