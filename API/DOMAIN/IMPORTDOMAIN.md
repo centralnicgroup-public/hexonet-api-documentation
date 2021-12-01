@@ -20,6 +20,7 @@ EXPIRATIONDATE | 0 | Only allowed for dediacted TLDs where the respective regist
 PERIOD | 0 | The period is used to calculate the respective accounting. The accounting is only created if PAY is set to `1`. If no period is provided the default registration period is used. | PERIOD
 PAY | 0 | Create a respective accounting for all users in the chain. | TEXT
 X-PT-ROID | 0 | Only required in order to import .PT domains. It is the ROID of the domain provided by the registry. | TEXT or NULL
+X-DOMAINBLOCK | 0 | Unique identifier provided by the registry, only required in order to import an ADULTBLOCK / ADULTBLOCKPLUS domain. | TEXT or NULL
 
 ----
 ## RESPONSE
