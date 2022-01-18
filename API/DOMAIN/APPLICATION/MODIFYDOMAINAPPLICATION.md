@@ -24,6 +24,7 @@ OWNERCONTACT[0..4] | 0 | Contact Handle ID | CONTACT or NULL
 PERIOD | 0 | The registration period in years | PERIOD or NULL
 TECHCONTACT[0..2] | 0 | Contact Handle ID | CONTACT or NULL
 X-ABOGADO-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
+X-ACCEPT-SSL-REQUIREMENT | 0 | Set to `1` to accept the policy and enforcement terms | `0`, `1` or NULL
 X-AFNIC-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service  | `0`, `1` or NULL
 X-ASIA-CED-IDENTNUMBER | 0 | Identification Number / Code of Reference (e.g. Passport number, Business Certificate number, Act or Legislation number/code, etc.) | TEXT or NULL
 X-ASIA-CED-OTHERIDENTFORM | 0 | If the legal entity type or form of identification is "other", please enter the appropriate information to support the claim | TEXT or NULL
