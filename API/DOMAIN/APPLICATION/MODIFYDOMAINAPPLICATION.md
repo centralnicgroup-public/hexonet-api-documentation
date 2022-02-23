@@ -37,7 +37,11 @@ X-ASIA-IPR-REGDATE | 0 |  Trademark registration date  | TEXT or NULL
 X-ASIA-MAINTAINERURL | 0 | This parameter can be used to display information about the maintainer, e.g. the provider of the domain, in the .ASIA whois | TEXT or NULL
 X-ASIA-NOTF-CONTACT | 0 |  With this parameter you can specify an Operations and Notifications Contact (OPN/NOTF Contact) to designate the point of contact to whom documentary evidence requests, auction invitations, and reminders are to be sent | CONTACT or NULL
 X-ASIA-REGAGENT-CONTACT | 0 |  With this parameter, a contact handle can be used to display the provider or reseller through whose system the .ASIA domain has been registered | CONTACT or NULL
-X-ATTORNEY-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `0`, `1` or NULL
+X-AU-REGISTRANT-ID-TYPE | 0 | The respective ID type, can be one of the following:<br>`ABN`: Australian Business Number<br>`ACN`:  Australian Company Number<br>`TM`:  Trademark Number | `ABN`, `ACN`, `TM` or `OTHER`
+X-AU-REGISTRANT-ID-NUMBER | 0 | The respective ID number depending on the registrant ID type | TEXT or NULL
+X-AU-GRANDFATHERING-TLD | 0 | This is the 3rd level extension of the domain on which the priority right is based. For instance, if you are applying for mydomain.au based on mydomain.net.au, you can fill the value `net.au` here. It is very important that this field is filled in correctly for domains that are managed by HEXONET and the Reseller, to ensure that we can import the Priority Token correctly. | `com.au`, `net.au`, `org.au`, `asn.au` or `id.au`
+X-AU-PRIORITY-TOKEN | 0 | This field is optional when submitting the AddDomainApplication, and it is not required when the 3rd level domain on which the priority right is based is managed by HEXONET and by the Reseller submitting the preorder. Where the 3rd level domain is managed by a different Registrar/Reseller, this field needs to be populated with the Priority Token provided by AuDA to the Registrant using the ModifyDomainApplication command before March 24th, 2022 in order for the request to be submitted to the Registry. | TEXT
+X-AU-IMPORT-TOKEN | 0 | When the 3rd level domain is managed by the Reseller through HEXONET, we will automatically import the Priority Token to submit the application to the Registry. In case the Reseller does not wish for the token to be imported automatically, this field can be set to 0. In this case, the X-AU-PRIORITY-TOKEN field will need to be filled in with the Priority token obtained from AuDA. Default is `1` | `0` or `1`
 X-BAYERN-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-BERLIN-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-BROKER-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
@@ -112,7 +116,7 @@ X-XXX-NON-RESOLVING | 0 | Set to `1` if the domain should not resolve | `0`, `1`
 X-YT-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service  | `0`, `1` or NULL
 X-ZUERICH-AGREEMENT | 0 | Set to `1` to accept the local laws of Canton of Zurich, in particular to the TLDV ordinance | `1` or NULL
 X-ZUERICH-UID | 0 |   Enterprise Identification Number (UID) or PUBLIC | TEXT
-X-XXX-SUNRISE-B-ON-EXPIRY-ACTION | 0 |  Set the expiry action of the XXX-SUNRISE-B application  | `EXPIRE`, `CONVERTTOADULTBLOCK` or `CONVERTTOADULTBLOCKPLUS` 
+X-XXX-SUNRISE-B-ON-EXPIRY-ACTION | 0 |  Set the expiry action of the XXX-SUNRISE-B application  | `EXPIRE`, `CONVERTTOADULTBLOCK` or `CONVERTTOADULTBLOCKPLUS`
 X-DOMAIN-BLOCKING-IPR-ID | 0 |  IPR-Number of the XXX-SUNRISE-B application  | TEXT or NULL
 
 ----
