@@ -36,6 +36,7 @@ NOTICE-ACCEPTEDDATE | 0 | Date when the claims notice has been accepted; NOTICE-
 NOTICE-POA-ACCEPT-HASH | 0 | By providing the appropriate hash value, a respective claim notice is accepted | TEXT or NULL
 LAUNCH-MARK-CODE | 0 | Special allocation token provided by the registry | TEXT or NULL
 X-CAT-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
+X-CHANNEL-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-DISCLOSE | 0 | Set to `1` to disclose the domain's details | `0`, `1` or NULL
 X-HEALTH-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1`
 X-REGISTRANT-DISCLOSE | 0 | Set to `1` to disclose the registrant's details | `0`, `1` or NULL
@@ -235,6 +236,7 @@ X-NICSE-IDNUMBER | 0 | This number must be provided for individuals as well as f
 X-NICSE-VATID | 0 | The VAT-ID has to be stated for companies that are located inside the European Union but outside Sweden | TEXT or NULL
 X-NICSE-DISCLOSE | 0 | If set to `1` the registrant's details get disclosed | `0`, `1` or NULL
 X-NGO-ACCEPT-REGISTRATION-TAC | 0 | Set to `1` to accept the terms and conditions | `0`, `1` or NULL
+X-ONG-ACCEPT-REGISTRATION-TAC | 0 | Set to `1` to accept the terms and conditions | `0`, `1` or NULL
 X-NL-ACCEPT-TRUSTEE-TAC | 0 | Set this parameter to `1` to use our Trustee Contact Service for the Owner-C, if you can't provide a local presence in the Netherlands. | `0`, `1` or NULL
 X-NL-REGISTRANT-LEGAL-FORM | 0 | Registrant's legal form | `ANDERS`, `BGG`, `BRO`, `BV`, `COOP`, `CV`, `EENMANSZAAK`, `EESV`, `KERK`, `MAATSCHAP`, `NV`, `OWM`, `PERSOON`, `REDR`, `STICHTING`, `VERENIGING`, `VOF` or NULL
 X-NL-REGISTRANT-LEGAL-FORM-REG-NO | 0 | Registrant's legal form registration number | TEXT or NULL
