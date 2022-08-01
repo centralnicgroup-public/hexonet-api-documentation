@@ -91,6 +91,7 @@ X-HEALTH-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and co
 X-ID-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1`
 X-IDN-LANGUAGE | 0 |  If the domain is an IDN domain, an IDN language tag is needed which by default gets auto-detected by the system. You can however override the default auto-detection by stating an explicit language tag here.  | TEXT or NULL
 X-IT-PIN | 0 | Taxpayer number for .IT domain registrations | TEXT or NULL
+X-IT-NATIONALITY | 0 | The nationality of the registrant contact if it deviates from the country code | TEXT or NULL
 X-IT-ACCEPT-LIABILITY-TAC | 0 | Accepts "Section 3 - Declarations and assumptions of liability" | `0`, `1` or NULL
 X-IT-ACCEPT-REGISTRATION-TAC | 0 | Accepts "Section 5 - Consent to the processing of personal data for registration" | `0`, `1` or NULL
 X-IT-ACCEPT-EXPLICIT-TAC | 0 | Accepts "Section 7 - Explicit acceptance of the following points" | `0`, `1` or NULL
