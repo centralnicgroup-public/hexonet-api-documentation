@@ -19,6 +19,7 @@ X-AU-OWNER-DOB | 0 | The Registrants date of birth in the YYYY-MM-DD format. | T
 X-AU-OWNER-IDNUMBER | 0 | Required if X-AU-OWNER-IDTYPE is one of the following: `1`, `2`, `3`, `4`, `5` | TEXT
 X-AU-OWNER-IDDATE | 0 | Required if X-AU-OWNER-IDTYPE is one of the following: `1`, `2` | TEXT
 X-AU-OWNER-IDISSUER | 0 | Required if X-AU-OWNER-IDTYPE is one of the following: `3`, `6` | TEXT
+X-AU-OWNER-CARDNUMBER | 0 | Required if X-AU-OWNER-IDTYPE is `3` and X-AU-OWNER-IDISSUER is one of the following: `ACT`, `NSW`, `NT`, `SA`, `TAS`, `WA` | TEXT
 CONTACT | 0 | If a existing contact should be validated, specify the Contact Handle ID here. If you would rather state the contact details and create the contact on the fly, please use the parameters below. | CONTACT
 NAME | 0 | Name, separated by space to fill FIRSTNAME and LASTNAME | TEXT or NULL
 FIRSTNAME | 0 | Firstname | TEXT or NULL
