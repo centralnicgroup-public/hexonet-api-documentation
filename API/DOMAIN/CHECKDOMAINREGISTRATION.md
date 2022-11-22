@@ -44,6 +44,7 @@ X-ADMIN-DISCLOSE | 0 | Set to `1` to disclose the admins's details | `0`, `1` or
 X-TECH-DISCLOSE | 0 | Set to `1` to disclose the technical contact's details | `0`, `1` or NULL
 X-BILLING-DISCLOSE | 0 | Set to `1` to disclose the biling contact's details | `0`, `1` or NULL
 X-ACCEPT-REGISTRATION-TAC | 0 | Set to `1` to accept the terms and conditions | `0`, `1` or NULL
+X-ACCEPT-SSL-REQUIREMENT | 0 | Set to `1` to accept the policy and enforcement terms | `0`, `1` or NULL
 X-REGISTRANT-BIRTHDATE | 0 | The registrant's birthdate | TEXT or NULL
 X-ADMIN-BIRTHDATE | 0 | The admins's birthdate | TEXT or NULL
 X-TECH-BIRTHDATE | 0 | The technical contact's birthdate | TEXT or NULL
