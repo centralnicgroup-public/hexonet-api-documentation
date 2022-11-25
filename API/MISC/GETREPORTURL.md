@@ -12,7 +12,7 @@ All users have access to this command.
 Parameter | Min | Definition | Type
 ---- | ---- | ---- | ----
 COMMAND | 1 | `GetReportURL` | COMMAND
-FILE | 1 | Report name:<br>`domains.csv` - list of domain names, which belong to the user, executing the command, and its subusers. This list created on a daily basis<br>`users.csv` - subusers list of the user, executing the command. This list created on a daily basis | TEXT
+FILE | 1 | Report name:<br>`reports/domains/domains.csv` - list of domain names, which belong to the user, executing the command, and its subusers. This list created on a daily basis<br>`reports/users/users.csv` - subusers list of the user, executing the command. This list created on a daily basis | TEXT
 USERDEPTH | 0 | Depth of the list, may be `SELF`, `SUBUSER` or `ALL` | `SELF`, `SUBUSER` or `ALL`
 
 ----
