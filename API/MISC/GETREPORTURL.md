@@ -41,7 +41,7 @@ URL | 0 | 1 | Report download link | TEXT
 ```
 [COMMAND]
 COMMAND = GetReportURL
-FILE = domains.csv
+FILE = reports/domains/domains.csv
 EOF
 ```
 ### Response
