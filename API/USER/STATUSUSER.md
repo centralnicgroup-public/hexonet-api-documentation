@@ -15,7 +15,7 @@ COMMAND | 1 | `StatusUser` | COMMAND
 SUBUSER | 0 | User ID of a subuser for which StatUsuser information is needed.<br>If not provided, then the information related to the user, making the API call, along with all applicable relations will be returned.<br>If provided, then only information related to the indicated subuser will be returned, including its UserClass and only subuser's relations. | TEXT
 STATS | 0 | `0` (default): Does not show extra information<br>`1`: Properties SUBUSERSDIRECT and SUBUSERSTOTAL are also shown in the response. | `0` or `1`
 RELATIONS | 0 | `0`: The response will not include relations. This is useful if a faster response is needed and relations are not needed.<br>`1` (default): Relations will be returned. | `0` or `1`
-PROPERTIES | 0 | `USERINDEX` : Show User Index<br>`PARENTUSERINDEX`: Show Parent Index<br>`USERINDEX PARENTUSERINDEX`: Show both User and Parent Indexes. | TEXT or NULL
+PROPERTIES | 0 | List of additional properties to be displayed. Several properties can be stated separated by a space:<br>`USERINDEX` : Show User Index<br>`PARENTUSERINDEX`: Show Parent Index<br>`TLDDATA`: Show TLDCLASS and TLDLABEL in addition<br>Example: `USERINDEX PARENTUSERINDEX`: Show both User and Parent Indexes. | TEXT or NULL
 ----
 ## RESPONSE
 
@@ -53,6 +53,8 @@ PARENTUSERINDEX | 0 | 1 | 	The current user's parent index | INT
 RELATIONDISABLED[0..N] | 0 | N | Type of the n-th user relation if this relation is disabled for the given user | TEXT
 RELATIONTYPE[0..N] | 0 | N | Type of the n-th user relation | TEXT
 RELATIONVALUE[0..N] | 0 | N | Value of the n-th user relation | TEXT
+TLDCLASS[0..N] | 0 | N | Value of the n-th TLD class | TEXT
+TLDLABEL[0..N] | 0 | N | Value of the n-th TLD label | TEXT
 SUBUSERSDIRECT | 0 | 1 | The number of direct subusers | INT
 SUBUSERSTOTAL | 0 | 1 | 	The number of all subusers | INT
 UPDATEDDATE | 1 | 1 | Timestamp of when this user information was updated | DATETIME
