@@ -134,6 +134,7 @@ X-CL-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-CN-REGISTRANT-ID-NUMBER | 0 | ID number of the registrant. Only relevant for .CN domains | TEXT or NULL
 X-CN-REGISTRANT-ID-TYPE | 0 | The type of ID provided for the registrant. Only relevant for .CN domains | `SFZ`, `HZ`, `GAJMTX`, `TWJMTX`, `WJLSFZ`, `GAJZZ`, `TWJZZ`, `JGZ`, `QT`, `ORG`, `YYZZ`, `TYDM`, `BDDM`, `JDDWFW`, `SYDWFR`, `WGCZJG`, `SHTTFR`, `ZJCS`, `MBFQY`, `JJHFR`, `LSZY`, `WGZHWH`, `WLCZJG`, `SFJD`, `JWJG`, `SHFWJG`, `MBXXBX`, `YLJGZY`, `GZJGZY`, `BJWSXX` or `QTTYDM`
 X-CORE-INTENDED-USE | 0 | Parameter describing the intended use for the domain name | TEXT or NULL
+X-CORE-PRIVACY-DISCLOSURE | 0 | Privacy disclosure settings, set to `NATURE-TRUE` to disclose contact details, set to `NATURAL-FALSE` to hide the contact details. Must be set to `LEGAL` if the owner contact is an organization. | `NATURAL-FALSE`, `NATURAL-TRUE` or `LEGAL`
 X-DE-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-DE-NSENTRY[0..4] | 0 | DNS resource records to directly add to the .DE root nameservers | TEXT or NULL
 X-DK-ADMIN-CONTACT | 0 | Customers with an existing DK-HOSTMASTER account can provide their User ID in order to place newly registered domains on their existing account; only relevant for .DK domains | CONTACT or NULL
