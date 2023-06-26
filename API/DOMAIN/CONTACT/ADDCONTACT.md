@@ -42,6 +42,8 @@ X-CAT-EMAIL-SPONSOR | 0 | Email address of the sponsoring contact | TEXT or NULL
 X-CAT-MAINTAINER | 0 | Maintainer | TEXT or NULL
 X-CAT-LANG | 0 | Contact language | TEXT or NULL
 X-COOP-SPONSOR[0..N] | 0 | Sponsoring contact | TEXT or NULL
+X-UK-REG-TYPE | 0 | Registrant type | TEXT or NULL
+X-UK-REG-CO-NO | 0 | Registrant Company Number | TEXT or NULL
 X-DE-TYPE | 0 | Type of contact at the .DE registry | `PERSON`, `ORGANIZATION`, `ROLE` or NULL
 ----
 ## RESPONSE
