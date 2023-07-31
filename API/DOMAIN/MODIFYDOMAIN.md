@@ -232,6 +232,7 @@ X-SG-RCBID | 0 | The company registration number has to be provided with this pa
 X-SG-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-UK-REG-OPT-OUT | 0 | If set to `Y`, the registrant's contact data will not be shown in the WHOIS | TEXT or NULL
 X-UK-REG-TYPE | 0 | Registrant type | TEXT or NULL
+X-UK-REG-CO-NO | 0 | Registrant Company Number | TEXT or NULL
 X-UK-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-TEL-WHOISTYPE | 0 | With this parameter the way the domain will be displayed in the WHOIS can be selected | `Legal`, `Natural` or NULL
 X-TEL-PUBLISH | 0 | If set to `N`, the registrant's contact data will not be shown in the WHOIS | `Y`, `N` or NULL
