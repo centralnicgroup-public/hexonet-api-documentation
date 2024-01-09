@@ -125,6 +125,7 @@ X-CAT-ENS-AUTH-ID | 0 | The ID needed to register a .CAT domain | TEXT or NULL
 X-CAT-ENS-AUTH-KEY | 0 | The respective password | TEXT or NULL
 X-CAT-ENS-INTENDED-USE | 0 | How the .CAT domain is intended to be used | TEXT or NULL
 X-CA-ACCEPT-AGREEMENT-VERSION | 0 | Version of the registrant agreement that is being accepted | TEXT or NULL
+X-CA-DISCLOSE | 0 | Set to `1` to disclose the contact's details | `0`, `1` or NULL
 X-CA-LEGALTYPE | 0 | The legal type of the domain owner | TEXT or NULL
 X-CA-LANGUAGE | 0 | The registrant contact's language (default is `EN`) | TEXT or NULL
 X-CA-REGISTRANT-LANGUAGE | 0 | The registrant contact's language (default is `EN`) | TEXT or NULL
