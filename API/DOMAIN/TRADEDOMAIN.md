@@ -137,7 +137,7 @@ X-RU-REGISTRANT-TIN | 0 | Registrant's TIN number | TEXT or NULL
 X-SG-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-SG-RCBID | 0 | The company registration number has to be provided with this parameter if the registrant is a organization from Singapore | TEXT or NULL
 X-SWISS-UID | 0 |  The enterprise ID, in the specific context of .swiss based on current rules, is the Swiss UID/UPI/IDE/IDI. | TEXT
-X-SWISS-OWNER-TYPE | 0 | The owner type, in the specific context of .swiss based on current rules, depending on application for natural persons (P) or organizations (O) | P or O
+X-SWISS-OWNER-TYPE | 0 | The owner type, in the specific context of .swiss based on current rules, depending on application for natural persons (P) or organizations (O) | `P` or `O`
 X-SYDNEY-NEXUS-CATEGORY | 0 | The registrant of the domain must one of 3 criteria:<br>`A`: New South Wales Entities<br>`B`: New South Wales Residents<br>`C`: Associated Entities | `A`, `B`, `C` or NULL
 X-MELBOURNE-NEXUS-CATEGORY | 0 | The registrant of the domain must one of 3 criteria:<br>`A`: Victorian Entities<br>`B`: Victorian Residents<br>`C`: Associated Entities | `A`, `B`, `C` or NULL
 X-US-NEXUS-APPPURPOSE | 0 | Must be one of the following:<br> `P1`: Business use for profit <br>`P2`: Non-profit business, club, association, religious organization, etc.<br>`P3`: Personal use<br> `P4`: Education purposes <br> `P5`: Government purposes | TEXT or NULL

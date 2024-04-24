@@ -254,7 +254,7 @@ X-PT-TECH-VATID | 0 | The technical contact's VAT-ID | TEXT or NULL
 X-PT-REGISTRANT-MOBILE | 0 | Registrant's mobile number | PHONE or NULL
 X-PT-TECH-MOBILE | 0 | Technical contact's mobile number | PHONE or NULL
 X-SWISS-UID | 0 | The enterprise ID, in the specific context of .swiss based on current rules, is the Swiss UID/UPI/IDE/IDI. | TEXT
-X-SWISS-OWNER-TYPE | 0 | The owner type, in the specific context of .swiss based on current rules, depending on application for natural persons (P) or organizations (O) | P or O
+X-SWISS-OWNER-TYPE | 0 | The owner type, in the specific context of .swiss based on current rules, depending on application for natural persons (P) or organizations (O) | `P` or `O`
 X-SYDNEY-NEXUS-CATEGORY | 0 | The registrant of the domain must one of 3 criteria:<br>`A`: New South Wales Entities<br>`B`: New South Wales Residents<br>`C`: Associated Entities | `A`, `B`, `C` or NULL
 X-MELBOURNE-NEXUS-CATEGORY | 0 | The registrant of the domain must one of 3 criteria:<br>`A`: Victorian Entities<br>`B`: Victorian Residents<br>`C`: Associated Entities | `A`, `B`, `C` or NULL
 X-XXX-ACCEPT-REGISTRATION-TAC | 0 | Set to `1` to accept the terms and conditions | NULL, `1` or `0`

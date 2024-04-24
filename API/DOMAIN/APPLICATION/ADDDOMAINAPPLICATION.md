@@ -115,7 +115,7 @@ X-RUHR-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-SE-ACCEPT-REGISTRATION-TAC | 0 | Set to `1` to accept the terms and conditions; only relevant for .SE domains | `0`, `1` or NULL
 X-SPREADBETTING-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-SWISS-UID | 0 | The enterprise ID, in the specific context of .swiss based on current rules, is the Swiss UID/UPI/IDE/IDI | TEXT
-X-SWISS-OWNER-TYPE | 0 | The owner type, in the specific context of .swiss based on current rules, depending on application for natural persons (P) or organizations (O) | P or O
+X-SWISS-OWNER-TYPE | 0 | The owner type, in the specific context of .swiss based on current rules, depending on application for natural persons (P) or organizations (O) | `P` or `O`
 X-SYDNEY-NEXUS-CATEGORY | 0 | The registrant of the domain must one of 3 criteria:<br>`A`: New South Wales Entities<br>`B`: New South Wales Residents<br>`C`: Associated Entities | `A`, `B`, `C` or NULL
 X-TEL-PUBLISH | 0 | If set to `N`, the registrant's contact data will not be shown in the WHOIS | `Y`, `N` or NULL
 X-TEL-WHOISTYPE | 0 | With this parameter the way the domain will be displayed in the WHOIS can be selected | `Legal`, `Natural` or NULL

@@ -282,7 +282,7 @@ X-SG-RCBID | 0 | Companies located in Singapore must enter their registration nu
 X-SG-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-SK-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-SWISS-UID | 0 |  The enterprise ID, in the specific context of .swiss based on current rules, is the Swiss UID/IDE/IDI. | TEXT
-X-SWISS-OWNER-TYPE | 0 | The owner type, in the specific context of .swiss based on current rules, depending on application for natural persons (P) or organizations (O) | P or O
+X-SWISS-OWNER-TYPE | 0 | The owner type, in the specific context of .swiss based on current rules, depending on application for natural persons (P) or organizations (O) | `P` or `O`
 X-SYDNEY-NEXUS-CATEGORY | 0 | The registrant of the domain must one of 3 criteria:<br>`A`: New South Wales Entities<br>`B`: New South Wales Residents<br>`C`: Associated Entities | `A`, `B`, `C` or NULL
 X-MELBOURNE-NEXUS-CATEGORY | 0 | The registrant of the domain must one of 3 criteria:<br>`A`: Victorian Entities<br>`B`: Victorian Residents<br>`C`: Associated Entities | `A`, `B`, `C` or NULL
 X-TEL-WHOISTYPE | 0 | With this parameter the way the domain will be displayed in the WHOIS can be selected | `Legal`, `Natural` or NULL
