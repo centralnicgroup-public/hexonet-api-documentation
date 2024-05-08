@@ -36,7 +36,8 @@ NOTICE-ACCEPTEDDATE | 0 | Date when the claims notice has been accepted; NOTICE-
 NOTICE-POA-ACCEPT-HASH | 0 | By providing the appropriate hash value, a respective claim notice is accepted | TEXT or NULL
 LAUNCH-MARK-CODE | 0 | Special allocation token provided by the registry | TEXT or NULL
 X-CAT-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
-X-CHANNEL-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
+X-CHANNEL-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NUL
+X-COOP-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULLL
 X-DISCLOSE | 0 | Set to `1` to disclose the domain's details | `0`, `1` or NULL
 X-HEALTH-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1`
 X-REGISTRANT-DISCLOSE | 0 | Set to `1` to disclose the registrant's details | `0`, `1` or NULL
@@ -73,6 +74,8 @@ X-IPR-NUMBER | 0 | Trademark number | TEXT or NULL
 X-IPR-CCLOCALITY | 0 | Trademark country | TEXT or NULL
 X-IPR-REGDATE | 0 | Trademark registration date | TEXT or NULL
 X-IPR-APPDATE | 0 | Trademark application date | TEXT or NULL
+X-ALLOCATIONTOKEN | 0 | Allocation token for the registration of reserved domain names | TEXT
+X-ASSOCIATION-ID | 0 | Special contact ID; only relevant for .XXX domains | TEXT or NULL
 X-AE-ACCEPT-REGISTRATION-TAC | 0 | Set to `1` to accept the terms and conditions; only relevant for .AE domains | `0`, `1` or NULL
 X-AE-REGISTRANT-NAME | 0 | Registrant's name; only relevant for .AE domains | TEXT or NULL
 X-AE-REGISTRANT-ID-TYPE | 0 | Registrant's ID type; only relevant for .AE domains | TEXT or NULL
@@ -134,10 +137,18 @@ X-CA-TECH-LANGUAGE | 0 | The technical contact's language (default is `EN`) | TE
 X-CL-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-CN-REGISTRANT-ID-NUMBER | 0 | ID number of the registrant. Only relevant for .CN domains | TEXT or NULL
 X-CN-REGISTRANT-ID-TYPE | 0 | The type of ID provided for the registrant. Only relevant for .CN domains | `SFZ`, `HZ`, `GAJMTX`, `TWJMTX`, `WJLSFZ`, `GAJZZ`, `TWJZZ`, `JGZ`, `QT`, `ORG`, `YYZZ`, `TYDM`, `BDDM`, `JDDWFW`, `SYDWFR`, `WGCZJG`, `SHTTFR`, `ZJCS`, `MBFQY`, `JJHFR`, `LSZY`, `WGZHWH`, `WLCZJG`, `SFJD`, `JWJG`, `SHFWJG`, `MBXXBX`, `YLJGZY`, `GZJGZY`, `BJWSXX` or `QTTYDM`
+X-CN-ADMIN-ID-NUMBER | 0 | ID number of the administrative contact. Only relevant for .CN domains | TEXT or NULL
+X-CN-ADMIN-ID-TYPE | 0 | The type of ID provided for the admin contact. Only relevant for .CN domains | `SFZ`, `HZ`, `GAJMTX`, `TWJMTX`, `WJLSFZ`, `GAJZZ`, `TWJZZ`, `JGZ`, `QT`, `ORG`, `YYZZ`, `TYDM`, `BDDM`, `JDDWFW`, `SYDWFR`, `WGCZJG`, `SHTTFR`, `ZJCS`, `MBFQY`, `JJHFR`, `LSZY`, `WGZHWH`, `WLCZJG`, `SFJD`, `JWJG`, `SHFWJG`, `MBXXBX`, `YLJGZY`, `GZJGZY`, `BJWSXX` or `QTTYDM`
+X-CN-TECH-ID-NUMBER | 0 | ID number of the technical contact. Only relevant for .CN domains | TEXT or NULL
+X-CN-TECH-ID-TYPE | 0 | The type of ID provided for the tech contact. Only relevant for .CN domains | `SFZ`, `HZ`, `GAJMTX`, `TWJMTX`, `WJLSFZ`, `GAJZZ`, `TWJZZ`, `JGZ`, `QT`, `ORG`, `YYZZ`, `TYDM`, `BDDM`, `JDDWFW`, `SYDWFR`, `WGCZJG`, `SHTTFR`, `ZJCS`, `MBFQY`, `JJHFR`, `LSZY`, `WGZHWH`, `WLCZJG`, `SFJD`, `JWJG`, `SHFWJG`, `MBXXBX`, `YLJGZY`, `GZJGZY`, `BJWSXX` or `QTTYDM`
+X-CN-BILLING-ID-NUMBER | 0 | ID number of the billing contact. Only relevant for .CN domains | TEXT or NULL
+X-CN-BILLING-ID-TYPE | 0 | The type of ID provided for the billing contact. Only relevant for .CN domains | `SFZ`, `HZ`, `GAJMTX`, `TWJMTX`, `WJLSFZ`, `GAJZZ`, `TWJZZ`, `JGZ`, `QT`, `ORG`, `YYZZ`, `TYDM`, `BDDM`, `JDDWFW`, `SYDWFR`, `WGCZJG`, `SHTTFR`, `ZJCS`, `MBFQY`, `JJHFR`, `LSZY`, `WGZHWH`, `WLCZJG`, `SFJD`, `JWJG`, `SHFWJG`, `MBXXBX`, `YLJGZY`, `GZJGZY`, `BJWSXX` or `QTTYDM`
 X-CORE-INTENDED-USE | 0 | Parameter describing the intended use for the domain name | TEXT or NULL
 X-CORE-PRIVACY-DISCLOSURE | 0 | Privacy disclosure settings, set to `NATURE-TRUE` to disclose contact details, set to `NATURAL-FALSE` to hide the contact details. Must be set to `LEGAL` if the owner contact is an organization. | `NATURAL-FALSE`, `NATURAL-TRUE` or `LEGAL`
 X-DE-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-DE-NSENTRY[0..4] | 0 | DNS resource records to directly add to the .DE root nameservers | TEXT or NULL
+X-DE-ABUSE-CONTACT | 0 | Abuse contact information for the domain that will be displayed by the registry. Value must consist of a valid URI template string, either a mailto link (e.g. `mailto:contact@example.com` ) or a valid http/https URL (e.g. `https://mycontactform.example`) | TEXT or NULL
+X-DE-GENERAL-REQUEST | 0 | General request contact information for the domain that will be displayed by the registry. Value must consist of a valid URI template string, either a mailto link (e.g. `mailto:contact@example.com` ) or a valid http/https URL (e.g. `https://mycontactform.example`) | TEXT or NULL
 X-DK-ADMIN-CONTACT | 0 | Customers with an existing DK-HOSTMASTER account can provide their User ID in order to place newly registered domains on their existing account; only relevant for .DK domains | CONTACT or NULL
 X-DK-AGREEMENT-ACCEPTEDDATE | 0 | If this date is provided during the registration request for a .DK domain the alternative registration path is enabled and the conclusion of the agreement is not requested by the registry any more. If this flag is present you are responsible to adjust your purchase flow as required by the registry. Further information is available at https://www.dk-hostmaster.dk/en/implementation-guide-registration-dk (How to - method 1). | DATETIME
 X-DK-REGISTRANT-CONTACT | 0 | Customers with an existing DK-HOSTMASTER account can provide their User ID in order to place newly registered domains on their existing account; only relevant for .DK domains | CONTACT or NULL
@@ -160,6 +171,7 @@ X-EU-REGISTRANT-LANG | 0 | Language of the .EU Domain registrant; possible value
 X-FI-IDNUMBER | 0 | Registrant's personal or organizational identification number; only relevant for .FI domains | TEXT or NULL
 X-FI-ACCEPT-REGISTRATION-TAC | 0 | Set to `1` to accept the terms and conditions; only relevant for .FI domains | `0`, `1` or NULL
 X-FI-DOMAIN-NAME-HOLDER-COMPANY-TYPE | 0 | Type of company applying for an .FI domain; possible values:<br>`0`: Private person<br>`1`: Company (default)<br>`2`: Association<br>`3`: Foundation<br>`4`: Municipality<br>`5`: Political party<br>`6`: State<br>`7`: Public corporation | INT or NULL
+X-FI-DEPARTMENT | 0 | Company department; only relevant for .FI domains | TEXT or NULL
 X-FI-BASED-ON-PERSON-NAME | 0 | Set to `1` in order to indicate that the domain name is based on the personal or company name of the registrant; only relevant for .FI domains | TEXT or NULL
 X-FI-PERSON-NAME-REGISTRATION-ID | 0 | The register where the company name on which the domain name is based has been registered; only relevant for .FI domains | INT or NULL
 X-FI-PERSON-NAME-REGISTRATION-NUMBER | 0 | The registration number of the registered company name on which the domain name is based; only relevant for .FI domains | TEXT or NULL
@@ -203,6 +215,9 @@ X-HK-REGISTRANT-INDUSTRY-TYPE | 0 | Registrant's industry type; default is: `0` 
 X-HK-ACCEPT-INDIVIDUAL-REGISTRATION-TAC | 0 | Accept the terms and conditions of a individual registration | `0`, `1` or NULL
 X-HU-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-IDN-LANGUAGE | 0 | If the domain is an IDN domain, please state the IDN language code | TEXT
+X-IE-CONTACT-TYPE | 0 | The type of the registrant, following values are possible:<br>`CHA `: a charitable organization based in Ireland<br>`COM `: a business or company that is incorporated in Ireland<br>`OTH `: an individual or organization that does not fall into the charity or company categories but has a connection to Ireland | TEXT
+X-IE-CRO-NUMBER | 0 | The Companies Registration Office (CRO)identifier. Mandatory if the `X-IE-CONTACT-TYPE` is `COM`. | TEXT
+X-IE-SUPPORT-NUMBER | 0 | The identifier for a charity or a supporting number (RBN or VAT, for example)for other contact types. Mandatory if the `X-IE-CONTACT-TYPE` is `CHA`. | TEXT
 X-IE-REGISTRANT-CLASS | 0 | The class of the registrant, following values are possible:<br>`Body Corporate (Ltd,PLC,Company)`<br>`Constitutional Body `<br>`Discretionary Applicant `<br>`Natural Person `<br>`School/Educational Institution `<br>`Sole Trader `<br>`Statutory Body `<br>`Unincorporated Association` | TEXT
 X-IE-REGISTRANT-CATEGORY | 0 | Based on the registrant class the registrant category has to state one of the following details:<br>`Body Corporate (Ltd,PLC,Company)`: Corporate Name, Discretionary Name, Publication Name, Registered Business Name, Registered Trade Mark Name<br>`Constitutional Body`: Discretionary Name, Publication Name, Registered Trade Mark Name, State Agency Name<br>`Discretionary Applicant`: Discretionary Name<br>`Natural Person`: Discretionary Name, Personal Name, Politician's Name, Registered Trade Mark Name<br>`School/Educational Institution`: Discretionary Name, Publication Name, Registered Trade Mark Name, School/Educational Institution Name<br>`Sole Trader`: Discretionary Name, Personal Trading Name, Publication Name, Registered Business Name, Registered Trade Mark Name<br>`Statutory Body`: Discretionary Name, Publication Name, Registered Trade Mark Name, State Agency Name<br>`Unincorporated Association`: Discretionary Name, Publication Name, Registered Business Name, Registered Trade Mark Name, Unincorporated Association Name | TEXT
 X-IE-REGISTRANT-REMARKS | 0 | Trade mark number or VAT-ID | TEXT
@@ -298,6 +313,7 @@ X-TRAVEL-INDUSTRY | 0 | In order to register .travel domains the registrant has 
 X-UK-REG-OPT-OUT | 0 | If set to `Y`, the registrant's contact data will not be shown in the WHOIS | TEXT or NULL
 X-UK-REG-TYPE | 0 | Registrant type | TEXT or NULL
 X-UK-REG-CO-NO | 0 | Registrant Company Number | TEXT or NULL
+X-UK-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-US-NEXUS-APPPURPOSE | 0 | Must be one of the following:<br> `P1`: Business use for profit <br>`P2`: Non-profit business, club, association, religious organization, etc.<br>`P3`: Personal use<br> `P4`: Education purposes <br> `P5`: Government purposes | `P1`, `P2`, `P3`, `P4`, `P5` or NULL
 X-US-NEXUS-CATEGORY | 0 | Must be one of the following:<br> `C11`: a United States citizen<br> `C12`: a permanent resident of the United States of America or any of its posessions or territories. <br> `C21`: U.S. Organization incorporated within one of the 50 states or a U.S. Territory An entity or organization that has a bona fide presence in the United States of America or any of its possessions or territories.<br> `C31`:  Regularly engages in lawful activities (sales of goods or services or other business, commercial or non-commercial, including not-for-profit relations in the United States) <br> `C32`: Entity has an office or other facility in the US. | `C11`, `C12`, `C21`, `C31`, `C32` or NULL
 X-US-NEXUS-VALIDATOR | 0 | Specify the two-letter country-code of the registrant (if Nexus Category is either C31 or C32) | COUNTRY or NULL
@@ -319,6 +335,7 @@ X-ABOGADO-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and c
 X-MAKEUP-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-BIBLE-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-ECO-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
+X-BOATS-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-HOMES-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-WDRP-RSP | 0 | Name of the RSP appearing in the WDRP email | TEXT or NULL
 X-WDRP-URL | 0 | URL of the RSP appearing in the WDRP email | TEXT or NULL
@@ -335,6 +352,8 @@ X-WHOIS-RSP | 0 | RSP name to display in our whois | TEXT or NULL
 X-WHOIS-BANNER[0..2] | 0 | Text to display in our whois (e.g. Advertising campaign) | TEXT or NULL
 X-ID-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-ZA-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
+X-ZUERICH-AGREEMENT | 0 | Set to `1` to accept the local laws of Canton of Zurich, in particular to the TLDV ordinance | `1` or NULL
+X-ZUERICH-UID | 0 |   Enterprise Identification Number (UID) or PUBLIC | TEXT
 X-ACCEPT-WHOISTRUSTEE-TAC | 0 | Activates the Whois Trustee Service | `0`, `1` or NULL
 X-ACCEPT-WHOISTRUSTEELITE-TAC | 0 | Activates the Whois Trustee Service Lite | `0`, `1` or NULL
 INTERNALDNS | 0 | Creates the necessary dns zone before submitting application to the registry. | `0`, `1` or NULL

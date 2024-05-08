@@ -18,8 +18,10 @@ MODE | 0 | If set to `PRECHECK` certain trade policy checks are skipped | `PRECH
 OWNERCONTACT0 | 0 | Contact Handle ID | CONTACT
 ADMINCONTACT0 | 0 | Contact Handle ID | CONTACT
 TECHCONTACT0 | 0 | Contact Handle ID | CONTACT
+BILLINGCONTACT0 | 0 | Contact Handle of the new billing contact | CONTACT
 NAMESERVER[0..12] | 0 | Nameserver Hostname | HOSTNAME or NULL
 HOST[0..N] | 0 | Nameserver hostnames and IP addresses | TEXT or NULL
+ACTION | 0 | Defines the action to perform. Supported values are:<br>`request`: Request a new ownership change (parameter OWNERCONTACT mandatory)<br>`cancel`: Cancel a pending Trade (parameter OWNERCONTACT **not** mandatory)<br><br>The default value is `request` | TEXT or NULL
 X-CAT-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-CHANNEL-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-COOP-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
@@ -54,6 +56,10 @@ X-ES-BILLING-TIPO-IDENTIFICACION | 0 | Must be one of the following:<br>`0`: Otr
 X-ES-BILLING-IDENTIFICACION | 0 | One of the following ID numbers can be provided via this parameter:<br>__For non-spanish owner__: passport number, drivers license number or even national identify card number<br>__For Spanish Individual or Organization__: Spanish National Personal ID or company VAT ID number<br>__Alien registration card__: Spanish resident alien ID number | TEXT or NULL
 X-EU-ACCEPT-TRUSTEE-TAC | 0 | Set this parameter to `1` to use our Trustee Contact Service for the Owner-C, if you can't provide a local presence in the EU | `0`, `1` or NULL
 X-FI-IDNUMBER | 0 | Registrant's personal or organizational identification number; only relevant for .FI domains | TEXT or NULL
+X-FI-DOMAIN-NAME-HOLDER-COMPANY-TYPE | 0 | Type of company applying for an .FI domain; possible values:<br>`0`: Private person<br>`1`: Company (default)<br>`2`: Association<br>`3`: Foundation<br>`4`: Municipality<br>`5`: Political party<br>`6`: State<br>`7`: Public corporation | INT or NULL
+X-FI-BASED-ON-PERSON-NAME | 0 | Set to `1` in order to indicate that the domain name is based on the personal or company name of the registrant; only relevant for .FI domains | TEXT or NULL
+X-FI-PERSON-NAME-REGISTRATION-ID | 0 | The register where the company name on which the domain name is based has been registered; only relevant for .FI domains | INT or NULL
+X-FI-PERSON-NAME-REGISTRATION-NUMBER | 0 | The registration number of the registered company name on which the domain name is based; only relevant for .FI domains | TEXT or NULL
 X-FI-REGISTRANT-BIRTH-DATE | 0 | The registrant's birth date; only relevant for .FI domains<br>Mandatory for non-finish private persons | TEXT or NULL
 X-FI-REGISTRANT-IDNUMBER | 0 | The registrant's ID number; only relevant for .FI domains | TEXT or NULL
 X-FR-ACCEPT-TRANSFER-TAC | 0 | Set to `1` to accept the .FR TRANSFER terms and conditions | `0`, `1` or NULL
@@ -86,6 +92,9 @@ X-HK-REGISTRANT-DOCUMENT-ORIGIN-COUNTRY | 0 | ISO-3166 Country Code | COUNTRY or
 X-HK-REGISTRANT-BIRTH-DATE | 0 | Registrant's birth date, mandatory if the registrant is an individual | TEXT or NULL
 X-HK-REGISTRANT-INDUSTRY-TYPE | 0 | Registrant's industry type; default is: `0` (not specified) | TEXT or NULL
 X-HK-ACCEPT-INDIVIDUAL-REGISTRATION-TAC | 0 | Set `1` to accept the terms and condition of a individual registration, mandatory if the registrant is an individual | `0`, `1` or NULL
+X-IE-REGISTRANT-CLASS | 0 | The class of the registrant, following values are possible:<br>`Body Corporate (Ltd,PLC,Company)`<br>`Constitutional Body `<br>`Discretionary Applicant `<br>`Natural Person `<br>`School/Educational Institution `<br>`Sole Trader `<br>`Statutory Body `<br>`Unincorporated Association` | TEXT
+X-IE-REGISTRANT-CATEGORY | 0 | Based on the registrant class the registrant category has to state one of the following details:<br>`Body Corporate (Ltd,PLC,Company)`: Corporate Name, Discretionary Name, Publication Name, Registered Business Name, Registered Trade Mark Name<br>`Constitutional Body`: Discretionary Name, Publication Name, Registered Trade Mark Name, State Agency Name<br>`Discretionary Applicant`: Discretionary Name<br>`Natural Person`: Discretionary Name, Personal Name, Politician's Name, Registered Trade Mark Name<br>`School/Educational Institution`: Discretionary Name, Publication Name, Registered Trade Mark Name, School/Educational Institution Name<br>`Sole Trader`: Discretionary Name, Personal Trading Name, Publication Name, Registered Business Name, Registered Trade Mark Name<br>`Statutory Body`: Discretionary Name, Publication Name, Registered Trade Mark Name, State Agency Name<br>`Unincorporated Association`: Discretionary Name, Publication Name, Registered Business Name, Registered Trade Mark Name, Unincorporated Association Name  | TEXT
+X-IE-REGISTRANT-REMARKS | 0 | Trade mark number or VAT-ID | TEXT
 X-NICSE-IDNUMBER | 0 | This number must be provided for individuals as well as for organizations. For individuals or companies located in Sweden a valid Swedish personal or organizational number must be stated (6 digits, dash, 4 digits).<br> For individuals and companies outside of Sweden the ID number (e.g. Civic registration number, company registration number, or the equivalent) can consist of 4 to 123 characters. | TEXT or NULL
 X-NICSE-VATID | 0 | The VAT-ID has to be stated for companies that are located inside the European Union but outside Sweden | TEXT or NULL
 X-IE-CONTACT-TYPE | 0 | The type of the registrant, following values are possible:<br>`CHA `: a charitable organization based in Ireland<br>`COM `: a business or company that is incorporated in Ireland<br>`OTH `: an individual or organization that does not fall into the charity or company categories but has a connection to Ireland | TEXT
@@ -98,7 +107,9 @@ X-IT-ACCEPT-LIABILITY-TAC | 0 | Accepts "Section 3 - Declarations and assumption
 X-IT-ACCEPT-REGISTRATION-TAC | 0 | Accepts "Section 5 - Consent to the processing of personal data for registration" | `0`, `1` or NULL
 X-IT-ACCEPT-DIFFUSION-AND-ACCESSIBILITY-TAC | 0 | Accepts - "Section 6 - Consent to the processing of personal data for diffusion and accessibility via the internet" | `0`, `1` or NULL
 X-IT-ACCEPT-EXPLICIT-TAC | 0 | Accepts "Section 7 - Explicit acceptance of the following points" | `0`, `1` or NULL
+X-IT-NATIONALITY | 0 | The nationality of the registrant contact if it deviates from the country code | TEXT or NULL
 X-LT-REGISTRANT-LEGAL-ID | 0 | Legal entity identification code of the registrant of a .LT domain. Required as of December 1, 2018 if the registrant is a legal entity. | TEXT or NULL
+X-MK-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-MY-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-MY-REGISTRANT-ORGANIZATION-TYPE | 0 | The registrant's organization type | INT
 X-MY-REGISTRANT-RACE | 0 | Registrant's nationality | `MALAY`, `CHINESE`, `INDIAN` or `OTHERS`
@@ -106,16 +117,34 @@ X-MY-REGISTRANT-PROOF-OF-IDENTITY | 0 | Document submitted as a proof of the reg
 X-NGO-ACCEPT-REGISTRATION-TAC | 0 | Set to `1` to accept the terms and conditions | `0`, `1` or NULL
 X-ONG-ACCEPT-REGISTRATION-TAC | 0 | Set to `1` to accept the terms and conditions | `0`, `1` or NULL
 X-NL-ACCEPT-TRUSTEE-TAC | 0 | Set this parameter to `1` to use our Domicile Contact Service for the Owner-C, if you can't provide a domicile address in the Netherlands | `0`, `1` or NULL
+X-NO-REGISTRANT-IDENTITY | 0 | The organization number of the Norwegian organization (consisting of exactly 9 digits) or the PID Number in format N.PRI.12345678 | TEXT
+X-NO-DECLARATION-VERSION | 0 | Version of the declaration form on which the domain name policy is accepted | TEXT or NULL
+X-NO-CONSENTING-PERSON-NAME | 0 | Name of the person accepting the domain name policy | TEXT or NULL
+X-NO-DECLARATION-TIMESTAMP | 0 | Date and time when the domain name policy has been accepted | TEXT or NULL
 X-PT-REGISTRANT-VATID | 0 | The registrant's VAT-ID. Required if the contact is used for the first time for a .PT domain | TEXT or NULL
+X-PT-REGISTRANT-MOBILE | 0 | Registrant's mobile number | PHONE or NULL
 X-PT-LEGITIMACY | 0 | Registrant type; only relevant for .PT domains | TEXT or NULL
+X-RU-ACCEPT-INDIVIDUAL-REGISTRATION-TAC | 0 | Set `1` to accept the terms and condition of a individual registration, mandatory if the registrant is an individual  | `0`, `1` or NULL
+X-RU-REGISTRANT-BIRTH-DATE | 0 | The registrant's birth date | TEXT or NULL
+X-RU-REGISTRANT-PASSPORT-DATA | 0 | Registrant's passport data including passport number, issue date, and place of issue | TEXT or NULL
+X-RU-REGISTRANT-PASSPORT-NUMBER | 0 | Registrant's passport number | TEXT or NULL
+X-RU-REGISTRANT-PASSPORT-DATE | 0 | Registrant's passport issue date | TEXT or NULL
+X-RU-REGISTRANT-PASSPORT-LOCATION | 0 | Registrant's passport place of issue | TEXT or NULL
+X-RU-REGISTRANT-KPP | 0 | Registrant's KPP number | TEXT or NULL
+X-RU-REGISTRANT-TIN | 0 | Registrant's TIN number | TEXT or NULL
+X-SG-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
+X-RO-PERSONTYPE | 0 | Registrant entity type; can be `c` (company) or `p` (person) | TEXT or NULL
+X-SG-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
+X-SG-RCBID | 0 | The company registration number has to be provided with this parameter if the registrant is a organization from Singapore | TEXT or NULL
+X-SWISS-UID | 0 |  The enterprise ID, in the specific context of .swiss based on current rules, is the Swiss UID/UPI/IDE/IDI. | TEXT
+X-SWISS-OWNER-TYPE | 0 | The owner type, in the specific context of .swiss based on current rules, depending on application for natural persons (P) or organizations (O) | `P` or `O`
+X-SYDNEY-NEXUS-CATEGORY | 0 | The registrant of the domain must one of 3 criteria:<br>`A`: New South Wales Entities<br>`B`: New South Wales Residents<br>`C`: Associated Entities | `A`, `B`, `C` or NULL
 X-PT-REGISTRATION-BASIS | 0 | Registration reason; only relevant for .PT domains | TEXT or NULL
 X-PT-BRAND-DATE | 0 | Registration date of the brand; only relevant for .PT domains | DATE or NULL
 X-PT-BRAND-NUMBER | 0 | Registration number of the brand; only relevant for .PT domains | TEXT or NULL
 X-PT-BRAND-WAY-OF-REGISTRY | 0 | Registration type of the brand; only relevant for .PT domains | TEXT or NULL
 X-PT-ARBITRATION | 0 | Special arbitration parameter; only relevant for .PT domains | `true`, `false` or NULL
-X-SYDNEY-NEXUS-CATEGORY | 0 | The registrant of the domain must one of 3 criteria:<br>`A`: New South Wales Entities<br>`B`: New South Wales Residents<br>`C`: Associated Entities | `A`, `B`, `C` or NULL
 X-MELBOURNE-NEXUS-CATEGORY | 0 | The registrant of the domain must one of 3 criteria:<br>`A`: Victorian Entities<br>`B`: Victorian Residents<br>`C`: Associated Entities | `A`, `B`, `C` or NULL
-X-SG-ACCEPT-TRUSTEE-TAC | 0 | Activates the trustee service | `0`, `1` or NULL
 X-SG-RCBID | 0 | The company registration number has to be provided with this parameter if the registrant is a organization from Singapore | TEXT or NULL
 X-US-NEXUS-APPPURPOSE | 0 | Must be one of the following:<br> `P1`: Business use for profit <br>`P2`: Non-profit business, club, association, religious organization, etc.<br>`P3`: Personal use<br> `P4`: Education purposes <br> `P5`: Government purposes | TEXT or NULL
 X-US-NEXUS-CATEGORY | 0 |Must be one of the following:<br> `C11`: a United States citizen<br> `C12`: a permanent resident of the United States of America or any of its posessions or territories. <br> `C21`: U.S. Organization incorporated within one of the 50 states or a U.S. Territory An entity or organization that has a bona fide presence in the United States of America or any of its possessions or territories.<br> `C31`:  Regularly engages in lawful activities (sales of goods or services or other business, commercial or non-commercial, including not-for-profit relations in the United States) <br> `C32`: Entity has an office or other facility in the US. | TEXT or NULL
@@ -136,9 +165,34 @@ X-MAKEUP-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and co
 X-BIBLE-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-ECO-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
 X-HOMES-ACCEPT-HIGHLY-REGULATED-TAC | 0 | Set to `1` to accept the terms and conditions of a highly regulated TLD | `1` or NULL
+X-REGISTRANT-BIRTHDATE | 0 | The registrant's birthdate | TEXT or NULL
+X-ADMIN-BIRTHDATE | 0 | The admin's birthdate | TEXT or NULL
+X-TECH-BIRTHDATE | 0 | The technical contact's birthdate | TEXT or NULL
+X-BILLING-BIRTHDATE | 0 | The billing contact's birthdate | TEXT or NULL
+X-REGISTRANT-BIRTHPLACE | 0 | The registrant's birthdate | TEXT or NULL
+X-ADMIN-BIRTHPLACE | 0 | The admin's birthplace | TEXT or NULL
+X-BILLING-BIRTHPLACE | 0 | The billing contact's birthplace  | TEXT or NULL
 X-REGISTRANT-IDNUMBER | 0 | The registrant's ID number | TEXT or NULL
 X-ADMIN-IDNUMBER | 0 | The admin's ID number | TEXT or NULL
 X-VATID | 0 | Domain contacts' VAT-ID | TEXT or NULL
+X-REGISTRANT-VATID | 0 | The registrant's VAT-ID | TEXT or NULL
+X-ADMIN-VATID | 0 | The admin's VAT-ID | TEXT or NULL
+X-TECH-VATID | 0 | The technical contact's VAT-ID | TEXT or NULL
+X-BILLING-VATID | 0 | The billing contact's VAT-ID | TEXT or NULL
+X-IDNUMBER | 0 | Domain contacts' personal or organizational identification number | TEXT or NULL
+X-TECH-IDNUMBER | 0 | The technical contact's ID number | TEXT or NULL
+X-BILLING-IDNUMBER | 0 | The billing contact's ID number | TEXT or NULL
+X-IDAUTHORITY | 0 | Authority that has issued the domain contacts' personal or organizational identification number | TEXT or NULL
+X-REGISTRANT-IDAUTHORITY | 0 | Authority that has issued the registrant's ID number | TEXT or NULL
+X-ADMIN-IDAUTHORITY | 0 | Authority that has issued the admin's ID number | TEXT or NULL
+X-TECH-IDAUTHORITY | 0 | Authority that has issued the technical contact's ID number | TEXT or NULL
+X-BILLING-IDAUTHORITY | 0 | Authority that has issued the billing contact's ID number | TEXT or NULL
+X-IPR-NAME | 0 | Trademark name | TEXT or NULL
+X-IPR-NUMBER | 0 | Trademark number | TEXT or NULL
+X-IPR-CCLOCALITY | 0 | Trademark country | TEXT or NULL
+X-IPR-REGDATE | 0 | Trademark registration date | TEXT or NULL
+X-IPR-APPDATE | 0 | Trademark application date | TEXT or NULL
+SUBUSER | 0 | The account in which the domain trade should be executed | TEXT or NULL
 
 ----
 ## RESPONSE
@@ -394,6 +448,7 @@ X-ES-TECH-TIPO-IDENTIFICACION | 0 | 1 | TLD specific domain flag | TEXT
 X-EU-ACCEPT-TRUSTEE-TAC | 0 | 1 | TLD specific domain flag | INT
 X-FOREX-ACCEPT-HIGHLY-REGULATED-TAC | 0 | 1 | TLD specific domain flag | INT
 X-FI-IDNUMBER | 0 | 1 | Registrant's personal or organizational identification number | TEXT
+X-FI-ACCEPT-REGISTRATION-TAC | 0 | Set to `1` to accept the terms and conditions | `0`, `1` or NULL
 X-FI-REGISTRANT-BIRTH-DATE | 0 | 1 | The registrant's birth date | TEXT
 X-FI-REGISTRANT-IDNUMBER | 0 | 1 | The registrant's ID number; only relevant for .FI domains | TEXT
 X-FR-ACCEPT-TRANSFER-TAC | 0 | 1 | TLD specific domain flag | INT
