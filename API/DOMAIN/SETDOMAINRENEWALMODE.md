@@ -13,7 +13,7 @@ Parameter | Min | Definition | Type
 ---- | ---- | ---- | ----
 COMMAND | 1 | `SetDomainRenewalMode` | COMMAND
 DOMAIN | 1 | Domain Name | DOMAIN
-RENEWALMODE | 1 | `DEFAULT`: Set the renewal mode of the domain according to the default renewal mode specified in the account settings.<br>`AUTORENEW`: When the RegistrationPeriod for a domain expires, the domain is automatically renewed (on FinalizationDate) and the RegistrationPeriod is extended by the length of the RenewalPeriod for a particular domain (normally 1 year). <br>`AUTOEXPIRE`: Domain is deleted at the end of the RegistrationPeriod (on FailureDate), or is pushed to the registry for self management if the respective registry offers such functionality.<br>`AUTODELETE`: Domain is deleted at the end of the RegistrationPeriod (on FailureDate).<br>`AUTORENEWMONTHLY`: Behaves like AUTORENEW, but on a monthly cycle (currently only available for .DE domains). | `DEFAULT`, `AUTORENEW`, `AUTOEXPIRE`, `AUTODELETE` or `AUTORENEWMONTHLY`
+RENEWALMODE | 1 | `DEFAULT`: When the RegistrationPeriod for a domain expires, the domain is automatically renewed (on FinalizationDate) and the RegistrationPeriod is extended by the length of the RenewalPeriod for a particular domain (normally 1 year).<br> | `DEFAULT`
 PERIOD | 0 | DEFAULT (for the most domains: 1 year) <br> xY (for x years) <br> xM (for x months) <br> (please remark that "Y" and "M" are case sensitive!) <br> | TEXT, `1M` or NULL
 
 ----
